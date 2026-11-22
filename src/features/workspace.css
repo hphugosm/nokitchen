@@ -1206,6 +1206,10 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   gap: 10px;
 }
+.meal-links .lined-list li > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .packing-box {
   min-width: 0;
 }
