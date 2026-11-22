@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useId, useRef } from 'react'
+import { createContext, useContext, useId, useLayoutEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
 import { AlertCircle, Check, CircleDashed, Clock3, Moon, Sunrise, Sun, X } from 'lucide-react'
 import type { WorkspaceUI } from '../application/uiContract'
@@ -163,7 +163,8 @@ export function Modal({
 }) {
   const ref = useRef<HTMLDialogElement>(null),
     titleId = useId()
-  useEffect(() => {
+  // Close while the dialog is still attached so the browser can refocus its launcher.
+  useLayoutEffect(() => {
     const d = ref.current
     d?.showModal()
     return () => {
