@@ -16,7 +16,7 @@ entries = {
         "tsconfig.json", "vite.config.ts",
     )
 }
-entries["NoKitchen-1.4.html"] = root / "dist" / "NoKitchen-1.4.html"
+entries["NoKitchen-1.4.1.html"] = root / "dist" / "NoKitchen-1.4.1.html"
 entries[".github/workflows/pages.yml"] = root / ".github/workflows/pages.yml"
 for folder, extensions in {
     "server": {".ts"},

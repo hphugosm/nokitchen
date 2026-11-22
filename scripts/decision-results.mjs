@@ -24,6 +24,7 @@ try {
   const example = reviewedPouches(true),
     source = snapshotOf(example.reviewed),
     before = example.reviewed.approved
+  assert.deepEqual(validatePlan(source, before), [])
   const name = (id) => source.recipes.find((r) => r.id === id).name
   const label = (a) => a && { recipe: name(a.recipeId), method: a.methodId, portions: a.portions }
   function describe(impact, plan, snapshot) {
@@ -136,13 +137,15 @@ try {
     }
   }
   const improved = improveVariety(source, before).plan,
-    raw = runPlanner(source, 'nokitchen')
+    raw = runPlanner(source, 'nokitchen'),
+    reference = runPlanner(source, 'reference-first-fit')
+  assert.deepEqual(validatePlan(source, reference), [])
   const moves = comparePlanChanges(before, improved)
   assert.deepEqual(validatePlan(source, improved), [])
   assert.equal(moves.lost.length + moves.filled.length, 0)
   assert.ok(moves.changed.every((m) => m.fromPortions === m.toPortions))
   const evidence = {
-    release: '1.4',
+    release: '1.4.1',
     modelWeek: example.reviewed.weekStart,
     sourceDigest: allocationDigest(before),
     catalog: {
@@ -151,6 +154,7 @@ try {
       methods: source.recipes.reduce((n, r) => n + r.methods.length, 0),
       families: new Set(source.recipes.map((r) => r.familyId)).size,
     },
+    freshReference: { strategy: reference.strategy, metrics: reference.metrics, validation: [] },
     baseline: { filledSlots: before.allocations.length, metrics: before.metrics },
     rawToStartingH01: householdComparison(raw, before).households.find((h) => h.id === 'H01'),
     improveVariety: {
@@ -160,7 +164,7 @@ try {
     },
     receiptBranches,
   }
-  await writeFile('docs/decision-results-1.4.json', JSON.stringify(evidence, null, 2) + '\n')
+  await writeFile('docs/decision-results-1.4.1.json', JSON.stringify(evidence, null, 2) + '\n')
   console.log(
     'Wrote evidence for',
     receiptBranches.length,

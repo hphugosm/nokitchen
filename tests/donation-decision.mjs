@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { begin } from './browser-flow.mjs'
+import { verifyRecording } from './recording.mjs'
 
 const { page, session, click, nav, read, notice, draft, reset, end } = await begin()
 const options = () => page.getByRole('region', { name: 'Donation plan options' })
@@ -37,15 +38,15 @@ try {
   assert.notEqual(varied.draftId, base.approvedId)
   await page.getByLabel('Variety for').selectOption('H07')
   const weekly = page.getByRole('region', { name: 'Weekly meal variety' })
-  assert.match(await weekly.innerText(), /Better spacing of the same family mix/)
-  await weekly.getByText('Family frequencies and weekly meals', { exact: true }).click()
+  assert.match(await weekly.innerText(), /Better spacing of the same meal types/)
+  await weekly.getByText('Meal types and weekly meals', { exact: true }).click()
   assert.match(await weekly.innerText(), /Toastie[\s\S]*8 → 8/)
-  await nav('Demo donations')
+  await nav('Donations')
   for (const name of [
     'Paste donor offer',
     'Packaged chickpeas',
     'Parse offer',
-    'Confirm example label and window',
+    'Confirm the example product details',
     'Save edits',
     'Mark reviewed',
   ])
@@ -92,6 +93,10 @@ try {
   await page.setViewportSize({ width: 390, height: 844 })
   await choose('Reallocate for coverage').click()
   await notice('Replacement draft selected')
+  await page.waitForFunction((prior) => {
+    const s = JSON.parse(localStorage.getItem('nokitchen.scenario.v4'))
+    return s.draftId !== prior
+  }, preserved.draftId)
   const redistributed = await read()
   assert.deepEqual(owner(redistributed), originalApproval)
   assert.equal(draft(redistributed).metrics.allocated, 310)
@@ -105,10 +110,12 @@ try {
   assert.deepEqual(await read(), redistributed)
   await choose('Keep existing meals').click()
   await notice('Replacement draft selected')
+  await page.waitForFunction((id) => JSON.parse(localStorage.getItem('nokitchen.scenario.v4')).draftId === id, preserved.draftId)
   assert.equal((await read()).draftId, preserved.draftId)
   assert.deepEqual(owner(await read()), originalApproval)
   await choose('Reallocate for coverage').click()
   await notice('Replacement draft selected')
+  await page.waitForFunction((id) => JSON.parse(localStorage.getItem('nokitchen.scenario.v4')).draftId === id, redistributed.draftId)
   await click('Approve plan')
   await notice('Plan approved')
   const approved = await read()
@@ -124,3 +131,5 @@ try {
 } finally {
   await end()
 }
+
+await verifyRecording()

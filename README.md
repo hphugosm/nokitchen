@@ -1,96 +1,79 @@
-# NoKitchen 1.4
+# NoKitchen 1.4.1
 
-NoKitchen plans a synthetic food-bank week using the stock each household can collect, store, open and prepare. In **Food bank**, paste an offer, review its label and quantities, preview the possible impact and record the actual delivery. The resulting draft shows which meals and collection boxes will change. In **Household**, open a meal to see its exact ingredients, method and collection.
+NoKitchen helps a food bank answer a practical question. Given the food available, which requested meals can each household actually collect, store, open and cook? The bank reviews offers, confirms receipts and prepares a weekly draft. Households see the meals the bank has approved.
+
+**Theme:** Projects for Social Good
 
 Jump-Powered by Tým Trampolín
 
-## Choose a deployment
+## Open the demo
 
-| Mode | How to open it | Data and connectivity |
-| --- | --- | --- |
-| Public demo | Serve the static Pages build or standalone HTML | Synthetic week, sample offers, household and bank tools. All planning runs in the browser. |
-| Private operator | Open the local sign-in link after starting the Node service | One inbox-scoped Agentboxd connection, imported donor text, actual receipt confirmation and traceable collection boxes. |
+The public GitHub Pages build runs entirely in the browser with synthetic households, stock and donor offers. It accepts pasted examples or manually entered offers. Each browser profile has its own saved demo week. **Start guided demo** opens an isolated session. **Reset demo** restores the ordinary demo in the current profile. [Guided demo](docs/guided-demo.md) · [Timed video walkthrough](docs/demo-script.md)
 
-Both modes use the same offer parser, review, receipt validation, allocation engine and approval command. The operator view also provides a locally generated donor reply to copy. For a real mailbox, configure the two read permissions and a dedicated operator browser. [Agentboxd setup and email-to-dinner walkthrough](docs/agentboxd-setup.md) · [Security](docs/agentboxd-security.md)
-
-## Publish the public demo
-
-Run `npm ci`, `npm run build` and `npm run check:public`. Deploy only `dist/` or extract the supplied Pages ZIP at the static site root. Relative asset paths work beneath a project subdirectory. To publish from a GitHub repository, select GitHub Actions in its Pages settings and manually run **Publish the public NoKitchen demo**. The workflow builds, checks and uploads the static files. No repository secrets are required. Private operator files and configuration belong on the operator machine.
-
-## Open the standalone
-
-The archive includes **NoKitchen-1.4.html** alongside this README. From the directory containing the HTML, start a loopback server and open [the standalone app](http://127.0.0.1:8080/NoKitchen-1.4.html).
+The source ZIP also contains **NoKitchen-1.4.1.html**. Open it in a browser that allows local files. If the browser blocks file navigation, run this command in the folder containing the HTML and open the loopback link. This serves the bundled scripts, styles, fonts and food catalog without internet or npm. A storage warning identifies session-only operation. [Loopback standalone](http://127.0.0.1:8080/NoKitchen-1.4.1.html)
 
 ```sh
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-No internet connection or npm installation is needed for this runtime. Scripts, styles, fonts, licenses and food data are bundled. Direct file opening is subject to browser policy. Each origin has separate browser storage. A visible warning identifies session-only operation if storage fails.
+## Follow a meal from donation to collection
 
-## Try the workflow
+1. On **Weekly plan**, inspect an assigned meal and a gap. **Approve plan** publishes the current allocation and reserves the stock. A household waiting for approval can still update **Kitchen settings**.
+2. In **Donations**, choose **Paste donor offer**, **Packaged chickpeas**, then **Parse offer**. Review the package label and model dates. Select **Confirm the example product details**, **Save edits** and **Mark reviewed**. Inventory changes only when the bank confirms a receipt.
+3. Select **Preview impact**. An existing approved plan defaults to **Keep existing meals**. An unapproved baseline defaults to **Reallocate for coverage**. Where the choices differ, inspect the gains, removed meals and lot quantities. Enter the actual delivery, confirm any differences, then **Confirm received** and **Recalculate**.
+4. On **Weekly plan**, review the proposed replacement before approving it. A draft or an **Improve variety** run stays in the bank workspace. Households keep seeing the last approval that still passes current content checks. A conflicting restriction shows **Plan needs review** until the bank resolves it. Releasing the approval returns households to **Waiting for an approved plan**.
+5. Select **Household**, choose H02, then **Fri** and **Dinner**. The meal lists the household batch, method, ingredients and collection. **Open Friday packing list** connects the meal to the approved box. **Stock details** exposes its exact lots.
 
-1. Select **Start guided demo** on the weekly plan. It opens an independent household week. Back restores the entry state of a step. Exit, Finish or reload returns to the ordinary workspace.
-2. In **Demo donations**, choose **Paste donor offer** and **Packaged chickpeas**, or enter your own supported text. Inspect extracted values beside their source phrases. Resolve the product, amount, package, dates and model window. Exclude any unmatched line with a reason. **Mark reviewed** leaves physical stock unchanged.
-3. Choose **Preview impact**. For an existing approval the bank sees **Keep existing meals** first. For an unapproved draft it sees **Reallocate for coverage** first. Compare the two when they differ. Select a removed meal to inspect that household’s day or open a collection box for the signed ingredient and lot changes.
-4. Enter the actual delivery and confirm any differences. Choose **Confirm received** and **Recalculate**. Switch the replacement draft in the donation or weekly approval view. Only **Approve plan** commits its reservations.
-5. On **Weekly plan**, use **Improve variety** and choose a household. Compare breakfast and main meals, then open **Family frequencies and weekly meals** for recipe names and counts. The action keeps the original filled slots and portion counts.
+## What this week demonstrates
 
-## Read the results
+Eight synthetic households with 18 people request 378 model portions in one week with Monday and Friday collection. The seed covers 297 portions in 134 household meals. A fresh run of the simple first-fit reference covers 286 portions. The catalog has 50 ingredients, 40 recipes, 44 methods and 21 meal families.
 
-The expanded opening week has 50 ingredients, 40 recipes, 44 methods, 21 recipe families and 54 explicitly entered lots. Eight households with 18 people request 378 portions. The seed covers 297. The earlier 1.2 week had a different catalog and stock. A frozen copy of the 1.2 fixtures and planner remains available for regression.
+| Actual receipt from the 12-pouch offer | Keep existing meals | Reallocate for coverage | H02 Friday box, preserve / reallocate |
+| --- | --- | --- | --- |
+| Twelve 200 g pouches | 309 portions, 5 added meals, 0 removed | 310 portions, 8 added meals, 2 removed | 1,200 g / 800 g |
+| Eight 200 g pouches | 305 portions, 3 added meals, 0 removed | Identical allocation | 400 g / 400 g |
 
-With twelve received 200 g chickpea pouches, keeping a valid approved plan covers 309 portions and adds five household meals. Reallocation covers 310, adding eight meals and removing two. With eight actually received, both choices cover 305 and keep the 134 original meals. [Household results, removed meals and box reconciliation](docs/results-1.3.1.md)
+Reallocation with twelve pouches removes H03’s Friday potato-and-bean dinner and H08’s Saturday banana-oatmeal breakfast, three portions each. The preserved plan adds a two-portion H02 Friday chickpea couscous dinner using two pouches. These results describe this synthetic week. The planner uses deterministic, bounded searches. Model portions measure requested meal coverage. Nutritional adequacy, global optimality and improvements for every household have not been established. [Computed results and household changes](docs/decision-results-1.4.1.json) · [Release verification](docs/verification-1.4.1.md) · [Planning rules](docs/data-model.md)
 
-| Evidence | Contents |
-| --- | --- |
-| [Release verification](docs/verification-1.4.md) and [computed 1.4 regression results](docs/decision-results-1.4.json) | Public build, private transport, receipt safety and end-to-end delivery checks |
-| [1.3.1 decisions and variety](docs/decision-results-1.3.1.json) and [verification](docs/verification-1.3.1.md) | Both candidates, both baseline statuses, meal-level changes and household frequencies |
-| [Catalog audit](docs/catalog-audit-1.3.md) and [compatibility matrix](docs/catalog-compatibility-1.3.md) | Ingredients, family decisions, method checks, independent batch feasibility and joint weekly use |
-| [Historical 1.3 coverage and variety](docs/variety-results-1.3.md) and [JSON](docs/variety-results-1.3.json) | Frozen 1.2, expanded 1.3, and identical-slot before/after scores |
-| [Historical 1.3 donor impact JSON](docs/donor-impact-1.3.json) | Independent branches for twelve offered and twelve or eight received, exact lots, household changes and boxes |
-| [Parser guide](docs/donor-parser-1.3.md) and [ingestion boundary](docs/future-agentboxd.md) | Supported patterns, unresolved fields, reviewed receipts and disconnected provider |
-| [Guided demo](docs/guided-demo.md), [release verification](docs/verification-1.3.1.md) and [changelog](docs/changelog-1.3.1.md) | Operating instructions, delivery checks and known limits |
+## Run or rebuild from source
 
-## Run from source
-
-Use Node.js 24 or newer and npm. Install dependencies, then open the local address printed by Vite. Fresh dependency installation requires network access or a populated npm package cache.
+Use Node.js 24 or newer and npm. Extract the source ZIP, enter **NoKitchen/**, then run the following commands. A fresh installation needs access to the npm registry or an already populated package cache. Start the app with `npm run dev`, or serve the production build with `npm run preview`. Each prints its local address.
 
 ```sh
 npm ci
-npm run dev
-```
-
-The production build writes `dist/NoKitchen-1.4.html`. The preview command serves the built project.
-
-```sh
-npm run typecheck
 npm test
 npm run build
-npm run preview
+npm run check:public
+npm run evidence:decision
 ```
 
-Browser checks use local Chromium, or use `npx playwright install chromium` to install a browser. Set `CHROMIUM_PATH` for a custom executable. With the dev server running, `npm run test:e2e` drives the bank, household, donor and tour workflows and storage failures. `NOKITCHEN_URL` overrides its address. After building, `npm run test:standalone` creates fresh browser contexts and denies external requests before loading the final HTML.
+The build runs TypeScript, produces the static project in `dist/` and writes `dist/NoKitchen-1.4.1.html`. The public guard scans the expected files, compares an isolated build under private sentinels, and checks that intentionally contaminated test files are rejected.
 
 ```sh
-npm run evidence:decision
-npm run catalog:audit
-npm run evidence:variety
-npm run evidence:donor
-npm run matrix
-python3 scripts/package-source.py NoKitchen-MVP-1.4.zip --pages NoKitchen-Pages-1.4.zip
+npm run test:standalone
+python3 scripts/package-source.py NoKitchen-MVP-1.4.1.zip --pages NoKitchen-Pages-1.4.1.zip
 ```
 
-The decision command regenerates the current synthetic regression measurements. The catalog command checks the retained 1.3 catalog. The variety and donor commands run the earlier experiments with the explicit coverage alternative and write their output to `dist/legacy-evidence/`. The original 1.3 reports remain in `docs/`. The matrix command runs the frozen 1.2 code. The ZIP includes source, tests, documents, the frozen regression fixture and the standalone. Existing saved weeks migrate without the 22 new seed lots. The explicit **Reset demo** action loads the expanded stock.
+The standalone test starts fresh Chromium contexts with network restrictions before the first navigation. With `npm run dev` running, `npm run test:e2e` exercises bank/household publication, comparison, what-if, sample receipts, the tour and unavailable storage. Set `CHROMIUM_PATH` to an installed Chromium executable or install Playwright Chromium using `npx playwright install chromium`.
 
-## Run the private service and tests
+## Publish the public demo
+
+Place the **contents of NoKitchen/** at the GitHub repository root so that `package.json` and `.github/workflows/pages.yml` are both at root level. In Pages settings choose GitHub Actions. Run the existing **Publish the public NoKitchen demo** workflow on the intended release commit. It publishes only the checked `dist/` tree. The public build needs no Agentboxd credentials. The separate Pages ZIP contains these static files at its root. [Pages workflow](.github/workflows/pages.yml)
+
+After deployment, run the check below in the matching release checkout with `dist/` built. Supply the published HTTPS project root, including its trailing slash. The command compares remote bytes to the local build and runs synthetic Chromium sessions against the public site.
+
+```sh
+node scripts/verify-pages.mjs "$NOKITCHEN_URL"
+```
+
+## Private operator and historical evidence
+
+The private operator uses a separate loopback Node service, server-side read-only Agentboxd credentials and a separate browser namespace. The operator can import donor mail into the same review and receipt workflow. The public site has no provider connection. Reply text can be copied for a human to send. Local tests use a synthetic HTTP provider. Actual retrieval requires a dedicated, configured inbox. No real inbox retrieval is claimed for this release. [Operator setup](docs/agentboxd-setup.md) · [Security boundaries](docs/agentboxd-security.md)
 
 ```sh
 npm run build:operator
+npm run test:live
 npm run operator
 ```
 
-With the public and operator builds present, `npm run test:live` drives a loopback Agentboxd HTTP fixture, including two independent receipt branches. It uses synthetic identities. To verify a real inbox, follow the test-message steps in the setup guide. The source archive includes the backend and tests. Its bundled standalone is the public demo.
-
-## Scope
-
-The planner models a single Monday–Sunday week with Monday and Friday pickup. All meal and package declarations are synthetic. The local parser needs human confirmation of unresolved facts. The deterministic variety search is bounded. The private service reads a configured Agentboxd inbox. All outbound replies require separate operator action in an email client. The planner uses fixed rules and synthetic product declarations. Hosted operator accounts and nutritional certification are outside this release. [Domain model](docs/data-model.md)
+The audited catalog, historical decision evidence and past release reports remain in the source archive. The catalog and earlier experiments can be regenerated with `npm run catalog:audit`, `npm run evidence:variety`, `npm run evidence:donor` and `npm run matrix`. Build the public distribution again after running historical generators that write additional files into `dist/`. [Catalog audit](docs/catalog-audit-1.3.md) · [Historical 1.4 verification](docs/verification-1.4.md) · [Release changes](docs/changelog-1.4.1.md)

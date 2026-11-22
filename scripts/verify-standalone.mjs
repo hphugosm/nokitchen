@@ -19,12 +19,15 @@ const executablePath =
 export async function workflowBrowser(viewport) {
   const browser = await chromium.launch({ executablePath, headless: true })
   const guarded = process.env.NOKITCHEN_COLD === '1'
+  const publicFiles = process.env.NOKITCHEN_PUBLIC_FILES
+    ? new Set(JSON.parse(process.env.NOKITCHEN_PUBLIC_FILES))
+    : null
   const url = process.env.NOKITCHEN_URL || 'http://127.0.0.1:5173/'
   const context = await browser.newContext({ viewport, serviceWorkers: 'block' })
   const page = await context.newPage()
   const blocked = []
   let documents = 0
-  if (guarded) {
+  if (guarded || publicFiles) {
     const fileMode = url.startsWith('file:')
     if (fileMode) await context.setOffline(true)
     const client = await context.newCDPSession(page)
@@ -33,7 +36,11 @@ export async function workflowBrowser(viewport) {
     // Installed on an empty context, before the first navigation, including before scripts or fonts run.
     await context.route('**/*', async (route) => {
       const req = route.request()
-      if (
+      if (publicFiles && req.method() === 'GET' && publicFiles.has(req.url().split('#')[0])) {
+        if (req.isNavigationRequest()) documents++
+        await route.continue()
+      } else if (
+        guarded &&
         req.method() === 'GET' &&
         req.url().split('#')[0] === url &&
         req.isNavigationRequest() &&
@@ -57,6 +64,11 @@ export async function workflowBrowser(viewport) {
     url,
     async close() {
       await browser.close()
+      if (publicFiles) {
+        assert.deepEqual(blocked, [], 'Public demo requested an operation outside the static build')
+        assert.ok(documents > 0, 'Expected an observed public document navigation')
+        console.log('Public profile: static GETs only, no operator/provider requests or WebSockets.')
+      }
       if (guarded) {
         assert.deepEqual(blocked, [], 'The standalone tried to access another resource')
         console.log(
@@ -86,7 +98,7 @@ async function directFileProbe(fileUrl) {
       }
     }
     await page.getByRole('heading', { name: 'Weekly plan', exact: true }).waitFor({ timeout: 8000 })
-    await page.getByText('Demo Mode — Simulated data', { exact: true }).first().waitFor()
+    await page.getByText('Demo · synthetic data', { exact: true }).first().waitFor()
     return { available: true }
   } finally {
     await browser.close()
@@ -94,7 +106,7 @@ async function directFileProbe(fileUrl) {
 }
 
 async function main() {
-  const path = resolve(process.argv[2] || resolve(root, 'dist/NoKitchen-1.4.html'))
+  const path = resolve(process.argv[2] || resolve(root, 'dist/NoKitchen-1.4.1.html'))
   const html = await readFile(path)
   const fileUrl = pathToFileURL(path).href
   const direct = await directFileProbe(fileUrl)

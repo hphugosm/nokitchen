@@ -27,7 +27,7 @@ const rules = [
   /(?:fixture-private-donor@fixtures\.invalid|nk-private-mail-fixture-v14)/i,
 ]
 const allowed =
-  /^(?:index\.html|NoKitchen-1\.4\.html|assets\/[\w.-]+\.(?:js(?:\.map)?|css(?:\.map)?|woff2))$/
+  /^(?:index\.html|NoKitchen-1\.4\.1\.html|assets\/[\w.-]+\.(?:js(?:\.map)?|css(?:\.map)?|woff2))$/
 const fingerprint = (data) => createHash('sha256').update(data).digest('hex')
 
 async function settings() {
@@ -78,7 +78,7 @@ async function scan(dir, values) {
   }
   if (!(await lstat(dir)).isDirectory()) throw Error('Expected a static build directory.')
   await visit('')
-  if (!manifest.has('index.html') || !manifest.has('NoKitchen-1.4.html'))
+  if (!manifest.has('index.html') || !manifest.has('NoKitchen-1.4.1.html'))
     throw Error('The public build is missing its Pages entry or standalone.')
   return manifest
 }

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { begin } from './browser-flow.mjs'
+import { verifyPublication } from './publication.mjs'
 
 const { page, session, button, click, nav, read, notice, draft, reset, end } = await begin()
 try {
@@ -21,21 +22,25 @@ try {
   await nav('Compare planners')
   await click('Teaching example')
   await click('Neutral example')
+  await nav('What would help?')
+  await page.getByRole('button', { name: /^Preview / }).first().click()
+  await page.locator('.preview-panel').waitFor()
+  assert.deepEqual(await read(), seed)
   await nav('Recipes')
   await page.getByLabel('Demo household').selectOption('H02')
   await nav('Weekly plan')
   await click('Approve plan')
   await notice('Plan approved')
   const approved = await read()
-  await nav('Demo donations')
+  await nav('Donations')
   await click('Paste donor offer')
   await click('Packaged chickpeas')
   await click('Parse offer')
-  await button('Confirm example label and window').waitFor()
+  await button('Confirm the example product details').waitFor()
   assert.equal(await button('Mark reviewed').isDisabled(), true)
   const offer = (await read()).proposals.at(-1)
   assert.deepEqual((await read()).lots, seed.lots)
-  await click('Confirm example label and window')
+  await click('Confirm the example product details')
   await click('Save edits')
   await notice('Offer saved')
   await click('Mark reviewed')
@@ -97,3 +102,5 @@ try {
 function slot(a) {
   return [a.householdId, a.day, a.meal, a.portions]
 }
+
+await verifyPublication()

@@ -1,0 +1,67 @@
+// This is the single ordinary-workspace story in docs/demo-script.md.
+import assert from 'node:assert/strict'
+import { begin, openStockDetails } from './browser-flow.mjs'
+
+export async function verifyRecording() {
+  const { session, page, click, nav, read, reset, notice, end } = await begin()
+  try {
+    await page.goto(session.url)
+    await reset()
+    await click('Approve plan')
+    await notice('Plan approved')
+    const initial = await read()
+    assert.equal(initial.plans[initial.approvedId].metrics.allocated, 297)
+    await nav('Donations')
+    for (const name of ['Paste donor offer', 'Packaged chickpeas', 'Parse offer', 'Confirm the example product details', 'Save edits', 'Mark reviewed', 'Preview impact'])
+      await click(name)
+    const preview = page.getByRole('region', { name: 'If received as entered', exact: true })
+    await preview.waitFor()
+    const options = page.getByRole('region', { name: 'Donation plan options' })
+    await options.getByRole('button', { name: 'Reallocate for coverage', exact: true }).click()
+    assert.match(await preview.innerText(), /297 → 310/)
+    assert.match(await preview.locator('.removed-meals').innerText(), /Potato with beans/)
+    assert.match(await preview.locator('.removed-meals').innerText(), /Banana oatmeal/)
+    await options.getByRole('button', { name: 'Keep existing meals', exact: true }).click()
+    assert.match(await preview.innerText(), /297 → 309/)
+    assert.deepEqual((await read()).lots, initial.lots)
+    await click('Confirm received')
+    await notice('Receipt recorded')
+    await click('Recalculate')
+    await notice('Draft recalculated')
+    const draftState = await read()
+    assert.equal(draftState.approvedId, initial.approvedId)
+    assert.equal(draftState.lots.at(-1).packageCount, 12)
+    await nav('Weekly plan')
+    await click('Approve plan')
+    await notice('Plan approved')
+    const saved = await read()
+    assert.equal(saved.plans[saved.approvedId].metrics.allocated, 309)
+    await click('Household')
+    await page.getByLabel('Demo household').selectOption('H02')
+    await click('Fri')
+    await page.locator('.house-meal').filter({ hasText: 'Dinner' }).click()
+    const modal = page.getByRole('dialog')
+    await modal.getByRole('heading', { name: 'Chickpea couscous bowl', exact: true }).waitFor()
+    const summary = await modal.innerText()
+    for (const needed of ['Kettle', '2 portions', '160 g', '400 g', '200 g', '20 ml'])
+      assert.ok(summary.includes(needed), needed)
+    await openStockDetails(modal)
+    const receiptLot = saved.lots.at(-1).id
+    assert.ok((await modal.innerText()).includes(receiptLot))
+    await click('Open Friday packing list')
+    const box = page.locator('article.packing-box').filter({ has: page.getByRole('heading', { name: 'Friday box' }) })
+    const chickpeas = box.locator('.pack-items li').filter({ has: page.getByText('Ready-to-eat chickpeas', { exact: true }) })
+    assert.match(await chickpeas.innerText(), /1,200 g/)
+    assert.match(await chickpeas.innerText(), /6 packages × 200 g/)
+    await openStockDetails(box)
+    assert.ok((await box.innerText()).includes(receiptLot))
+    await box.getByText(/^Meals in this box/).click()
+    for (const meal of ['Friday dinner', 'Saturday lunch', 'Saturday dinner']) {
+      const link = box.getByRole('button').filter({ hasText: meal })
+      assert.ok((await link.innerText()).includes('Chickpea couscous bowl'))
+    }
+    console.log('PASS video path: approved 297, reviewed 12, both trade-offs inspected, actual 12, preserve 309; H02 kettle dinner has 400 g from the received lot and Friday box has six pouches across three meals.')
+  } finally {
+    await end()
+  }
+}

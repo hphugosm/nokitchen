@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { chromium } from 'playwright'
+import { openStockDetails } from './browser-flow.mjs'
 import {
   fixture,
   instruction,
@@ -79,18 +80,19 @@ async function pages() {
     const { nav, click } = tools(page, false)
     await page.goto(site.url)
     await page.getByRole('heading', { name: 'Weekly plan', exact: true }).waitFor()
-    await page.getByText('Demo Mode — Simulated data', { exact: true }).first().waitFor()
-    await nav('Demo donations')
+    await page.getByText('Demo · synthetic data', { exact: true }).first().waitFor()
+    await nav('Donations')
     assert.equal(await page.getByRole('button', { name: 'Sync Inbox', exact: true }).count(), 0)
     await click('Paste donor offer')
     await click('Packaged chickpeas')
     await click('Parse offer')
-    await page.getByRole('button', { name: 'Confirm example label and window' }).waitFor()
+    await page.getByRole('button', { name: 'Confirm the example product details' }).waitFor()
     await nav('Recipes')
     await page.locator('.record-grid article').first().waitFor()
     assert.equal(await page.locator('.record-grid article').count(), 40)
     await click('Household')
-    await page.getByRole('heading', { name: 'Meal schedule', exact: true }).waitFor()
+    await page.getByRole('heading', { name: 'Waiting for an approved plan' }).waitFor()
+    assert.equal(await page.locator('.house-meal').count(), 0)
     assert.equal(
       await page.evaluate(() => localStorage.getItem('nokitchen.operator.scenario.v4')),
       null,
@@ -425,6 +427,7 @@ async function live(width, delivered) {
       })
       .click()
     const dialog = page.getByRole('dialog')
+    await openStockDetails(dialog)
     assert(
       (await dialog.innerText()).includes(recipe.name) &&
         (await dialog.innerText()).includes(method.name) &&
@@ -435,6 +438,7 @@ async function live(width, delivered) {
     const boxUI = page
       .locator('article.packing-box')
       .filter({ has: page.getByRole('heading', { name: days[collect] + ' box', exact: true }) })
+    await openStockDetails(boxUI)
     assert((await boxUI.innerText()).includes(lot.id))
     await measureLayout('packing list')
     await click('Food bank')

@@ -53,3 +53,7 @@ Schema 4 stores mutable inputs and plan records keyed by ID. Migration reads ear
 ## Private operator import in 1.4
 
 The private staging database identifies mail by provider origin, inbox and provider message ID. After an operator claims a readable message, its inbox ID, message ID and immutable source text enter the same local offer document used for manual review. An explicit package count may be known even when the missing size or edible basis prevents receipt. Agentboxd lots carry the source message and ordinary offer IDs. Approval and allocation continue to use the existing local domain commands. [Private operator setup](agentboxd-setup.md)
+
+## Household publication in 1.4.1
+
+The bank may inspect or compare a draft while another allocation owns the approved reservations. Household meal schedules, preparation instructions and collection boxes share one publication decision. A household without an approval can edit its settings while waiting. When the current rules, restrictions and lots still admit the full approved allocation, households continue to see it across draft changes and safe stock additions. A failed content check blocks meal and box instructions and requests bank review. Only explicit approval publishes a replacement and moves its reservations. [Decision evidence](decision-results-1.4.1.json)

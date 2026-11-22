@@ -24,4 +24,4 @@ const licenses = await Promise.all(
   ),
 )
 html += '\n<!-- Bundled font licenses\n' + licenses.join('\n') + '\n-->\n'
-await writeFile(new URL('NoKitchen-1.4.html', dist), html)
+await writeFile(new URL('NoKitchen-1.4.1.html', dist), html)

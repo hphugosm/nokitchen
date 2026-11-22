@@ -36,3 +36,9 @@ export async function begin(width = 1380) {
   }
   return { page, session, button, click, nav, read, notice, draft, reset, end }
 }
+
+/** Expand the human-facing stock evidence before inspecting exact lot IDs. */
+export async function openStockDetails(region) {
+  const summary = region.locator('details:not([open]) > summary').filter({ hasText: /^Stock details$/ })
+  if (await summary.count()) await summary.click()
+}
