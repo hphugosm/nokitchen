@@ -4,7 +4,7 @@ import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { execFile } from 'node:child_process'
 import { readFile, readdir } from 'node:fs/promises'
-import { join, relative } from 'node:path'
+import { join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { promisify } from 'node:util'
 
@@ -43,5 +43,14 @@ for (const script of ['tests/pages-navigation.mjs', 'tests/walkthrough.mjs', 'te
     child.once('exit', (code) => code === 0 ? ok() : fail(Error(script + ' exited ' + code)))
   })
 }
-const git = await run('git', ['rev-parse', 'HEAD'], { cwd: root })
-console.log(JSON.stringify({ url: base.href, version, comparedCheckout: git.stdout.trim(), staticSHA256: hashes }))
+let comparedCheckout = null
+try {
+  const top = await run('git', ['rev-parse', '--show-toplevel'], { cwd: root })
+  if (resolve(top.stdout.trim()) === resolve(root)) {
+    const head = await run('git', ['rev-parse', '--verify', 'HEAD'], { cwd: root })
+    comparedCheckout = head.stdout.trim()
+  }
+} catch {
+  // Extracted source archives have no Git metadata. The mandatory byte and browser checks still apply.
+}
+console.log(JSON.stringify({ url: base.href, version, comparedCheckout, staticSHA256: hashes }))
