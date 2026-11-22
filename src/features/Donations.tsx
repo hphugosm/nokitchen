@@ -51,7 +51,7 @@ export default function Donations() {
   return (
     <>
       <PageTitle
-        title={operator ? 'Donations' : 'Demo donations'}
+        title="Donations"
         subtitle="Review donor messages, preview their effect on meals and record the items that arrive."
       >
         {!composing && (
