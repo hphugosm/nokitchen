@@ -1,10 +1,17 @@
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
+import { version } from './package.json'
 
 const root = fileURLToPath(new URL('.', import.meta.url))
 
 export default defineConfig(({ mode }) => ({
   base: './',
+  plugins: [{
+    name: 'release-metadata',
+    transformIndexHtml() {
+      return [{ tag: 'meta', attrs: { name: 'application-version', content: version }, injectTo: 'head' as const }]
+    },
+  }],
   publicDir: false,
   envDir: false,
   envPrefix: [],
