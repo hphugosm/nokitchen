@@ -262,7 +262,7 @@ export function PastedOfferPanel({ offer }: { offer: DonationOffer }) {
                       )
                     }
                   >
-                    Confirm example label and window
+                    Confirm the example product details
                   </button>
                 </div>
               )}

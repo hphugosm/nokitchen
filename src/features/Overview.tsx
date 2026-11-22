@@ -1,5 +1,5 @@
 import { WeeklyVariety } from './Variety'
-import { PlanActions, PolicySummary } from './Policy'
+import { PlanActions, PolicySummary, ReceiptAnalysis, SelectionDetails } from './Policy'
 import { NeedsLink } from './Needs'
 import {
   Check,
@@ -149,7 +149,7 @@ export default function Overview({ openMeal }: { openMeal: OpenMeal }) {
     <>
       <PageTitle
         title="Weekly plan"
-        subtitle="Allocate meal kits across households and collection days."
+        subtitle="Turn food-bank stock into meals each household can actually prepare."
         badge={<PlanStatus />}
       >
         {!tour.active && (
@@ -165,20 +165,11 @@ export default function Overview({ openMeal }: { openMeal: OpenMeal }) {
         <PolicySummary />
         <PlanActions />
       </section>
-      <WeeklyVariety />
-      <NeedsLink />
-      {previousDraft && plan && previousDraft.revision !== plan.revision && (
-        <div className="note">
-          <RefreshCw />
-          Previous calculation: {previousDraft.metrics.allocated} allocated portions. Current
-          calculation: {plan.metrics.allocated}.
-        </div>
-      )}
       <section className="panel schedule-panel">
         <div className="panel-head">
           <div>
             <h2>Household meal schedule</h2>
-            <p>Choose a meal slot to inspect its allocation.</p>
+            <p>Open a meal to see the ingredients and how to prepare it.</p>
           </div>
           <div className="legend">
             <span>
@@ -278,6 +269,17 @@ export default function Overview({ openMeal }: { openMeal: OpenMeal }) {
         )}
       </section>
       <CollectionSummary />
+      <WeeklyVariety />
+      <NeedsLink />
+      {previousDraft && plan && previousDraft.revision !== plan.revision && (
+        <div className="note">
+          <RefreshCw />
+          Previous plan · {previousDraft.metrics.allocated} allocated portions. Current plan ·{' '}
+          {plan.metrics.allocated}.
+        </div>
+      )}
+      {plan?.selection && <SelectionDetails selection={plan.selection} />}
+      <ReceiptAnalysis />
       {approved && (
         <div className="reservation-line">
           <Chip tone="green">

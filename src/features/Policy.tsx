@@ -6,7 +6,7 @@ import { DAYS } from '../domain/types'
 import { DONATION_RULE } from '../domain/donorTypes'
 import type { CandidateKind, SelectionEvidence } from '../domain/policyTypes'
 import { HouseholdChanges, MealChanges } from './Effects'
-import { Chip, plural, useWork } from './shared'
+import { plural, useWork } from './shared'
 
 const policy = 'Meal coverage first'
 const candidateNames: Record<CandidateKind, string> = {
@@ -29,7 +29,7 @@ export function SelectionDetails({ selection }: { selection: SelectionEvidence }
       <summary>
         <span>
           <Scale size={16} />
-          Selection evidence
+          Why this plan?
         </span>
         <ChevronDown size={15} />
       </summary>
@@ -82,7 +82,8 @@ export function SelectionDetails({ selection }: { selection: SelectionEvidence }
           </table>
         </div>
         <p className="muted">
-          ¹ Family pairs / adjacent same-family meals / exact-recipe pairs. Lower is better.
+          ¹ Matching meal-type pairs / consecutive meals of the same type / matching recipe pairs.
+          Lower is better.
         </p>
         <dl className="context-data">
           <dt>Operation / metric</dt>
@@ -117,38 +118,50 @@ export function PolicySummary() {
         <span>{scenarioName}</span>
       </div>
       {plan?.selection && (
-        <>
-          <p>
-            {planLabel === 'Out of date' ? 'Previous plan selection' : 'Selected approach'} ·{' '}
-            {decision
-              ? donationChoiceLabels[decision.selected]
-              : candidateNames[plan.selection.winner]}
-          </p>
-          <SelectionDetails selection={plan.selection} />
-        </>
+        <p>
+          {decision
+            ? (planLabel === 'Out of date' ? 'Previous option' : 'Selected option') +
+              ' · ' +
+              donationChoiceLabels[decision.selected]
+            : plan.selection.context.operation === 'improve-variety'
+              ? 'Compares meal variety while keeping each household’s assigned slots and portions.'
+              : 'Prioritizes covered meal portions. At equal coverage, favors the least-covered household and more stable meal choices.'}
+        </p>
       )}
     </div>
   )
 }
-export function PlanActions({ offerId }: { offerId?: string } = {}) {
+function useReceiptReview(offerId?: string) {
   const ui = useWork(),
     draft = ui.draft
   const current = !!draft && draft.fingerprint === ui.fingerprint && ui.planLabel !== 'Out of date'
-  const review = current && ui.planLabel !== 'Approved' ? ui.approvalReview : null
   const impact =
     ui.latestImpact && (ui.bankView === 'overview' || ui.latestImpact.offerId === offerId)
       ? ui.latestImpact
       : null
-  const isReceiptChoice = !!impact && current && impact.after.id === draft?.id
-  const alreadyCompared = isReceiptChoice && review?.beforeDigest === impact.decision.baselineDigest
+  const receiptChoice = current && impact?.after.id === draft?.id ? impact : null
+  return { ui, current, impact, receiptChoice }
+}
+
+export function ReceiptAnalysis({ offerId }: { offerId?: string }) {
+  const { impact, receiptChoice } = useReceiptReview(offerId)
+  if (!impact) return null
+  return <DonationImpact key={impact.offerId} impact={impact} actual showOptions={!receiptChoice} />
+}
+
+export function PlanActions({ offerId }: { offerId?: string } = {}) {
+  const { ui, current, impact, receiptChoice } = useReceiptReview(offerId)
+  const review = current && ui.planLabel !== 'Approved' ? ui.approvalReview : null
+  const alreadyCompared =
+    receiptChoice && review?.beforeDigest === receiptChoice.decision.baselineDigest
   return (
     <div className={'plan-actions ' + (review || impact ? 'with-review' : '')}>
-      {isReceiptChoice && (
+      {receiptChoice && (
         <DonationOptions
-          impact={impact}
+          impact={receiptChoice}
           actual
-          selected={impact.decision.selected}
-          onSelect={(c) => ui.chooseDonationCandidate(impact.offerId, impact.key, c)}
+          selected={receiptChoice.decision.selected}
+          onSelect={(c) => ui.chooseDonationCandidate(receiptChoice.offerId, receiptChoice.key, c)}
         />
       )}
       {review && (
@@ -158,47 +171,39 @@ export function PlanActions({ offerId }: { offerId?: string } = {}) {
             Compared with {review.basis.toLowerCase()}. Allocated portions change from{' '}
             <strong>{review.before}</strong> to <strong>{review.after}</strong>.
           </p>
-          {alreadyCompared ? (
-            <>
-              <HouseholdChanges
-                rows={review.deltas}
-                slots={review}
-                snapshot={ui.snapshot}
-                before="Baseline portions"
-                after="Selected draft"
-                lossLabel="Would become unfilled"
-              />
-              {assignmentChanges(impact.before, impact.after)
-                .filter((c) => c.kind === 'removed')
-                .map((c) => (
-                  <p className="loss" key={c.householdId + c.day + c.meal}>
-                    Would become unfilled ·{' '}
-                    {ui.snapshot.households.find((h) => h.id === c.householdId)?.name} ·{' '}
-                    {DAYS[c.day]} {c.meal} ·{' '}
-                    {ui.snapshot.recipes.find((r) => r.id === c.before!.recipeId)?.name} ·{' '}
-                    {plural(c.before!.portions, 'portion')}
-                  </p>
-                ))}
-            </>
-          ) : (
-            <>
-              <p>
-                {plural(review.filled.length, 'newly filled meal')} ·{' '}
-                {plural(review.lost.length, 'lost meal')} ·{' '}
-                {plural(review.changed.length, 'changed assigned meal')}. A household may lose a
-                meal even when its weekly portion count holds steady.
-              </p>
-              <HouseholdChanges
-                rows={review.deltas}
-                snapshot={ui.snapshot}
-                slots={review}
-                before="Previous portions"
-                after="Draft portions"
-              />
-              <MealChanges changes={review} />
-            </>
-          )}
+          <p>
+            {plural(review.filled.length, 'newly filled meal')} ·{' '}
+            {plural(review.lost.length, 'lost meal')} ·{' '}
+            {plural(review.changed.length, 'changed assigned meal')}. A household may lose a
+            meal even when its weekly portion count holds steady.
+          </p>
+          <HouseholdChanges
+            rows={review.deltas}
+            snapshot={ui.snapshot}
+            slots={review}
+            before={alreadyCompared ? 'Baseline portions' : 'Previous portions'}
+            after={alreadyCompared ? 'Selected draft' : 'Draft portions'}
+            lossLabel={alreadyCompared ? 'Would become unfilled' : 'Lost meals'}
+          />
+          {alreadyCompared &&
+            assignmentChanges(receiptChoice.before, receiptChoice.after)
+              .filter((c) => c.kind === 'removed')
+              .map((c) => (
+                <p className="loss" key={c.householdId + c.day + c.meal}>
+                  Would become unfilled ·{' '}
+                  {ui.snapshot.households.find((h) => h.id === c.householdId)?.name} ·{' '}
+                  {DAYS[c.day]} {c.meal} ·{' '}
+                  {ui.snapshot.recipes.find((r) => r.id === c.before!.recipeId)?.name} ·{' '}
+                  {plural(c.before!.portions, 'portion')}
+                </p>
+              ))}
+          <MealChanges changes={review} />
         </section>
+      )}
+      {!offerId && ui.planLabel === 'Draft' && (
+        <p className="publication-note">
+          Approve this draft to publish meals to the household portal.
+        </p>
       )}
       <div className="actions">
         <button className="button" onClick={ui.recalculate}>
@@ -214,14 +219,7 @@ export function PlanActions({ offerId }: { offerId?: string } = {}) {
           {ui.planLabel === 'Approved' ? 'Plan approved' : 'Approve plan'}
         </button>
       </div>
-      {impact && (
-        <DonationImpact
-          key={impact.offerId}
-          impact={impact}
-          actual
-          showOptions={!isReceiptChoice}
-        />
-      )}
+      {offerId && <ReceiptAnalysis offerId={offerId} />}
     </div>
   )
 }

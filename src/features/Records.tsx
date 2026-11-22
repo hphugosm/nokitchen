@@ -377,7 +377,7 @@ function RecipeDetails({
             : 'Needs review'}
         </p>
         <p className="muted">
-          Family · {pretty(recipe.familyId ?? 'unclassified')}. Dietary compatibility of the
+          Meal type · {pretty(recipe.familyId ?? 'unclassified')}. Dietary compatibility of the
           required demo products · {diets?.map(pretty).join(', ') || 'Requires review'}.
         </p>
         <p className="muted">{recipe.provenance}</p>
@@ -458,9 +458,9 @@ export function Recipes() {
       <div className="panel filters">
         <HouseholdSelect value={householdId} onChange={selectHousehold} />
         <DaySelect value={day} onChange={setDay} />
-        <Field label="Meal type">
+        <Field label="Meal time">
           <select
-            aria-label="Meal type"
+            aria-label="Meal time"
             value={mealType}
             onChange={(e) => setMealType(e.target.value as typeof mealType)}
           >
@@ -472,13 +472,13 @@ export function Recipes() {
             ))}
           </select>
         </Field>
-        <Field label="Recipe family">
+        <Field label="Meal type">
           <select
-            aria-label="Recipe family"
+            aria-label="Meal type"
             value={family}
             onChange={(e) => setFamily(e.target.value)}
           >
-            <option value="all">All families</option>
+            <option value="all">All meal types</option>
             {families.map((id) => (
               <option key={id} value={id}>
                 {pretty(id)}
@@ -510,11 +510,11 @@ export function Recipes() {
           </p>
           <p>
             Allocated on {DAYS[day]} · {plural(assigned.length, 'recipe')} in{' '}
-            {plural(familyCount(assigned), 'family', 'families')}
+            {plural(familyCount(assigned), 'meal type')}
           </p>
           <p>
             Allocated across the week · {plural(weekly.length, 'recipe')} in{' '}
-            {plural(familyCount(weekly), 'family', 'families')}. Standalone batches each start with
+            {plural(familyCount(weekly), 'meal type')}. Standalone batches each start with
             the same received stock.
           </p>
         </div>
@@ -522,7 +522,7 @@ export function Recipes() {
       {!visible.length && (
         <div className="panel empty-view">
           <h3>No recipes match these filters</h3>
-          <p>Change the meal, family or compatibility filter to see more recipes.</p>
+          <p>Change the meal time, meal type or compatibility filter to see more recipes.</p>
         </div>
       )}
       <div className="record-grid">
@@ -534,7 +534,7 @@ export function Recipes() {
               </span>
               <Chip tone={batch.feasible ? 'green' : 'neutral'}>
                 {batch.feasible ? <Check /> : <CircleOff />}
-                {batch.feasible ? 'Compatible' : 'Unavailable'}
+                {batch.feasible ? 'Ready with current stock' : 'Unavailable'}
               </Chip>
             </div>
             <h2>{recipe.name}</h2>

@@ -45,8 +45,8 @@ export function WeeklyVariety() {
           />
         )}
         <p className="muted">
-          A family groups recognizable meals, such as porridges. Lunch and dinner form one
-          chronological sequence. Empty slots are skipped.
+          A meal type groups similar recipes, such as porridges. Lunch and dinner are counted
+          together in serving order, skipping unfilled meals.
         </p>
       </div>
     </section>
@@ -63,12 +63,12 @@ export function HouseholdVariety() {
   return (
     <p className="household-variety">
       <strong>This week’s variety</strong> ·{' '}
-      {plural(row.breakfast.distinctFamilies, 'breakfast family', 'breakfast families')} and{' '}
-      {plural(row.main.distinctFamilies, 'main-meal family', 'main-meal families')}.
+      {plural(row.breakfast.distinctFamilies, 'breakfast type')} and{' '}
+      {plural(row.main.distinctFamilies, 'main-meal type')}.
       {row.main.maxFamilyFrequency > 1 && (
         <>
           {' '}
-          The most frequent main-meal family appears {row.main.maxFamilyFrequency} times. Meal
+          The most frequent main-meal type appears {row.main.maxFamilyFrequency} times. Meal
           choices depend on your kitchen, collection days and shared stock.
         </>
       )}

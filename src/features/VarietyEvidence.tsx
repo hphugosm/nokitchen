@@ -15,9 +15,9 @@ const metrics = {
   slots: 'Filled slots',
   portions: 'Person-portions',
   distinctRecipes: 'Distinct recipes',
-  distinctFamilies: 'Distinct families',
-  maxFamilyFrequency: 'Most uses of one family',
-  adjacent: 'Adjacent same-family meals',
+  distinctFamilies: 'Distinct meal types',
+  maxFamilyFrequency: 'Most uses of one type',
+  adjacent: 'Consecutive meals of the same type',
 } as const
 function value(before: number | undefined, after: number) {
   return before === undefined ? String(after) : before + ' → ' + after
@@ -36,13 +36,13 @@ function Effects({
   const notes: string[] = []
   if (effect.broader)
     notes.push(
-      'Broader family mix (' + before.distinctFamilies + ' → ' + after.distinctFamilies + ').',
+      'More meal types (' + before.distinctFamilies + ' → ' + after.distinctFamilies + ').',
     )
   if (effect.moreBalanced)
     notes.push(
       'More balanced at ' +
         plural(after.slots, 'filled slot') +
-        ' (same-family pairs ' +
+        ' (matching meal-type pairs ' +
         before.familyCollisions +
         ' → ' +
         after.familyCollisions +
@@ -59,11 +59,11 @@ function Effects({
           ' → ' +
           (after.familyFrequencies[id] ?? 0),
       )
-    notes.push('Changed family counts include ' + altered.join(', ') + '.')
+    notes.push('Counts changed for ' + altered.join(', ') + '.')
   }
   if (effect.betterSpacing)
     notes.push(
-      'Better spacing of the same family mix (adjacent repetitions ' +
+      'Better spacing of the same meal types (adjacent repetitions ' +
         before.adjacent +
         ' → ' +
         after.adjacent +
@@ -74,7 +74,7 @@ function Effects({
       'Different recipe variants within ' + effect.variantFamilies.map(nameOf).join(', ') + '.',
     )
   if (effect.sameFamilyMix && effect.recipeVariants && !effect.betterSpacing)
-    notes.push('Family frequencies stayed the same.')
+    notes.push('Counts for each meal type stayed the same.')
   if (effect.reorderedFamilies.length)
     notes.push(
       'Existing recipes were reordered within ' +
@@ -82,14 +82,14 @@ function Effects({
         '. Their counts stayed the same.',
     )
   if (!notes.length && effect.sameFamilyMix && before.adjacent === after.adjacent)
-    notes.push('Family and recipe frequencies and the adjacent-repeat count held steady.')
+    notes.push('Meal-type counts, recipe counts and consecutive repetitions stayed the same.')
   else if (!effect.sameFamilyMix && !effect.broader && !effect.moreBalanced)
     notes.push(
-      'Family frequencies changed (' +
+      'Meal-type counts changed (' +
         before.distinctFamilies +
         ' → ' +
         after.distinctFamilies +
-        ' distinct families).',
+        ' distinct meal types).',
     )
   if (effect.sameFamilyMix && after.adjacent > before.adjacent)
     notes.push(
@@ -97,7 +97,7 @@ function Effects({
         before.adjacent +
         ' to ' +
         after.adjacent +
-        ' with the same family frequencies.',
+        ' with the same counts for each meal type.',
     )
   return (
     <p>
@@ -170,7 +170,7 @@ export function VarietyEvidence({
       )}
       <details className="meal-links">
         <summary>
-          {showMenu ? 'Family frequencies and weekly meals' : 'Family and recipe frequencies'}
+          {showMenu ? 'Meal types and weekly meals' : 'Meal types and recipes'}
         </summary>
         {categoryKeys.map((cat) => {
           const old = previous?.[cat],
@@ -184,7 +184,7 @@ export function VarietyEvidence({
                   <table className="data-table">
                     <thead>
                       <tr>
-                        <th>Family</th>
+                        <th>Meal type</th>
                         <th>Occurrences</th>
                         <th>Recipes and occurrences</th>
                       </tr>
@@ -226,7 +226,7 @@ export function VarietyEvidence({
                 <p>No allocated meals in this category.</p>
               )}
               <p className="muted">
-                Same-family pairs · {value(old?.familyCollisions, next.familyCollisions)}.
+                Matching meal-type pairs · {value(old?.familyCollisions, next.familyCollisions)}.
               </p>
             </div>
           )

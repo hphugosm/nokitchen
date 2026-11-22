@@ -540,6 +540,12 @@
   min-width: 0;
   max-width: 100%;
 }
+.publication-note {
+  max-width: 33ch;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 .plan-actions.with-review {
   flex-basis: 100%;
   width: 100%;

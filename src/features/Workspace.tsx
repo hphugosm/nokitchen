@@ -42,13 +42,16 @@ import './workspace.css'
 
 const bankLinks = [
   { id: 'overview', name: 'Weekly plan', Icon: CalendarDays },
+  { id: 'donations', name: 'Donations', Icon: HandHeart },
+  { id: 'households', name: 'Households', Icon: Users },
+  { id: 'packing', name: 'Packing lists', Icon: ListChecks },
+  { id: 'inventory', name: 'Inventory', Icon: Boxes },
+  { id: 'recipes', name: 'Recipes', Icon: BookOpen },
+] as const
+const analysisLinks = [
   { id: 'needs', name: 'Unmet needs', Icon: SearchCheck },
   { id: 'compare', name: 'Compare planners', Icon: Scale },
   { id: 'whatif', name: 'What would help?', Icon: ChartNoAxesCombined },
-  { id: 'inventory', name: 'Inventory', Icon: Boxes },
-  { id: 'households', name: 'Households', Icon: Users },
-  { id: 'recipes', name: 'Recipes', Icon: BookOpen },
-  { id: 'packing', name: 'Packing lists', Icon: ListChecks },
 ] as const
 const householdLinks = [
   { id: 'schedule', name: 'Meal schedule', Icon: CalendarDays },
@@ -94,7 +97,6 @@ export default function Workspace(ui: WorkspaceUI) {
   const menuToggle = useRef<HTMLButtonElement>(null),
     drawer = useRef<HTMLElement>(null)
   const operator = __OPERATOR_MODE__ && !ui.tour.active
-  const donationsName = operator ? 'Donations' : 'Demo donations'
   const bank = ui.mode === 'bank'
   useEffect(() => {
     setSlot(null)
@@ -145,7 +147,7 @@ export default function Workspace(ui: WorkspaceUI) {
     </button>
   )
   const title = bank
-    ? (bankLinks.find((l) => l.id === ui.bankView)?.name ?? donationsName)
+    ? [...bankLinks, ...analysisLinks].find((l) => l.id === ui.bankView)?.name
     : householdLinks.find((l) => l.id === houseView)?.name
   return (
     <WorkContext.Provider value={ui}>
@@ -183,7 +185,7 @@ export default function Workspace(ui: WorkspaceUI) {
           </div>
           <div className="nav-scroll">
             <span className="nav-label">{bank ? 'Food bank' : 'Household'} workspace</span>
-            <nav>
+            <nav aria-label={bank ? 'Food bank workspace' : 'Household workspace'}>
               {bank
                 ? bankLinks.map(({ id, name, Icon }) =>
                     navButton(name, id, Icon, ui.bankView === id, () => changeBank(id)),
@@ -200,8 +202,11 @@ export default function Workspace(ui: WorkspaceUI) {
             {bank && (
               <>
                 <div className="nav-divider" />
-                <span className="nav-label">{operator ? 'Donations and demo' : 'Demo tools'}</span>
-                <nav>
+                <span className="nav-label">{ui.tour.active ? 'Plan analysis' : 'Analysis and demo'}</span>
+                <nav aria-label="Plan analysis and guided demo">
+                  {analysisLinks.map(({ id, name, Icon }) =>
+                    navButton(name, id, Icon, ui.bankView === id, () => changeBank(id)),
+                  )}
                   {!ui.tour.active && (
                     <button
                       className="nav-item"
@@ -214,13 +219,6 @@ export default function Workspace(ui: WorkspaceUI) {
                       Guided demo
                     </button>
                   )}
-                  {navButton(
-                    donationsName,
-                    'donations',
-                    HandHeart,
-                    ui.bankView === 'donations',
-                    () => changeBank('donations'),
-                  )}
                 </nav>
               </>
             )}
@@ -230,7 +228,7 @@ export default function Workspace(ui: WorkspaceUI) {
               <Sprout />
               <div>
                 <strong>Rule-based planner</strong>
-                <span>{operator ? 'Local operator workspace' : 'Demo data · Local workspace'}</span>
+                <span>{operator ? 'Local operator workspace' : 'Local workspace'}</span>
               </div>
             </div>
             <button
@@ -265,7 +263,7 @@ export default function Workspace(ui: WorkspaceUI) {
             <div className="top-actions">
               <span className="demo-indicator">
                 <FlaskConical />
-                {operator ? 'Private Operator Mode' : 'Demo Mode — Simulated data'}
+                {operator ? 'Private Operator Mode' : 'Demo · synthetic data'}
               </span>
               <div className="mode-switch" role="group" aria-label="Portal">
                 <button
@@ -332,14 +330,14 @@ export default function Workspace(ui: WorkspaceUI) {
         {slot && <MealDetail slot={slot} onBox={openBox} onClose={() => setSlot(null)} />}
         {confirmReset && (
           <Modal
-            title={operator ? 'Reset the operator workspace?' : 'Reset the demo?'}
+            title={operator ? 'Reset the operator workspace?' : 'Restore the starting demo week?'}
             sub="Local workspace"
             onClose={() => setConfirmReset(false)}
           >
             <p>
               {operator
                 ? 'This replaces local households, stock, imported offers, approvals and the draft with the synthetic opening week. Completed emails retain their receipt status in the private inbox.'
-                : 'This loads the expanded 1.3 week and replaces this scenario’s households, stock, offers, approvals and draft.'}
+                : 'This clears your local changes, donations, and approvals.'}
             </p>
             <div className="actions">
               <button className="button" onClick={() => setConfirmReset(false)}>

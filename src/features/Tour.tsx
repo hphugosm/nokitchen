@@ -2,8 +2,8 @@ import { ArrowLeft, ArrowRight, Check, Compass, Eye, Package, RotateCcw, X } fro
 import { useWork, type OpenMeal } from './shared'
 const steps = [
   [
-    'Start with the household week',
-    'Inspect an assigned meal and the household’s breakfast and main-meal variety.',
+    'Inspect the draft meal plan',
+    'Open an assigned meal in the bank’s draft. Households will see their meals after the bank approves the plan.',
   ],
   [
     'Paste a donor offer',
@@ -23,7 +23,7 @@ const steps = [
   ],
   [
     'Improve variety at fixed coverage',
-    'Choose Improve variety. Inspect the recipe and household changes. Filled slots and family portion counts stay fixed.',
+    'Choose Improve variety. Inspect the recipe and household changes. Each household keeps its assigned slots and portions.',
   ],
   [
     'Approve and inspect the box',
@@ -85,7 +85,7 @@ export function TourPanel({
         </div>
       </div>
       <div className="tour-bottom">
-        <small>Isolated demo · {ui.weekStart} · Agentboxd not connected</small>
+        <small>Isolated demo · week of {ui.weekStart}</small>
         <div className="actions">
           <button className="button" onClick={tour.back} disabled={step === 0}>
             <ArrowLeft />
