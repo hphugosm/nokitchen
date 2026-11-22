@@ -1,0 +1,227 @@
+import { CheckCheck, ChevronDown, RefreshCw, Scale } from 'lucide-react'
+import { DonationOptions, donationChoiceLabels } from './DonationDecision'
+import { DonationImpact } from './DonationImpact'
+import { assignmentChanges } from '../domain/impactTrace'
+import { DAYS } from '../domain/types'
+import { DONATION_RULE } from '../domain/donorTypes'
+import type { CandidateKind, SelectionEvidence } from '../domain/policyTypes'
+import { HouseholdChanges, MealChanges } from './Effects'
+import { Chip, plural, useWork } from './shared'
+
+const policy = 'Meal coverage first'
+const candidateNames: Record<CandidateKind, string> = {
+  'improve-variety': 'Improve variety at fixed coverage',
+  'fresh-refined': 'Fresh plan with a variety improvement',
+  'family-aware': 'Family-aware fresh plan',
+  'fresh-legacy': 'Fresh NoKitchen heuristic',
+  retain: 'Retain validated assignments',
+  extend: 'Preserve and extend assignments',
+}
+
+export function SelectionDetails({ selection }: { selection: SelectionEvidence }) {
+  const context = selection.context
+  const preserving =
+    context.strategyId === DONATION_RULE + '/approved/keep' ||
+    context.strategyId === DONATION_RULE + '/draft/keep'
+  const name = preserving ? 'Keep existing meals' : policy
+  return (
+    <details className="selection-details">
+      <summary>
+        <span>
+          <Scale size={16} />
+          Selection evidence
+        </span>
+        <ChevronDown size={15} />
+      </summary>
+      <div>
+        <p>
+          <strong>{name}</strong> selected <strong>{candidateNames[selection.winner]}</strong>.{' '}
+          {selection.reason}
+        </p>
+        <p className="muted">
+          {preserving
+            ? 'Only valid retaining and preserving extensions are eligible for this option.'
+            : context.operation === 'improve-variety'
+              ? 'Variety improves at fixed slots and portions. Each household keeps or improves its variety score.'
+              : 'Valid candidates are ranked by covered portions, lowest household coverage, stability, variety, then stable candidate ID.'}
+        </p>
+        <div className="table-scroll">
+          <table className="data-table policy-table">
+            <thead>
+              <tr>
+                <th>Candidate</th>
+                <th>Validation</th>
+                <th>Portions</th>
+                <th>Lowest household coverage</th>
+                <th>Changed assignments</th>
+                <th>Variety score¹</th>
+              </tr>
+            </thead>
+            <tbody>
+              {selection.candidates.map((c) => (
+                <tr key={c.kind}>
+                  <th>
+                    {candidateNames[c.kind]}
+                    {c.kind === selection.winner && <small>Selected</small>}
+                  </th>
+                  <td>
+                    {c.valid ? 'Valid' : 'Excluded'}
+                    {c.issues.length > 0 && <p>{c.issues.join(' ')}</p>}
+                  </td>
+                  <td>{c.score?.total ?? '—'}</td>
+                  <td>
+                    {c.score?.minimum
+                      ? c.score.minimum.allocated + ' / ' + c.score.minimum.requested
+                      : '—'}
+                  </td>
+                  <td>{c.score?.changedAssigned ?? '—'}</td>
+                  <td>{c.score?.variety?.join(' / ') ?? c.score?.repeats ?? '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="muted">
+          ¹ Family pairs / adjacent same-family meals / exact-recipe pairs. Lower is better.
+        </p>
+        <dl className="context-data">
+          <dt>Operation / metric</dt>
+          <dd>
+            {context.operation} / {context.metricVersion}
+          </dd>
+          <dt>Engine / parameters</dt>
+          <dd>
+            {context.engineVersion} / {context.parametersId}
+          </dd>
+          <dt>Snapshot</dt>
+          <dd>{context.snapshotFingerprint}</dd>
+          <dt>Incumbent allocation</dt>
+          <dd>{context.incumbentDigest ?? 'None · fresh calculation'}</dd>
+          <dt>Decision context</dt>
+          <dd>{context.key}</dd>
+          <dt>Selected allocation</dt>
+          <dd>{selection.allocationDigest}</dd>
+        </dl>
+      </div>
+    </details>
+  )
+}
+export function PolicySummary() {
+  const { plan, scenarioName, planLabel, latestImpact } = useWork()
+  const decision = latestImpact?.after.id === plan?.id ? latestImpact?.decision : null
+  return (
+    <div className="policy-summary">
+      <div>
+        <Scale />
+        <strong>{decision ? 'Donation plan selection' : policy}</strong>
+        <span>{scenarioName}</span>
+      </div>
+      {plan?.selection && (
+        <>
+          <p>
+            {planLabel === 'Out of date' ? 'Previous plan selection' : 'Selected approach'} ·{' '}
+            {decision
+              ? donationChoiceLabels[decision.selected]
+              : candidateNames[plan.selection.winner]}
+          </p>
+          <SelectionDetails selection={plan.selection} />
+        </>
+      )}
+    </div>
+  )
+}
+export function PlanActions({ offerId }: { offerId?: string } = {}) {
+  const ui = useWork(),
+    draft = ui.draft
+  const current = !!draft && draft.fingerprint === ui.fingerprint && ui.planLabel !== 'Out of date'
+  const review = current && ui.planLabel !== 'Approved' ? ui.approvalReview : null
+  const impact =
+    ui.latestImpact && (ui.bankView === 'overview' || ui.latestImpact.offerId === offerId)
+      ? ui.latestImpact
+      : null
+  const isReceiptChoice = !!impact && current && impact.after.id === draft?.id
+  const alreadyCompared = isReceiptChoice && review?.beforeDigest === impact.decision.baselineDigest
+  return (
+    <div className={'plan-actions ' + (review || impact ? 'with-review' : '')}>
+      {isReceiptChoice && (
+        <DonationOptions
+          impact={impact}
+          actual
+          selected={impact.decision.selected}
+          onSelect={(c) => ui.chooseDonationCandidate(impact.offerId, impact.key, c)}
+        />
+      )}
+      {review && (
+        <section aria-label="Changes before approval" className="review-panel">
+          <h2>Changes before approval</h2>
+          <p>
+            Compared with {review.basis.toLowerCase()}. Allocated portions change from{' '}
+            <strong>{review.before}</strong> to <strong>{review.after}</strong>.
+          </p>
+          {alreadyCompared ? (
+            <>
+              <HouseholdChanges
+                rows={review.deltas}
+                slots={review}
+                snapshot={ui.snapshot}
+                before="Baseline portions"
+                after="Selected draft"
+                lossLabel="Would become unfilled"
+              />
+              {assignmentChanges(impact.before, impact.after)
+                .filter((c) => c.kind === 'removed')
+                .map((c) => (
+                  <p className="loss" key={c.householdId + c.day + c.meal}>
+                    Would become unfilled ·{' '}
+                    {ui.snapshot.households.find((h) => h.id === c.householdId)?.name} ·{' '}
+                    {DAYS[c.day]} {c.meal} ·{' '}
+                    {ui.snapshot.recipes.find((r) => r.id === c.before!.recipeId)?.name} ·{' '}
+                    {plural(c.before!.portions, 'portion')}
+                  </p>
+                ))}
+            </>
+          ) : (
+            <>
+              <p>
+                {plural(review.filled.length, 'newly filled meal')} ·{' '}
+                {plural(review.lost.length, 'lost meal')} ·{' '}
+                {plural(review.changed.length, 'changed assigned meal')}. A household may lose a
+                meal even when its weekly portion count holds steady.
+              </p>
+              <HouseholdChanges
+                rows={review.deltas}
+                snapshot={ui.snapshot}
+                slots={review}
+                before="Previous portions"
+                after="Draft portions"
+              />
+              <MealChanges changes={review} />
+            </>
+          )}
+        </section>
+      )}
+      <div className="actions">
+        <button className="button" onClick={ui.recalculate}>
+          <RefreshCw />
+          Recalculate
+        </button>
+        <button
+          className="button primary"
+          disabled={!current || ui.planLabel === 'Approved'}
+          onClick={ui.approve}
+        >
+          <CheckCheck />
+          {ui.planLabel === 'Approved' ? 'Plan approved' : 'Approve plan'}
+        </button>
+      </div>
+      {impact && (
+        <DonationImpact
+          key={impact.offerId}
+          impact={impact}
+          actual
+          showOptions={!isReceiptChoice}
+        />
+      )}
+    </div>
+  )
+}

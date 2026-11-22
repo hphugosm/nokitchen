@@ -1,0 +1,6450 @@
+{
+  "release": "1.2",
+  "timing": {
+    "environment": "Node v24.22.3",
+    "processor": "AMD EPYC 9V74 80-Core Processor",
+    "runs": 9,
+    "warmups": 1
+  },
+  "householdIds": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H06",
+    "H07",
+    "H08"
+  ],
+  "rows": [
+    {
+      "id": "initial",
+      "name": "Untouched full week",
+      "description": "Reset fixture with all original inputs.",
+      "mode": "fresh",
+      "context": {
+        "snapshotFingerprint": "wk12-5xovmt-1jgx27",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": null,
+        "incumbentEvidenceDigest": null,
+        "key": "ctx12-11yeqnc-2t9cze"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 228,
+        "digest": "alloc-hr8b4m-4bkble"
+      },
+      "raw": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8"
+      },
+      "incumbent": null,
+      "selected": {
+        "portions": 241,
+        "winner": "fresh-legacy",
+        "digest": "alloc-ihsn8q-32tfn8",
+        "reason": "The only validated candidate in this context."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        }
+      ],
+      "changeBasis": "Reference",
+      "target": {
+        "id": "H01",
+        "before": 8,
+        "after": 10,
+        "delta": 2,
+        "percentagePoints": 9.523809523809524
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 8,
+            "after": 10,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 26,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 36,
+            "delta": -6,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H04",
+            "before": 13,
+            "after": 18,
+            "delta": 5,
+            "percentagePoints": 23.809523809523803
+          },
+          {
+            "householdId": "H05",
+            "before": 56,
+            "after": 52,
+            "delta": -4,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H06",
+            "before": 20,
+            "after": 22,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 33,
+            "after": 39,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R10",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-cooker",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R15",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R10",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R08",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R08-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          }
+        ]
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 8,
+            "after": 10,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 26,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 36,
+            "delta": -6,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H04",
+            "before": 13,
+            "after": 18,
+            "delta": 5,
+            "percentagePoints": 23.809523809523803
+          },
+          {
+            "householdId": "H05",
+            "before": 56,
+            "after": 52,
+            "delta": -4,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H06",
+            "before": 20,
+            "after": 22,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 33,
+            "after": 39,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R10",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-cooker",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R15",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R10",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R08",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R08-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 5.68,
+        "rawMedianMs": 8.98,
+        "selectedMedianMs": 12.01
+      }
+    },
+    {
+      "id": "monday-donation",
+      "name": "Monday donation",
+      "description": "Review and receive OFFER-01 once, using the selected initial plan as history.",
+      "mode": "with incumbent",
+      "context": {
+        "snapshotFingerprint": "wk12-15uywzx-wjyjkb",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": "alloc-ihsn8q-32tfn8",
+        "incumbentEvidenceDigest": "1517den-p5v4v7",
+        "key": "ctx12-bhnv3j-g9prav"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 242,
+        "digest": "alloc-qytwsz-piwsbf"
+      },
+      "raw": {
+        "portions": 249,
+        "digest": "alloc-1rs44um-17qxvyq"
+      },
+      "incumbent": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8",
+        "valid": true,
+        "issues": []
+      },
+      "selected": {
+        "portions": 255,
+        "winner": "extend",
+        "digest": "alloc-1df1s6k-hc3nd6",
+        "reason": "extend over fresh-legacy (255 vs 249 portions): more allocated portions. extend over retain (255 vs 241 portions): more allocated portions."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 249,
+            "minimum": {
+              "allocated": 12,
+              "requested": 21
+            },
+            "changedAssigned": 28,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-1rs44um-17qxvyq"
+        },
+        {
+          "kind": "retain",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        },
+        {
+          "kind": "extend",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 255,
+            "minimum": {
+              "allocated": 12,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 65
+          },
+          "allocationDigest": "alloc-1df1s6k-hc3nd6"
+        }
+      ],
+      "changeBasis": "Incumbent",
+      "target": {
+        "id": "H01",
+        "before": 10,
+        "after": 12,
+        "delta": 2,
+        "percentagePoints": 9.523809523809524
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 10,
+            "after": 12,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H02",
+            "before": 26,
+            "after": 28,
+            "delta": 2,
+            "percentagePoints": 4.761904761904756
+          },
+          {
+            "householdId": "H03",
+            "before": 36,
+            "after": 39,
+            "delta": 3,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H04",
+            "before": 18,
+            "after": 18,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 26,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H07",
+            "before": 38,
+            "after": 38,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 42,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [],
+        "changed": []
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 9,
+            "after": 12,
+            "delta": 3,
+            "percentagePoints": 14.285714285714285
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 28,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 39,
+            "delta": -3,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H04",
+            "before": 14,
+            "after": 18,
+            "delta": 4,
+            "percentagePoints": 19.047619047619047
+          },
+          {
+            "householdId": "H05",
+            "before": 60,
+            "after": 52,
+            "delta": -8,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 26,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 42,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 6,
+            "meal": "lunch"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R10",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R06",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R15",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R10",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R07",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R16",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R15",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R13",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 5.15,
+        "rawMedianMs": 8.92,
+        "selectedMedianMs": 21.85
+      }
+    },
+    {
+      "id": "opener-only",
+      "name": "Opener only",
+      "description": "Add only a can opener to H01 on the initial stock.",
+      "mode": "with incumbent",
+      "context": {
+        "snapshotFingerprint": "wk12-o456ks-wzbw74",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": "alloc-ihsn8q-32tfn8",
+        "incumbentEvidenceDigest": "1517den-p5v4v7",
+        "key": "ctx12-8hy0pw-b3tfkm"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 228,
+        "digest": "alloc-ddu8ha-136g036"
+      },
+      "raw": {
+        "portions": 239,
+        "digest": "alloc-w6my8h-gb9na9"
+      },
+      "incumbent": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8",
+        "valid": true,
+        "issues": []
+      },
+      "selected": {
+        "portions": 241,
+        "winner": "retain",
+        "digest": "alloc-ihsn8q-32tfn8",
+        "reason": "retain over extend (241 vs 241 portions): stable candidate ID after equal scores. retain over fresh-legacy (241 vs 239 portions): more allocated portions."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 239,
+            "minimum": {
+              "allocated": 20,
+              "requested": 42
+            },
+            "changedAssigned": 14,
+            "repeats": 55
+          },
+          "allocationDigest": "alloc-w6my8h-gb9na9"
+        },
+        {
+          "kind": "retain",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        },
+        {
+          "kind": "extend",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        }
+      ],
+      "changeBasis": "Incumbent",
+      "target": {
+        "id": "H01",
+        "before": 10,
+        "after": 10,
+        "delta": 0,
+        "percentagePoints": 0
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 10,
+            "after": 10,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 26,
+            "after": 26,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 36,
+            "after": 36,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 18,
+            "after": 18,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 22,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 38,
+            "after": 38,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 39,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": []
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 8,
+            "after": 10,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 26,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 36,
+            "delta": -6,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H04",
+            "before": 13,
+            "after": 18,
+            "delta": 5,
+            "percentagePoints": 23.809523809523803
+          },
+          {
+            "householdId": "H05",
+            "before": 56,
+            "after": 52,
+            "delta": -4,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H06",
+            "before": 20,
+            "after": 22,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 33,
+            "after": 39,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R08",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R08",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R10",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-cooker",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R07",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R15",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R10",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R08",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R08-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 5.01,
+        "rawMedianMs": 8.85,
+        "selectedMedianMs": 21.62
+      }
+    },
+    {
+      "id": "donation-then-opener",
+      "name": "Donation then opener",
+      "description": "Add only a can opener to H01 after the Monday receipt and its selected draft.",
+      "mode": "with incumbent",
+      "context": {
+        "snapshotFingerprint": "wk12-11falr8-q0dgdy",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": "alloc-1df1s6k-hc3nd6",
+        "incumbentEvidenceDigest": "mu93z4-10ljovo",
+        "key": "ctx12-dcti0r-1y49vot"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 242,
+        "digest": "alloc-10wtffg-1gz9jxg"
+      },
+      "raw": {
+        "portions": 253,
+        "digest": "alloc-ixlo3p-1y52pjl"
+      },
+      "incumbent": {
+        "portions": 255,
+        "digest": "alloc-1df1s6k-hc3nd6",
+        "valid": true,
+        "issues": []
+      },
+      "selected": {
+        "portions": 255,
+        "winner": "retain",
+        "digest": "alloc-1df1s6k-hc3nd6",
+        "reason": "retain over extend (255 vs 255 portions): stable candidate ID after equal scores. retain over fresh-legacy (255 vs 253 portions): more allocated portions."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 253,
+            "minimum": {
+              "allocated": 36,
+              "requested": 63
+            },
+            "changedAssigned": 35,
+            "repeats": 61
+          },
+          "allocationDigest": "alloc-ixlo3p-1y52pjl"
+        },
+        {
+          "kind": "retain",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 255,
+            "minimum": {
+              "allocated": 12,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 65
+          },
+          "allocationDigest": "alloc-1df1s6k-hc3nd6"
+        },
+        {
+          "kind": "extend",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 255,
+            "minimum": {
+              "allocated": 12,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 65
+          },
+          "allocationDigest": "alloc-1df1s6k-hc3nd6"
+        }
+      ],
+      "changeBasis": "Incumbent",
+      "target": {
+        "id": "H01",
+        "before": 12,
+        "after": 12,
+        "delta": 0,
+        "percentagePoints": 0
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 12,
+            "after": 12,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 28,
+            "after": 28,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 39,
+            "after": 39,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 18,
+            "after": 18,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 26,
+            "after": 26,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 38,
+            "after": 38,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": []
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 9,
+            "after": 12,
+            "delta": 3,
+            "percentagePoints": 14.285714285714285
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 28,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 39,
+            "delta": -3,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H04",
+            "before": 14,
+            "after": 18,
+            "delta": 4,
+            "percentagePoints": 19.047619047619047
+          },
+          {
+            "householdId": "H05",
+            "before": 60,
+            "after": 52,
+            "delta": -8,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 26,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 42,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 6,
+            "meal": "lunch"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R08",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R08",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R10",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R06",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R10",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R07",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R16",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R15",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R13",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 4.84,
+        "rawMedianMs": 8.84,
+        "selectedMedianMs": 21.48
+      }
+    },
+    {
+      "id": "teaching",
+      "name": "Teaching pair",
+      "description": "Two one-person Monday lunch requests competing for one kettle meal.",
+      "mode": "fresh",
+      "context": {
+        "snapshotFingerprint": "wk12-1lqifx0-1sg8aya",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": null,
+        "incumbentEvidenceDigest": null,
+        "key": "ctx12-1dh1bed-1nw5f21"
+      },
+      "requested": 2,
+      "reference": {
+        "portions": 1,
+        "digest": "alloc-15g9jeh-1a5vjmj"
+      },
+      "raw": {
+        "portions": 2,
+        "digest": "alloc-14um7jg-y4baym"
+      },
+      "incumbent": null,
+      "selected": {
+        "portions": 2,
+        "winner": "fresh-legacy",
+        "digest": "alloc-14um7jg-y4baym",
+        "reason": "The only validated candidate in this context."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 2,
+            "minimum": {
+              "allocated": 1,
+              "requested": 1
+            },
+            "changedAssigned": 0,
+            "repeats": 0
+          },
+          "allocationDigest": "alloc-14um7jg-y4baym"
+        }
+      ],
+      "changeBasis": "Reference",
+      "target": {
+        "id": "H02",
+        "before": 0,
+        "after": 1,
+        "delta": 1,
+        "percentagePoints": 100
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 0,
+            "after": 1,
+            "delta": 1,
+            "percentagePoints": 100
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch"
+          }
+        ],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R11",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 0,
+            "after": 1,
+            "delta": 1,
+            "percentagePoints": 100
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch"
+          }
+        ],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R11",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 0.17,
+        "rawMedianMs": 0.2,
+        "selectedMedianMs": 0.46
+      }
+    },
+    {
+      "id": "neutral",
+      "name": "Neutral pair",
+      "description": "Both Monday lunch requests have suitable stock in this separate example.",
+      "mode": "fresh",
+      "context": {
+        "snapshotFingerprint": "wk12-1pcd86s-1j20148",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": null,
+        "incumbentEvidenceDigest": null,
+        "key": "ctx12-1o92q8f-1a1pa15"
+      },
+      "requested": 2,
+      "reference": {
+        "portions": 2,
+        "digest": "alloc-j7ilq8-12423po"
+      },
+      "raw": {
+        "portions": 2,
+        "digest": "alloc-11e69qs-1w91tby"
+      },
+      "incumbent": null,
+      "selected": {
+        "portions": 2,
+        "winner": "fresh-legacy",
+        "digest": "alloc-11e69qs-1w91tby",
+        "reason": "The only validated candidate in this context."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 2,
+            "minimum": {
+              "allocated": 1,
+              "requested": 1
+            },
+            "changedAssigned": 0,
+            "repeats": 0
+          },
+          "allocationDigest": "alloc-11e69qs-1w91tby"
+        }
+      ],
+      "changeBasis": "Reference",
+      "target": {
+        "id": "H02",
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "percentagePoints": 0
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R11",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 1,
+            "after": 1,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R11",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 0.15,
+        "rawMedianMs": 0.17,
+        "selectedMedianMs": 0.42
+      }
+    },
+    {
+      "id": "invalid",
+      "name": "Invalid incumbent",
+      "description": "Reduce the received couscous lot LOT-002 to zero before approval. The old assignments use this lot.",
+      "mode": "with incumbent",
+      "context": {
+        "snapshotFingerprint": "wk12-1lrw4x4-x7m0zq",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": "alloc-ihsn8q-32tfn8",
+        "incumbentEvidenceDigest": "1517den-p5v4v7",
+        "key": "ctx12-bi31ri-w9tjqs"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 220,
+        "digest": "alloc-3inmy0-1iozm8m"
+      },
+      "raw": {
+        "portions": 222,
+        "digest": "alloc-1gxsoi9-d35gjr"
+      },
+      "incumbent": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8",
+        "valid": false,
+        "issues": [
+          "Reservations exceed on-hand stock for LOT-002"
+        ]
+      },
+      "selected": {
+        "portions": 222,
+        "winner": "fresh-legacy",
+        "digest": "alloc-1gxsoi9-d35gjr",
+        "reason": "The only validated candidate in this context."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 222,
+            "minimum": {
+              "allocated": 16,
+              "requested": 42
+            },
+            "changedAssigned": 34,
+            "repeats": 54
+          },
+          "allocationDigest": "alloc-1gxsoi9-d35gjr"
+        },
+        {
+          "kind": "retain",
+          "issues": [
+            "Reservations exceed on-hand stock for LOT-002"
+          ],
+          "valid": false,
+          "score": null,
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        },
+        {
+          "kind": "extend",
+          "valid": false,
+          "score": null,
+          "allocationDigest": null,
+          "issues": [
+            "Fixed assignments failed incumbent revalidation."
+          ]
+        }
+      ],
+      "changeBasis": "Incumbent",
+      "target": {
+        "id": "H02",
+        "before": 26,
+        "after": 16,
+        "delta": -10,
+        "percentagePoints": -23.809523809523814
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 10,
+            "after": 9,
+            "delta": -1,
+            "percentagePoints": -4.761904761904762
+          },
+          {
+            "householdId": "H02",
+            "before": 26,
+            "after": 16,
+            "delta": -10,
+            "percentagePoints": -23.809523809523814
+          },
+          {
+            "householdId": "H03",
+            "before": 36,
+            "after": 33,
+            "delta": -3,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H04",
+            "before": 18,
+            "after": 20,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 20,
+            "delta": -2,
+            "percentagePoints": -4.761904761904767
+          },
+          {
+            "householdId": "H07",
+            "before": 38,
+            "after": 30,
+            "delta": -8,
+            "percentagePoints": -19.047619047619047
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 42,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H02",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 5,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 5,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R04",
+            "toRecipeId": "R02",
+            "fromMethodId": "R04-kettle",
+            "toMethodId": "R02-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R06",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R04",
+            "toRecipeId": "R02",
+            "fromMethodId": "R04-kettle",
+            "toMethodId": "R02-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R04",
+            "toRecipeId": "R03",
+            "fromMethodId": "R04-kettle",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R07",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R09",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R11",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R14",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R11",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R12",
+            "toRecipeId": "R10",
+            "fromMethodId": "R12-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R16",
+            "toRecipeId": "R06",
+            "fromMethodId": "R16-hob",
+            "toMethodId": "R06-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner",
+            "fromRecipeId": "R16",
+            "toRecipeId": "R11",
+            "fromMethodId": "R16-hob",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 6,
+            "after": 9,
+            "delta": 3,
+            "percentagePoints": 14.285714285714285
+          },
+          {
+            "householdId": "H02",
+            "before": 12,
+            "after": 16,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H03",
+            "before": 48,
+            "after": 33,
+            "delta": -15,
+            "percentagePoints": -23.809523809523803
+          },
+          {
+            "householdId": "H04",
+            "before": 14,
+            "after": 20,
+            "delta": 6,
+            "percentagePoints": 28.57142857142857
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 16,
+            "after": 20,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H07",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H01",
+            "day": 1,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H06",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R09",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R07",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R06",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R11",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R08",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R07",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R14",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R10",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R12",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-cooker",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R07",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R08",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R08-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R14",
+            "toRecipeId": "R07",
+            "fromMethodId": "R14-oven",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R12",
+            "toRecipeId": "R10",
+            "fromMethodId": "R12-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R11",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R12",
+            "toRecipeId": "R10",
+            "fromMethodId": "R12-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R06-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [],
+      "timing": {
+        "referenceMedianMs": 6.03,
+        "rawMedianMs": 8.81,
+        "selectedMedianMs": 15.88
+      }
+    },
+    {
+      "id": "tool-blocker",
+      "name": "Microwave without container",
+      "description": "Add a microwave to H01 only. The R13 microwave-safe container remains missing.",
+      "mode": "with incumbent",
+      "context": {
+        "snapshotFingerprint": "wk12-2ujqr1-gcud43",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.2.0",
+        "parametersId": "total-minimum-stability-repetition-v1",
+        "incumbentDigest": "alloc-ihsn8q-32tfn8",
+        "incumbentEvidenceDigest": "1517den-p5v4v7",
+        "key": "ctx12-1kjjrua-1c8d3pc"
+      },
+      "requested": 378,
+      "reference": {
+        "portions": 228,
+        "digest": "alloc-hr8b4m-4bkble"
+      },
+      "raw": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8"
+      },
+      "incumbent": {
+        "portions": 241,
+        "digest": "alloc-ihsn8q-32tfn8",
+        "valid": true,
+        "issues": []
+      },
+      "selected": {
+        "portions": 241,
+        "winner": "retain",
+        "digest": "alloc-ihsn8q-32tfn8",
+        "reason": "retain over extend (241 vs 241 portions): stable candidate ID after equal scores. retain over fresh-legacy (241 vs 241 portions): stable candidate ID after equal scores."
+      },
+      "candidates": [
+        {
+          "kind": "fresh-legacy",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        },
+        {
+          "kind": "retain",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        },
+        {
+          "kind": "extend",
+          "issues": [],
+          "valid": true,
+          "score": {
+            "total": 241,
+            "minimum": {
+              "allocated": 10,
+              "requested": 21
+            },
+            "changedAssigned": 0,
+            "repeats": 59
+          },
+          "allocationDigest": "alloc-ihsn8q-32tfn8"
+        }
+      ],
+      "changeBasis": "Incumbent",
+      "target": {
+        "id": "H01",
+        "before": 10,
+        "after": 10,
+        "delta": 0,
+        "percentagePoints": 0
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 10,
+            "after": 10,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 26,
+            "after": 26,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 36,
+            "after": 36,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 18,
+            "after": 18,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 52,
+            "after": 52,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 22,
+            "after": 22,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 38,
+            "after": 38,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 39,
+            "after": 39,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": []
+      },
+      "changesFromReference": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 8,
+            "after": 10,
+            "delta": 2,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H02",
+            "before": 24,
+            "after": 26,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 36,
+            "delta": -6,
+            "percentagePoints": -9.523809523809524
+          },
+          {
+            "householdId": "H04",
+            "before": 13,
+            "after": 18,
+            "delta": 5,
+            "percentagePoints": 23.809523809523803
+          },
+          {
+            "householdId": "H05",
+            "before": 56,
+            "after": 52,
+            "delta": -4,
+            "percentagePoints": -4.761904761904756
+          },
+          {
+            "householdId": "H06",
+            "before": 20,
+            "after": 22,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H07",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H08",
+            "before": 33,
+            "after": 39,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "filled": [
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H06",
+            "day": 2,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H02",
+            "day": 3,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 4,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H04",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H07",
+            "day": 6,
+            "meal": "dinner"
+          }
+        ],
+        "lost": [
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H05",
+            "day": 5,
+            "meal": "dinner"
+          },
+          {
+            "householdId": "H02",
+            "day": 6,
+            "meal": "breakfast"
+          }
+        ],
+        "changed": [
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R02",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R02-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R09",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-cooker",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R13",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R11",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R11-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R03",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R03-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R15",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R10",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R12",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H06",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R06",
+            "fromMethodId": "R11-cooker",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R08",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R07",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R15",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R15-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R15",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R10",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-hob",
+            "toMethodId": "R03-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R04",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R06",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R08",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R08-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R08",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R08-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R07",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H05",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R12",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R12-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R03",
+            "toRecipeId": "R01",
+            "fromMethodId": "R03-cold",
+            "toMethodId": "R01-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R15",
+            "toRecipeId": "R14",
+            "fromMethodId": "R15-microwave",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R16",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R16-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 3,
+            "meal": "dinner",
+            "fromRecipeId": "R10",
+            "toRecipeId": "R15",
+            "fromMethodId": "R10-hob",
+            "toMethodId": "R15-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H05",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R11",
+            "toRecipeId": "R10",
+            "fromMethodId": "R11-hob",
+            "toMethodId": "R10-hob",
+            "fromPortions": 4,
+            "toPortions": 4
+          }
+        ]
+      },
+      "validation": {
+        "reference": [],
+        "raw": [],
+        "selected": []
+      },
+      "blockers": [
+        {
+          "code": "MISSING_TOOL",
+          "message": "Microwave requires a microwave safe container.",
+          "methodId": "R13-microwave",
+          "recipeId": "R13"
+        }
+      ],
+      "timing": {
+        "referenceMedianMs": 4.92,
+        "rawMedianMs": 8.83,
+        "selectedMedianMs": 20.99
+      }
+    }
+  ]
+}

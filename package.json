@@ -1,0 +1,43 @@
+{
+  "name": "nokitchen",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build && node scripts/offline.mjs && node scripts/check-public.mjs",
+    "test": "vitest run",
+    "preview": "vite preview",
+    "test:e2e": "node tests/walkthrough.mjs && node tests/guided.mjs && node tests/storage-browser.mjs && node tests/donation-decision.mjs",
+    "measure": "node scripts/measure.mjs",
+    "matrix": "node scripts/scenario-matrix.mjs",
+    "test:standalone": "node scripts/verify-standalone.mjs",
+    "evidence:donor": "node scripts/donor-results.mjs",
+    "evidence:variety": "node scripts/variety-results.mjs",
+    "catalog:audit": "node scripts/catalog-audit.mjs",
+    "evidence:decision": "node scripts/decision-results.mjs",
+    "build:operator": "npm run typecheck && vite build --mode operator",
+    "operator": "node --env-file-if-exists=.env.local server/main.ts",
+    "check:public": "node scripts/check-public.mjs --prove",
+    "test:live": "node tests/live-flow.mjs && node tests/private-storage.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "parse5": "^7.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "playwright": "^1.65.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.0",
+    "vitest": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

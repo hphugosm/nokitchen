@@ -1,0 +1,479 @@
+.paste-compose,
+.paste-record,
+.donor-impact {
+  min-width: 0;
+}
+.paste-compose .option-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 20px;
+  gap: 7px;
+}
+.paste-compose .option-set button {
+  min-height: 38px;
+  padding: 6px 12px;
+  border: 1px solid var(--line, #d9d9cf);
+  border-radius: 8px;
+  background: #fff;
+  color: #304536;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.87rem;
+}
+.paste-compose .option-set button[aria-pressed='true'] {
+  color: #fff;
+  background: #304c3f;
+  border-color: #304c3f;
+}
+.paste-compose textarea {
+  width: 100%;
+  min-height: 110px;
+  font: inherit;
+  padding: 12px;
+  color: #293d32;
+  line-height: 1.5;
+  border: 1px solid #cdd5cb;
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+}
+.donor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+  align-items: end;
+  gap: 12px;
+  margin: 12px 0;
+}
+.donor-rows {
+  display: grid;
+  gap: 16px;
+  margin: 16px 0;
+}
+.donor-item {
+  min-width: 0;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #d8ddd3;
+  border-radius: 12px;
+  background: #fbfcf8;
+}
+.donor-item legend {
+  font-weight: 700;
+  padding: 0 7px;
+  color: #314a3a;
+}
+.donor-source {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  margin: 0 0 10px;
+}
+.donor-source q {
+  overflow-wrap: anywhere;
+  color: #36483b;
+  line-height: 1.55;
+}
+.donor-field {
+  min-width: 0;
+  display: grid;
+  align-content: end;
+  gap: 5px;
+  color: #3c4f40;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.donor-field :is(select, input) {
+  min-width: 0;
+  width: 100%;
+  height: 38px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #c9d2c7;
+  background: #fff;
+  font: inherit;
+  font-weight: 400;
+  color: #273b2d;
+}
+.donor-field :is(select, input):focus-visible,
+.paste-compose textarea:focus-visible {
+  outline: 2px solid #416c4f;
+  outline-offset: 1px;
+}
+.fixture-facts,
+.receipt-diff {
+  border-left: 3px solid #879b7f;
+  background: #f3f6ed;
+  padding: 13px 16px;
+  border-radius: 4px;
+  margin: 14px 0;
+}
+.fixture-facts p {
+  margin: 4px 0 10px;
+}
+.donor-issues {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  padding-left: 22px;
+  color: #795521;
+}
+.donor-evidence {
+  display: grid;
+  gap: 5px;
+  margin: 12px 0;
+}
+.donor-evidence div {
+  display: grid;
+  grid-template-columns: minmax(100px, 150px) 1fr;
+  gap: 8px;
+}
+.donor-evidence dt {
+  font-weight: 600;
+}
+.donor-evidence dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.donor-evidence dd span,
+.donor-lots span,
+.donor-impact th small {
+  display: block;
+  font-size: 0.8rem;
+  color: #566456;
+}
+.donor-lots {
+  padding-left: 20px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.paste-record .meal-links,
+.donor-impact .meal-links {
+  max-width: 100%;
+  min-width: 0;
+}
+.paste-record .source-stamp,
+.donor-impact .source-stamp {
+  color: #58675a;
+  font-size: 0.76rem;
+  overflow-wrap: anywhere;
+}
+.donor-batch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 12px 0;
+}
+.donor-batch > div {
+  padding: 12px;
+  min-width: 0;
+  background: #f2f5ee;
+  border-radius: 8px;
+}
+.donor-batch h4,
+.donor-batch p {
+  margin: 0 0 6px;
+}
+.donor-batch ul {
+  padding-left: 16px;
+  overflow-wrap: anywhere;
+  font-size: 0.82rem;
+}
+.donor-impact,
+.paste-record {
+  margin-top: 16px;
+}
+.donor-impact .panel-body,
+.donor-impact .subsection {
+  min-width: 0;
+}
+@media (max-width: 640px) {
+  .donor-batch {
+    grid-template-columns: 1fr;
+  }
+  .donor-source {
+    flex-direction: column;
+  }
+  .donor-item {
+    padding: 10px;
+  }
+  .donor-evidence div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .donor-rows .donor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .donor-field {
+    font-size: 0.76rem;
+  }
+}
+@media (max-width: 380px) {
+  .donor-rows .donor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.donor-field-group {
+  align-self: start;
+  min-width: 0;
+}
+.donor-identification {
+  grid-template-columns: minmax(140px, 1fr) minmax(160px, 2fr);
+  align-items: center;
+}
+.donor-product {
+  align-self: center;
+  color: #405343;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.donor-product p {
+  margin: 2px 0;
+}
+.donor-phrase {
+  margin: 4px 0 0;
+  font-size: 0.73rem;
+  color: #526654;
+  overflow-wrap: anywhere;
+}
+.donor-phrase summary {
+  cursor: pointer;
+}
+.donor-phrase q {
+  display: block;
+  margin: 3px 0;
+}
+@media (max-width: 560px) {
+  .donor-item .donor-identification {
+    grid-template-columns: 1fr;
+  }
+}
+.donation-options {
+  width: 100%;
+  min-width: 0;
+  margin: 5px 0 14px;
+}
+.donation-options p,
+.variety-effects p,
+.removed-meals li {
+  line-height: 1.55;
+}
+.donation-candidates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.donation-card {
+  min-width: 0;
+  border: 1px solid #d6ddd2;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafbf8;
+}
+.donation-card.selected {
+  border-color: #819b81;
+  background: #f1f5ed;
+}
+.donation-card .button {
+  font-size: 0.9rem;
+  white-space: normal;
+}
+.donation-card button[aria-pressed='true'] {
+  border-color: #4a6951;
+  color: #f8fbf5;
+  background: #3c5944;
+}
+.donation-card p {
+  margin: 7px 0 2px;
+  font-weight: 600;
+}
+.donation-card small {
+  color: #4c614f;
+}
+.donor-impact .slot-totals {
+  margin: 12px 0 3px;
+}
+.removed-meals {
+  margin: 12px 0;
+  padding: 12px;
+  border-inline-start: 3px solid #b86f4c;
+  background: #fbf2eb;
+  color: #643622;
+}
+.removed-meals h3 {
+  margin: 0;
+}
+.removed-meals ul {
+  margin: 6px 0 0;
+  padding-inline-start: 18px;
+}
+.donor-impact .table-scroll,
+.variety-evidence .table-scroll {
+  max-width: 100%;
+}
+.donor-impact :is(td, th) small,
+.donor-batch small {
+  display: block;
+}
+.box-trace td small {
+  color: #5a655a;
+  overflow-wrap: anywhere;
+}
+.box-trace .field,
+.household-impact-day > .field {
+  max-width: 350px;
+}
+.variety-effects {
+  margin-top: 12px;
+}
+.variety-effects p {
+  margin: 4px 0;
+}
+.plan-actions > .donor-impact {
+  width: 100%;
+  min-width: 0;
+}
+.live-inbox {
+  margin: 8px 0 22px;
+}
+.live-inbox .panel-head {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.live-inbox .record-head {
+  min-width: 0;
+}
+.live-inbox h2,
+.live-inbox h3,
+.live-inbox :is(p, dd, li),
+.email-dinner {
+  overflow-wrap: anywhere;
+}
+.live-inbox .panel-head h2 {
+  font-size: 1.4rem;
+}
+.inbox-status,
+.inbox-message-head,
+.inbox-message-foot,
+.mail-attachments li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inbox-status {
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: #506358;
+}
+.inbox-messages {
+  display: grid;
+  gap: 12px;
+  margin-top: 15px;
+}
+.inbox-message {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #d5ded3;
+  border-radius: 10px;
+  background: #fbfcf9;
+}
+.inbox-message-head,
+.inbox-message-foot {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inbox-message-head h3,
+.inbox-message-head p,
+.inbox-note {
+  margin: 0;
+}
+.inbox-message-head p,
+.inbox-message-foot > span,
+.inbox-note {
+  font-size: 0.8rem;
+  color: #566659;
+}
+.inbox-preview {
+  white-space: pre-line;
+  line-height: 1.45;
+  max-height: 6em;
+  overflow: hidden;
+}
+.inbox-message-foot {
+  margin-top: 10px;
+}
+.inbox-note {
+  margin-top: 5px;
+}
+.inbox-empty {
+  text-align: center;
+  padding: 24px 6px;
+  color: #526758;
+}
+.inbox-empty svg,
+.inbox-empty strong {
+  display: block;
+  margin: 6px auto;
+}
+.inbox-empty p {
+  margin: 4px;
+}
+.mail-attachments {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+}
+.email-dinner,
+.reply-panel {
+  min-width: 0;
+  margin: 16px 0;
+  padding: 14px 16px;
+  background: #f1f5ee;
+  border-radius: 10px;
+  border-inline-start: 3px solid #8ca289;
+}
+.email-dinner h3,
+.reply-panel h3 {
+  margin: 0 0 5px;
+}
+.email-dinner p,
+.reply-panel p {
+  margin: 4px 0 10px;
+}
+.reply-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font: inherit;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  border: 1px solid #c9d3c8;
+  border-radius: 7px;
+  resize: vertical;
+  background: #fff;
+  color: #263d2c;
+}
+.email-dinner li {
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+}
+.batch-appliances {
+  font-size: 0.8rem;
+}
+@media (max-width: 560px) {
+  .live-inbox .collection-icon {
+    display: none;
+  }
+  .inbox-message {
+    padding: 12px;
+  }
+  .live-inbox .record-head {
+    max-width: 100%;
+  }
+  .email-dinner,
+  .reply-panel {
+    padding: 12px;
+  }
+}

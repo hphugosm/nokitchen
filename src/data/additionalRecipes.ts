@@ -1,0 +1,360 @@
+import type { Tool } from '../domain/types'
+import { dish } from './recipeAuthoring'
+
+const board: Tool[] = ['knife', 'cutting_board']
+const bowl: Tool[] = ['bowl', 'spoon']
+const salad: Tool[] = [...board, ...bowl]
+const pot: Tool[] = [...board, 'pot_with_lid', 'spoon']
+const microwave: Tool[] = [...board, 'microwave_safe_container', 'spoon']
+const roast: Tool[] = [...board, 'oven_safe_tray', 'spoon']
+const rinse = 'Potable water to rinse the produce.'
+const devices = {
+  cold: 'No heat',
+  hob: 'Hob',
+  kettle: 'Kettle',
+  microwave: 'Microwave',
+  mini_oven: 'Mini oven',
+  sandwich_press: 'Sandwich maker',
+}
+
+function recipe(
+  id: string,
+  name: string,
+  amounts: Record<string, number>,
+  device: keyof typeof devices,
+  tools: Tool[],
+  minutes: number,
+  water: string | undefined,
+  steps: string[],
+  optional: Record<string, number> = {},
+) {
+  return dish(id, name, amounts, optional, [
+    {
+      id: id + '-' + device,
+      name: devices[device],
+      appliance: device === 'cold' ? undefined : device,
+      tools,
+      minutes,
+      water,
+      steps,
+    },
+  ])
+}
+
+export const additionalRecipes = [
+  recipe(
+    'R17',
+    'Pear and puffed rice cereal',
+    { rice_cereal: 45, oat_drink: 200, pear: 100 },
+    'cold',
+    salad,
+    5,
+    rinse,
+    [
+      'Rinse and core the pear, then dice it on the board.',
+      'Pour the puffed rice into a bowl. Top with the pear and add the oat drink just before eating with a spoon.',
+    ],
+  ),
+  recipe(
+    'R18',
+    'Apple and apricot muesli',
+    { oats: 50, apple_puree: 100, dried_apricots: 25 },
+    'cold',
+    salad,
+    6,
+    undefined,
+    [
+      'Cut the pitted dried apricots into small pieces on the board.',
+      'Open the apple puree into a bowl. Stir in the cold-use oats and apricots with a spoon and let stand briefly to soften.',
+    ],
+  ),
+  recipe(
+    'R19',
+    'Sunflower and jam cracker plate',
+    { crackers: 60, sunflower_spread: 25, jam: 20 },
+    'cold',
+    ['spoon'],
+    4,
+    undefined,
+    [
+      'Lay out the crackers and open the two single-use sachets.',
+      'Use the back of the spoon to spread sunflower seed butter on the crackers. Finish each with a little jam.',
+    ],
+  ),
+  recipe(
+    'R20',
+    'Orange and pear salad with rice crunch',
+    { orange: 120, pear: 100, rice_cereal: 20 },
+    'cold',
+    salad,
+    8,
+    rinse,
+    [
+      'Rinse the fruit. Peel and segment the orange, then core and dice the pear on the board.',
+      'Combine the fruit and its juice in a bowl. Fold in the crisp rice with a spoon immediately before serving.',
+    ],
+  ),
+  recipe(
+    'R21',
+    'Pear porridge with oat drink',
+    { oats: 60, oat_drink: 200, pear: 100 },
+    'hob',
+    pot,
+    12,
+    rinse,
+    [
+      'Rinse, core and dice the pear on the board. Put it in the pot with the oats and oat drink.',
+      'Heat gently on the hob, stirring with a spoon until the oats and pear soften. Let stand briefly before serving.',
+    ],
+    { cinnamon: 1 },
+  ),
+  recipe(
+    'R22',
+    'Warm raisin rice pudding',
+    { ready_rice: 150, oat_drink: 200, raisins: 20 },
+    'microwave',
+    ['microwave_safe_container', 'spoon'],
+    9,
+    undefined,
+    [
+      'Empty the pouch of cooked rice into a deep microwave-safe container. Mix in the oat drink and raisins.',
+      'Microwave in short intervals, stirring between bursts until hot and creamy. Let stand briefly and serve.',
+    ],
+    { cinnamon: 1 },
+  ),
+
+  recipe(
+    'R23',
+    'Beetroot and chickpea salad',
+    { ready_beetroot: 100, ready_chickpeas: 200, oil: 10 },
+    'cold',
+    bowl,
+    6,
+    undefined,
+    [
+      'Open the cooked beetroot pouch and drain the chickpeas. Tip the soft beet pieces into a bowl.',
+      'Fold in the chickpeas and oil with the spoon, lightly crushing some of the beetroot to coat the chickpeas.',
+    ],
+  ),
+  recipe(
+    'R24',
+    'Hummus and pepper open sandwiches',
+    { bread: 80, hummus: 50, bell_pepper: 80 },
+    'cold',
+    [...board, 'spoon'],
+    6,
+    rinse,
+    [
+      'Rinse the pepper, remove its stem and seeds and cut it into thin strips on the board.',
+      'Spread the whole hummus portion on the sliced bread with a spoon. Arrange the pepper strips on top.',
+    ],
+  ),
+  recipe(
+    'R25',
+    'Sardine and cucumber cracker plate',
+    { sardines: 100, crackers: 60, cucumber: 80 },
+    'cold',
+    salad,
+    7,
+    rinse,
+    [
+      'Rinse the cucumber and slice it on the board. Open the sardine can and drain it.',
+      'Flake the boneless fish in a bowl with the spoon. Serve alongside the cucumber slices and crackers for topping as you eat.',
+    ],
+  ),
+  recipe(
+    'R26',
+    'Cold rice and pea bowl',
+    { ready_rice: 150, ready_peas: 100, carrot: 60, oil: 10 },
+    'cold',
+    salad,
+    9,
+    rinse,
+    [
+      'Rinse the carrot and cut it into small pieces on the board. Drain the cooked peas.',
+      'Empty the ready-to-eat rice pouch into a bowl. Break up the grains with a spoon, then mix in the peas, carrot and oil.',
+    ],
+  ),
+  recipe(
+    'R27',
+    'Crunchy cabbage and hummus wrap',
+    { tortilla: 1, hummus: 50, cabbage: 80, carrot: 50 },
+    'cold',
+    [...board, 'spoon'],
+    8,
+    rinse,
+    [
+      'Rinse the vegetables. Slice the cabbage finely and cut the carrot into thin sticks on the board.',
+      'Spread the hummus over the tortilla with a spoon. Fold around the vegetables and serve any extra slaw alongside.',
+    ],
+  ),
+  recipe(
+    'R28',
+    'Beet and bean dip with crackers',
+    { ready_beetroot: 100, ready_beans: 200, crackers: 60 },
+    'cold',
+    bowl,
+    7,
+    undefined,
+    [
+      'Drain the beans and tip them into a bowl. Crush them with the back of a spoon until spreadable.',
+      'Mash the soft cooked beet pieces into the beans. Serve the dip with crackers, leaving a little texture.',
+    ],
+  ),
+  recipe(
+    'R29',
+    'Potato mash with peas',
+    { potato_flakes: 55, ready_peas: 100, oil: 10 },
+    'kettle',
+    ['heatproof_bowl', 'spoon'],
+    9,
+    'Heat the potable water required by the supplied plain potato-flake directions.',
+    [
+      'Heat plain water in the kettle. Put the potato flakes in a separate heatproof bowl and add hot water following the supplied flake directions.',
+      'Stir in the oil with the spoon. Drain the ready peas and fold them through the mash just before serving.',
+    ],
+  ),
+  recipe(
+    'R30',
+    'Couscous-stuffed pepper halves',
+    { instant_couscous: 60, bell_pepper: 150, hummus: 50 },
+    'kettle',
+    [...board, 'heatproof_bowl', 'spoon'],
+    13,
+    'Use potable water to rinse the pepper and hydrate the couscous as directed.',
+    [
+      'Heat plain water in the kettle. Hydrate the couscous with it in the separate heatproof bowl, following the supplied product directions.',
+      'Rinse the pepper, halve it on the board and remove the seeds and stem. Stir the hummus into the couscous and spoon the filling into the raw pepper halves.',
+    ],
+  ),
+  recipe(
+    'R31',
+    'Red lentil and carrot soup',
+    { red_lentils: 65, carrot: 100, onion: 40, oil: 10 },
+    'hob',
+    pot,
+    30,
+    'Use potable water to rinse produce and cook the lentils to a loose soup consistency.',
+    [
+      'Rinse and dice the carrot, then peel and chop the onion on the board. Soften both in oil in the pot.',
+      'Add the dry split red lentils and water. Simmer following the supplied lentil directions until the lentils are cooked and soft, stirring and adding water for a spoonable soup.',
+    ],
+  ),
+  recipe(
+    'R32',
+    'Sweet potato and red lentil stew',
+    { sweet_potato: 180, red_lentils: 55, passata: 200 },
+    'hob',
+    pot,
+    32,
+    'Use potable water to wash the sweet potato and cook the lentils as directed.',
+    [
+      'Scrub the sweet potato and dice it small on the board. Put it in the pot with the dry lentils and the water needed for cooking.',
+      'Simmer following the lentil directions until the lentils are cooked and the sweet potato softens. Stir in the passata and heat through to a thick stew.',
+    ],
+  ),
+  recipe(
+    'R33',
+    'Spinach and pea pasta',
+    { dry_pasta: 80, spinach: 60, ready_peas: 100, oil: 10 },
+    'hob',
+    ['pot_with_lid', 'strainer', 'spoon'],
+    20,
+    'Use potable water for rinsing the spinach and boiling the pasta.',
+    [
+      'Rinse the spinach. Boil the pasta in the pot as directed and drain it in the strainer.',
+      'Return the pasta to the pot. Add the oil, drained cooked peas and spinach. Stir over low heat until the leaves wilt and everything is hot.',
+    ],
+  ),
+  recipe(
+    'R34',
+    'Sweet potato and hummus bowl',
+    { sweet_potato: 220, hummus: 50, spinach: 60 },
+    'microwave',
+    microwave,
+    16,
+    'Use potable water to wash the vegetables and moisten the cooking container.',
+    [
+      'Scrub the sweet potato, dice it on the board and put it in the microwave-safe container with water to moisten the bottom.',
+      'Microwave in intervals, stirring until tender. Rinse and tear in the spinach and heat briefly until wilted. Stir in the opened hummus portion with a spoon.',
+    ],
+  ),
+  recipe(
+    'R35',
+    'Rice and sardine stuffed tomatoes',
+    { tomato: 200, ready_rice: 150, sardines: 100 },
+    'cold',
+    salad,
+    12,
+    rinse,
+    [
+      'Rinse the tomatoes, halve them on the board and use a spoon to scoop their centers into a bowl.',
+      'Open the cooked rice and mix it into the tomato centers with the drained, flaked sardines. Spoon the mixture back into the tomato shells and serve excess filling alongside.',
+    ],
+  ),
+  recipe(
+    'R36',
+    'Apple and cheese tortilla pockets',
+    { tortilla: 1, apple: 80, cheese: 40 },
+    'sandwich_press',
+    board,
+    10,
+    rinse,
+    [
+      'Rinse and core the apple, then slice it thinly on the board. Fill half of the tortilla with the cheese and apple and fold it closed.',
+      'Warm the closed pocket in the sandwich maker following its manual, allowing space at the edges. Serve any remaining apple alongside.',
+    ],
+  ),
+  recipe(
+    'R37',
+    'Beetroot and cheese gratin',
+    { ready_beetroot: 100, cheese: 40, crackers: 60 },
+    'mini_oven',
+    ['oven_safe_tray', 'spoon'],
+    20,
+    undefined,
+    [
+      'Preheat the mini oven following its manual for baking a small vegetable dish. Place the soft beet pieces on the oven-safe tray.',
+      'Crumble some crackers over the beetroot with a spoon. Cover with cheese and bake until the food is hot and the cheese melts. Serve the remaining crackers with it.',
+    ],
+  ),
+  recipe(
+    'R38',
+    'Corn and tomato tortilla flatbreads',
+    { tortilla: 2, tomato: 80, cheese: 40, sweetcorn: 100 },
+    'mini_oven',
+    roast,
+    18,
+    rinse,
+    [
+      'Preheat the mini oven for baking thin flatbreads following its manual. Rinse the tomato, slice it on the board and drain the sweetcorn.',
+      'Lay the tortillas on the oven-safe tray. Top with the tomato, use the spoon to distribute the corn, then add cheese. Bake until crisp at the edges and hot throughout.',
+    ],
+  ),
+  recipe(
+    'R39',
+    'Cabbage and potato mash',
+    { potato: 250, cabbage: 100, onion: 40, oil: 10 },
+    'hob',
+    [...pot, 'strainer'],
+    25,
+    'Use potable water to rinse the vegetables and boil the potatoes.',
+    [
+      'Rinse the potatoes and cabbage. Cube the potatoes and slice the cabbage and peeled onion on the board. Start the potatoes in a pot of water.',
+      'When the potatoes begin to soften, add the cabbage and onion. Cook until tender, drain in the strainer and return everything to the pot. Roughly crush with the spoon and fold in the oil.',
+    ],
+  ),
+  recipe(
+    'R40',
+    'Orange and lentil couscous',
+    { instant_couscous: 60, ready_lentils: 200, orange: 100 },
+    'kettle',
+    [...board, 'heatproof_bowl', 'spoon'],
+    12,
+    'Heat potable water for the couscous as directed. Use potable water to rinse the orange.',
+    [
+      'Heat plain water in the kettle. Hydrate the couscous in the heatproof bowl following the supplied directions.',
+      'Rinse, peel and segment the orange on the board. Drain the ready lentils. Fold the fruit, its juice and lentils through the grains with a spoon.',
+    ],
+  ),
+]

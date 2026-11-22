@@ -1,0 +1,5179 @@
+{
+  "release": "1.4",
+  "modelWeek": "2026-11-23",
+  "sourceDigest": "alloc-16izyjp-qgqs6z",
+  "catalog": {
+    "ingredients": 50,
+    "recipes": 40,
+    "methods": 44,
+    "families": 21
+  },
+  "baseline": {
+    "filledSlots": 134,
+    "metrics": {
+      "requested": 378,
+      "allocated": 297,
+      "uncovered": 81,
+      "percent": 79
+    }
+  },
+  "rawToStartingH01": {
+    "id": "H01",
+    "breakfast": {
+      "before": {
+        "slots": 6,
+        "portions": 6,
+        "distinctRecipes": 4,
+        "distinctFamilies": 4,
+        "recipeIds": [
+          "R02",
+          "R17",
+          "R18",
+          "R20"
+        ],
+        "familyIds": [
+          "cereal_bowl",
+          "fruit_salad",
+          "muesli",
+          "open_sandwich"
+        ],
+        "familyFrequencies": {
+          "open_sandwich": 3,
+          "fruit_salad": 1,
+          "muesli": 1,
+          "cereal_bowl": 1
+        },
+        "recipeFrequencies": {
+          "R02": 3,
+          "R20": 1,
+          "R18": 1,
+          "R17": 1
+        },
+        "recipesByFamily": {
+          "open_sandwich": [
+            "R02",
+            "R02",
+            "R02"
+          ],
+          "fruit_salad": [
+            "R20"
+          ],
+          "muesli": [
+            "R18"
+          ],
+          "cereal_bowl": [
+            "R17"
+          ]
+        },
+        "maxFamilyFrequency": 3,
+        "adjacent": 1,
+        "familyCollisions": 3,
+        "recipeCollisions": 3
+      },
+      "after": {
+        "slots": 6,
+        "portions": 6,
+        "distinctRecipes": 4,
+        "distinctFamilies": 4,
+        "recipeIds": [
+          "R02",
+          "R17",
+          "R18",
+          "R20"
+        ],
+        "familyIds": [
+          "cereal_bowl",
+          "fruit_salad",
+          "muesli",
+          "open_sandwich"
+        ],
+        "familyFrequencies": {
+          "open_sandwich": 3,
+          "fruit_salad": 1,
+          "cereal_bowl": 1,
+          "muesli": 1
+        },
+        "recipeFrequencies": {
+          "R02": 3,
+          "R20": 1,
+          "R17": 1,
+          "R18": 1
+        },
+        "recipesByFamily": {
+          "open_sandwich": [
+            "R02",
+            "R02",
+            "R02"
+          ],
+          "fruit_salad": [
+            "R20"
+          ],
+          "cereal_bowl": [
+            "R17"
+          ],
+          "muesli": [
+            "R18"
+          ]
+        },
+        "maxFamilyFrequency": 3,
+        "adjacent": 0,
+        "familyCollisions": 3,
+        "recipeCollisions": 3
+      },
+      "effect": {
+        "broader": false,
+        "moreBalanced": false,
+        "betterSpacing": true,
+        "recipeVariants": false,
+        "sameFamilyMix": true,
+        "addedFamilies": [],
+        "removedFamilies": [],
+        "variantFamilies": [],
+        "reorderedFamilies": []
+      }
+    },
+    "main": {
+      "before": {
+        "slots": 9,
+        "portions": 9,
+        "distinctRecipes": 6,
+        "distinctFamilies": 6,
+        "recipeIds": [
+          "R08",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R35"
+        ],
+        "familyIds": [
+          "cracker_plate",
+          "open_sandwich",
+          "pulse_salad",
+          "rice_bowl",
+          "stuffed_vegetables",
+          "wrap"
+        ],
+        "familyFrequencies": {
+          "open_sandwich": 1,
+          "wrap": 2,
+          "pulse_salad": 2,
+          "cracker_plate": 1,
+          "rice_bowl": 2,
+          "stuffed_vegetables": 1
+        },
+        "recipeFrequencies": {
+          "R24": 1,
+          "R08": 2,
+          "R23": 2,
+          "R25": 1,
+          "R26": 2,
+          "R35": 1
+        },
+        "recipesByFamily": {
+          "open_sandwich": [
+            "R24"
+          ],
+          "wrap": [
+            "R08",
+            "R08"
+          ],
+          "pulse_salad": [
+            "R23",
+            "R23"
+          ],
+          "cracker_plate": [
+            "R25"
+          ],
+          "rice_bowl": [
+            "R26",
+            "R26"
+          ],
+          "stuffed_vegetables": [
+            "R35"
+          ]
+        },
+        "maxFamilyFrequency": 2,
+        "adjacent": 0,
+        "familyCollisions": 3,
+        "recipeCollisions": 3
+      },
+      "after": {
+        "slots": 9,
+        "portions": 9,
+        "distinctRecipes": 6,
+        "distinctFamilies": 6,
+        "recipeIds": [
+          "R08",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R35"
+        ],
+        "familyIds": [
+          "cracker_plate",
+          "open_sandwich",
+          "pulse_salad",
+          "rice_bowl",
+          "stuffed_vegetables",
+          "wrap"
+        ],
+        "familyFrequencies": {
+          "open_sandwich": 1,
+          "wrap": 2,
+          "pulse_salad": 2,
+          "cracker_plate": 1,
+          "rice_bowl": 2,
+          "stuffed_vegetables": 1
+        },
+        "recipeFrequencies": {
+          "R24": 1,
+          "R08": 2,
+          "R23": 2,
+          "R25": 1,
+          "R26": 2,
+          "R35": 1
+        },
+        "recipesByFamily": {
+          "open_sandwich": [
+            "R24"
+          ],
+          "wrap": [
+            "R08",
+            "R08"
+          ],
+          "pulse_salad": [
+            "R23",
+            "R23"
+          ],
+          "cracker_plate": [
+            "R25"
+          ],
+          "rice_bowl": [
+            "R26",
+            "R26"
+          ],
+          "stuffed_vegetables": [
+            "R35"
+          ]
+        },
+        "maxFamilyFrequency": 2,
+        "adjacent": 0,
+        "familyCollisions": 3,
+        "recipeCollisions": 3
+      },
+      "effect": {
+        "broader": false,
+        "moreBalanced": false,
+        "betterSpacing": false,
+        "recipeVariants": false,
+        "sameFamilyMix": true,
+        "addedFamilies": [],
+        "removedFamilies": [],
+        "variantFamilies": [],
+        "reorderedFamilies": []
+      }
+    }
+  },
+  "improveVariety": {
+    "beforeScore": [
+      102,
+      17,
+      67
+    ],
+    "afterScore": [
+      101,
+      9,
+      66
+    ],
+    "households": [
+      {
+        "id": "H01",
+        "breakfast": {
+          "before": {
+            "slots": 6,
+            "portions": 6,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R17",
+              "R18",
+              "R20"
+            ],
+            "familyIds": [
+              "cereal_bowl",
+              "fruit_salad",
+              "muesli",
+              "open_sandwich"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 3,
+              "fruit_salad": 1,
+              "cereal_bowl": 1,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 3,
+              "R20": 1,
+              "R17": 1,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02",
+                "R02"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cereal_bowl": [
+                "R17"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 3
+          },
+          "after": {
+            "slots": 6,
+            "portions": 6,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R17",
+              "R18",
+              "R20"
+            ],
+            "familyIds": [
+              "cereal_bowl",
+              "fruit_salad",
+              "muesli",
+              "open_sandwich"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 3,
+              "fruit_salad": 1,
+              "cereal_bowl": 1,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 3,
+              "R20": 1,
+              "R17": 1,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02",
+                "R02"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cereal_bowl": [
+                "R17"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 3
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 9,
+            "portions": 9,
+            "distinctRecipes": 6,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R08",
+              "R23",
+              "R24",
+              "R25",
+              "R26",
+              "R35"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "open_sandwich",
+              "pulse_salad",
+              "rice_bowl",
+              "stuffed_vegetables",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "wrap": 2,
+              "pulse_salad": 2,
+              "cracker_plate": 1,
+              "rice_bowl": 2,
+              "stuffed_vegetables": 1
+            },
+            "recipeFrequencies": {
+              "R24": 1,
+              "R08": 2,
+              "R23": 2,
+              "R25": 1,
+              "R26": 2,
+              "R35": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R24"
+              ],
+              "wrap": [
+                "R08",
+                "R08"
+              ],
+              "pulse_salad": [
+                "R23",
+                "R23"
+              ],
+              "cracker_plate": [
+                "R25"
+              ],
+              "rice_bowl": [
+                "R26",
+                "R26"
+              ],
+              "stuffed_vegetables": [
+                "R35"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 3
+          },
+          "after": {
+            "slots": 9,
+            "portions": 9,
+            "distinctRecipes": 7,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R08",
+              "R23",
+              "R24",
+              "R25",
+              "R26",
+              "R27",
+              "R35"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "open_sandwich",
+              "pulse_salad",
+              "rice_bowl",
+              "stuffed_vegetables",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "rice_bowl": 2,
+              "pulse_salad": 2,
+              "cracker_plate": 1,
+              "stuffed_vegetables": 1,
+              "wrap": 2
+            },
+            "recipeFrequencies": {
+              "R24": 1,
+              "R26": 2,
+              "R23": 2,
+              "R25": 1,
+              "R35": 1,
+              "R08": 1,
+              "R27": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R24"
+              ],
+              "rice_bowl": [
+                "R26",
+                "R26"
+              ],
+              "pulse_salad": [
+                "R23",
+                "R23"
+              ],
+              "cracker_plate": [
+                "R25"
+              ],
+              "stuffed_vegetables": [
+                "R35"
+              ],
+              "wrap": [
+                "R08",
+                "R27"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 2
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": true,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [
+              "wrap"
+            ],
+            "reorderedFamilies": []
+          }
+        }
+      },
+      {
+        "id": "H02",
+        "breakfast": {
+          "before": {
+            "slots": 7,
+            "portions": 14,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R04",
+              "R17",
+              "R20"
+            ],
+            "familyIds": [
+              "cereal_bowl",
+              "couscous_bowl",
+              "fruit_salad",
+              "open_sandwich"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "couscous_bowl": 4,
+              "fruit_salad": 1,
+              "cereal_bowl": 1
+            },
+            "recipeFrequencies": {
+              "R02": 1,
+              "R04": 4,
+              "R20": 1,
+              "R17": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02"
+              ],
+              "couscous_bowl": [
+                "R04",
+                "R04",
+                "R04",
+                "R04"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cereal_bowl": [
+                "R17"
+              ]
+            },
+            "maxFamilyFrequency": 4,
+            "adjacent": 2,
+            "familyCollisions": 6,
+            "recipeCollisions": 6
+          },
+          "after": {
+            "slots": 7,
+            "portions": 14,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R04",
+              "R17",
+              "R20"
+            ],
+            "familyIds": [
+              "cereal_bowl",
+              "couscous_bowl",
+              "fruit_salad",
+              "open_sandwich"
+            ],
+            "familyFrequencies": {
+              "couscous_bowl": 4,
+              "fruit_salad": 1,
+              "cereal_bowl": 1,
+              "open_sandwich": 1
+            },
+            "recipeFrequencies": {
+              "R04": 4,
+              "R20": 1,
+              "R17": 1,
+              "R02": 1
+            },
+            "recipesByFamily": {
+              "couscous_bowl": [
+                "R04",
+                "R04",
+                "R04",
+                "R04"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cereal_bowl": [
+                "R17"
+              ],
+              "open_sandwich": [
+                "R02"
+              ]
+            },
+            "maxFamilyFrequency": 4,
+            "adjacent": 1,
+            "familyCollisions": 6,
+            "recipeCollisions": 6
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": true,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 9,
+            "portions": 18,
+            "distinctRecipes": 6,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R05",
+              "R06",
+              "R07",
+              "R08",
+              "R24",
+              "R40"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "open_sandwich",
+              "pulse_salad",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 2,
+              "open_sandwich": 1,
+              "couscous_bowl": 3,
+              "wrap": 3
+            },
+            "recipeFrequencies": {
+              "R06": 2,
+              "R24": 1,
+              "R05": 2,
+              "R07": 2,
+              "R08": 1,
+              "R40": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06",
+                "R06"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "couscous_bowl": [
+                "R05",
+                "R40",
+                "R05"
+              ],
+              "wrap": [
+                "R07",
+                "R08",
+                "R07"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 7,
+            "recipeCollisions": 3
+          },
+          "after": {
+            "slots": 9,
+            "portions": 18,
+            "distinctRecipes": 6,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R05",
+              "R06",
+              "R07",
+              "R08",
+              "R24",
+              "R40"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "open_sandwich",
+              "pulse_salad",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "wrap": 3,
+              "open_sandwich": 1,
+              "couscous_bowl": 3,
+              "pulse_salad": 2
+            },
+            "recipeFrequencies": {
+              "R07": 2,
+              "R24": 1,
+              "R05": 2,
+              "R06": 2,
+              "R08": 1,
+              "R40": 1
+            },
+            "recipesByFamily": {
+              "wrap": [
+                "R07",
+                "R08",
+                "R07"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "couscous_bowl": [
+                "R05",
+                "R40",
+                "R05"
+              ],
+              "pulse_salad": [
+                "R06",
+                "R06"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 0,
+            "familyCollisions": 7,
+            "recipeCollisions": 3
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": true,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        }
+      },
+      {
+        "id": "H03",
+        "breakfast": {
+          "before": {
+            "slots": 5,
+            "portions": 15,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R01",
+              "R02",
+              "R03",
+              "R22"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "porridge",
+              "rice_pudding",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "yogurt_bowl": 2,
+              "porridge": 1,
+              "rice_pudding": 1
+            },
+            "recipeFrequencies": {
+              "R02": 1,
+              "R03": 2,
+              "R01": 1,
+              "R22": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "porridge": [
+                "R01"
+              ],
+              "rice_pudding": [
+                "R22"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 1,
+            "recipeCollisions": 1
+          },
+          "after": {
+            "slots": 5,
+            "portions": 15,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R01",
+              "R02",
+              "R03",
+              "R22"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "porridge",
+              "rice_pudding",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "yogurt_bowl": 2,
+              "porridge": 1,
+              "rice_pudding": 1
+            },
+            "recipeFrequencies": {
+              "R02": 1,
+              "R03": 2,
+              "R01": 1,
+              "R22": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "porridge": [
+                "R01"
+              ],
+              "rice_pudding": [
+                "R22"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 1,
+            "recipeCollisions": 1
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 9,
+            "portions": 27,
+            "distinctRecipes": 7,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R08",
+              "R13",
+              "R15",
+              "R24",
+              "R26"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "open_sandwich": 1,
+              "potato_bowl": 3,
+              "soup": 1,
+              "wrap": 2,
+              "rice_bowl": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R24": 1,
+              "R13": 3,
+              "R15": 1,
+              "R07": 1,
+              "R08": 1,
+              "R26": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "potato_bowl": [
+                "R13",
+                "R13",
+                "R13"
+              ],
+              "soup": [
+                "R15"
+              ],
+              "wrap": [
+                "R07",
+                "R08"
+              ],
+              "rice_bowl": [
+                "R26"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 2,
+            "familyCollisions": 4,
+            "recipeCollisions": 3
+          },
+          "after": {
+            "slots": 9,
+            "portions": 27,
+            "distinctRecipes": 7,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R08",
+              "R13",
+              "R15",
+              "R24",
+              "R26"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "open_sandwich": 1,
+              "potato_bowl": 3,
+              "soup": 1,
+              "wrap": 2,
+              "rice_bowl": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R24": 1,
+              "R13": 3,
+              "R15": 1,
+              "R08": 1,
+              "R26": 1,
+              "R07": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "potato_bowl": [
+                "R13",
+                "R13",
+                "R13"
+              ],
+              "soup": [
+                "R15"
+              ],
+              "wrap": [
+                "R08",
+                "R07"
+              ],
+              "rice_bowl": [
+                "R26"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 0,
+            "familyCollisions": 4,
+            "recipeCollisions": 3
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": true,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": [
+              "wrap"
+            ]
+          }
+        }
+      },
+      {
+        "id": "H04",
+        "breakfast": {
+          "before": {
+            "slots": 7,
+            "portions": 7,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R01",
+              "R03",
+              "R18",
+              "R20"
+            ],
+            "familyIds": [
+              "fruit_salad",
+              "muesli",
+              "porridge",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "yogurt_bowl": 2,
+              "porridge": 3,
+              "muesli": 1,
+              "fruit_salad": 1
+            },
+            "recipeFrequencies": {
+              "R03": 2,
+              "R01": 3,
+              "R18": 1,
+              "R20": 1
+            },
+            "recipesByFamily": {
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "porridge": [
+                "R01",
+                "R01",
+                "R01"
+              ],
+              "muesli": [
+                "R18"
+              ],
+              "fruit_salad": [
+                "R20"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "after": {
+            "slots": 7,
+            "portions": 7,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R01",
+              "R03",
+              "R18",
+              "R20"
+            ],
+            "familyIds": [
+              "fruit_salad",
+              "muesli",
+              "porridge",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "yogurt_bowl": 2,
+              "porridge": 3,
+              "muesli": 1,
+              "fruit_salad": 1
+            },
+            "recipeFrequencies": {
+              "R03": 2,
+              "R01": 3,
+              "R18": 1,
+              "R20": 1
+            },
+            "recipesByFamily": {
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "porridge": [
+                "R01",
+                "R01",
+                "R01"
+              ],
+              "muesli": [
+                "R18"
+              ],
+              "fruit_salad": [
+                "R20"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 14,
+            "portions": 14,
+            "distinctRecipes": 9,
+            "distinctFamilies": 7,
+            "recipeIds": [
+              "R06",
+              "R10",
+              "R11",
+              "R15",
+              "R31",
+              "R32",
+              "R33",
+              "R35",
+              "R39"
+            ],
+            "familyIds": [
+              "pasta",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "stew",
+              "stuffed_vegetables"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "pasta": 4,
+              "rice_bowl": 1,
+              "soup": 3,
+              "stew": 1,
+              "potato_bowl": 3,
+              "stuffed_vegetables": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R33": 1,
+              "R11": 1,
+              "R10": 3,
+              "R15": 1,
+              "R31": 2,
+              "R32": 1,
+              "R39": 3,
+              "R35": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "pasta": [
+                "R33",
+                "R10",
+                "R10",
+                "R10"
+              ],
+              "rice_bowl": [
+                "R11"
+              ],
+              "soup": [
+                "R15",
+                "R31",
+                "R31"
+              ],
+              "stew": [
+                "R32"
+              ],
+              "potato_bowl": [
+                "R39",
+                "R39",
+                "R39"
+              ],
+              "stuffed_vegetables": [
+                "R35"
+              ]
+            },
+            "maxFamilyFrequency": 4,
+            "adjacent": 1,
+            "familyCollisions": 12,
+            "recipeCollisions": 7
+          },
+          "after": {
+            "slots": 14,
+            "portions": 14,
+            "distinctRecipes": 9,
+            "distinctFamilies": 7,
+            "recipeIds": [
+              "R06",
+              "R10",
+              "R11",
+              "R15",
+              "R31",
+              "R32",
+              "R33",
+              "R35",
+              "R39"
+            ],
+            "familyIds": [
+              "pasta",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "stew",
+              "stuffed_vegetables"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "pasta": 4,
+              "rice_bowl": 1,
+              "soup": 2,
+              "stew": 2,
+              "potato_bowl": 3,
+              "stuffed_vegetables": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R33": 1,
+              "R11": 1,
+              "R10": 3,
+              "R15": 1,
+              "R31": 1,
+              "R32": 2,
+              "R39": 3,
+              "R35": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "pasta": [
+                "R33",
+                "R10",
+                "R10",
+                "R10"
+              ],
+              "rice_bowl": [
+                "R11"
+              ],
+              "soup": [
+                "R15",
+                "R31"
+              ],
+              "stew": [
+                "R32",
+                "R32"
+              ],
+              "potato_bowl": [
+                "R39",
+                "R39",
+                "R39"
+              ],
+              "stuffed_vegetables": [
+                "R35"
+              ]
+            },
+            "maxFamilyFrequency": 4,
+            "adjacent": 1,
+            "familyCollisions": 11,
+            "recipeCollisions": 7
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": true,
+            "betterSpacing": false,
+            "recipeVariants": true,
+            "sameFamilyMix": false,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [
+              "soup"
+            ],
+            "reorderedFamilies": []
+          }
+        }
+      },
+      {
+        "id": "H05",
+        "breakfast": {
+          "before": {
+            "slots": 5,
+            "portions": 20,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R18",
+              "R19",
+              "R21"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "muesli",
+              "open_sandwich",
+              "porridge"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "porridge": 1,
+              "cracker_plate": 1,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R21": 1,
+              "R19": 1,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "porridge": [
+                "R21"
+              ],
+              "cracker_plate": [
+                "R19"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 1,
+            "recipeCollisions": 1
+          },
+          "after": {
+            "slots": 5,
+            "portions": 20,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R18",
+              "R19",
+              "R21"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "muesli",
+              "open_sandwich",
+              "porridge"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "porridge": 1,
+              "cracker_plate": 1,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R21": 1,
+              "R19": 1,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "porridge": [
+                "R21"
+              ],
+              "cracker_plate": [
+                "R19"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 1,
+            "recipeCollisions": 1
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 13,
+            "portions": 52,
+            "distinctRecipes": 9,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R10",
+              "R11",
+              "R12",
+              "R15",
+              "R31",
+              "R32",
+              "R33",
+              "R39"
+            ],
+            "familyIds": [
+              "pasta",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "stew"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "pasta": 3,
+              "rice_bowl": 5,
+              "soup": 2,
+              "potato_bowl": 1,
+              "stew": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R33": 1,
+              "R11": 1,
+              "R12": 4,
+              "R10": 2,
+              "R15": 1,
+              "R39": 1,
+              "R31": 1,
+              "R32": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "pasta": [
+                "R33",
+                "R10",
+                "R10"
+              ],
+              "rice_bowl": [
+                "R11",
+                "R12",
+                "R12",
+                "R12",
+                "R12"
+              ],
+              "soup": [
+                "R15",
+                "R31"
+              ],
+              "potato_bowl": [
+                "R39"
+              ],
+              "stew": [
+                "R32"
+              ]
+            },
+            "maxFamilyFrequency": 5,
+            "adjacent": 2,
+            "familyCollisions": 14,
+            "recipeCollisions": 7
+          },
+          "after": {
+            "slots": 13,
+            "portions": 52,
+            "distinctRecipes": 9,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R10",
+              "R11",
+              "R12",
+              "R15",
+              "R31",
+              "R32",
+              "R33",
+              "R39"
+            ],
+            "familyIds": [
+              "pasta",
+              "potato_bowl",
+              "pulse_salad",
+              "rice_bowl",
+              "soup",
+              "stew"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 1,
+              "pasta": 3,
+              "rice_bowl": 5,
+              "soup": 2,
+              "potato_bowl": 1,
+              "stew": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R33": 1,
+              "R11": 1,
+              "R12": 4,
+              "R10": 2,
+              "R15": 1,
+              "R39": 1,
+              "R31": 1,
+              "R32": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06"
+              ],
+              "pasta": [
+                "R33",
+                "R10",
+                "R10"
+              ],
+              "rice_bowl": [
+                "R11",
+                "R12",
+                "R12",
+                "R12",
+                "R12"
+              ],
+              "soup": [
+                "R15",
+                "R31"
+              ],
+              "potato_bowl": [
+                "R39"
+              ],
+              "stew": [
+                "R32"
+              ]
+            },
+            "maxFamilyFrequency": 5,
+            "adjacent": 2,
+            "familyCollisions": 14,
+            "recipeCollisions": 7
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        }
+      },
+      {
+        "id": "H06",
+        "breakfast": {
+          "before": {
+            "slots": 6,
+            "portions": 12,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R03",
+              "R19",
+              "R20"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "fruit_salad",
+              "open_sandwich",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "yogurt_bowl": 2,
+              "fruit_salad": 1,
+              "cracker_plate": 1
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R03": 2,
+              "R20": 1,
+              "R19": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cracker_plate": [
+                "R19"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 2,
+            "recipeCollisions": 2
+          },
+          "after": {
+            "slots": 6,
+            "portions": 12,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R03",
+              "R19",
+              "R20"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "fruit_salad",
+              "open_sandwich",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "yogurt_bowl": 2,
+              "fruit_salad": 1,
+              "cracker_plate": 1
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R03": 2,
+              "R20": 1,
+              "R19": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "fruit_salad": [
+                "R20"
+              ],
+              "cracker_plate": [
+                "R19"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 2,
+            "recipeCollisions": 2
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 9,
+            "portions": 18,
+            "distinctRecipes": 7,
+            "distinctFamilies": 5,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R11",
+              "R23",
+              "R24",
+              "R25",
+              "R28"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "open_sandwich",
+              "pulse_salad",
+              "rice_bowl",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 3,
+              "open_sandwich": 1,
+              "rice_bowl": 2,
+              "wrap": 1,
+              "cracker_plate": 2
+            },
+            "recipeFrequencies": {
+              "R06": 2,
+              "R24": 1,
+              "R11": 2,
+              "R07": 1,
+              "R23": 1,
+              "R28": 1,
+              "R25": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06",
+                "R23",
+                "R06"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "rice_bowl": [
+                "R11",
+                "R11"
+              ],
+              "wrap": [
+                "R07"
+              ],
+              "cracker_plate": [
+                "R28",
+                "R25"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 5,
+            "recipeCollisions": 2
+          },
+          "after": {
+            "slots": 9,
+            "portions": 18,
+            "distinctRecipes": 7,
+            "distinctFamilies": 5,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R11",
+              "R23",
+              "R24",
+              "R25",
+              "R28"
+            ],
+            "familyIds": [
+              "cracker_plate",
+              "open_sandwich",
+              "pulse_salad",
+              "rice_bowl",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 3,
+              "cracker_plate": 2,
+              "rice_bowl": 2,
+              "wrap": 1,
+              "open_sandwich": 1
+            },
+            "recipeFrequencies": {
+              "R06": 2,
+              "R25": 1,
+              "R11": 2,
+              "R07": 1,
+              "R23": 1,
+              "R28": 1,
+              "R24": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06",
+                "R23",
+                "R06"
+              ],
+              "cracker_plate": [
+                "R25",
+                "R28"
+              ],
+              "rice_bowl": [
+                "R11",
+                "R11"
+              ],
+              "wrap": [
+                "R07"
+              ],
+              "open_sandwich": [
+                "R24"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 0,
+            "familyCollisions": 5,
+            "recipeCollisions": 2
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": true,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": [
+              "cracker_plate"
+            ]
+          }
+        }
+      },
+      {
+        "id": "H07",
+        "breakfast": {
+          "before": {
+            "slots": 7,
+            "portions": 14,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R03",
+              "R04",
+              "R18"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "muesli",
+              "open_sandwich",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "yogurt_bowl": 2,
+              "couscous_bowl": 3,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 1,
+              "R03": 2,
+              "R04": 3,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "couscous_bowl": [
+                "R04",
+                "R04",
+                "R04"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "after": {
+            "slots": 7,
+            "portions": 14,
+            "distinctRecipes": 4,
+            "distinctFamilies": 4,
+            "recipeIds": [
+              "R02",
+              "R03",
+              "R04",
+              "R18"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "muesli",
+              "open_sandwich",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 1,
+              "yogurt_bowl": 2,
+              "couscous_bowl": 3,
+              "muesli": 1
+            },
+            "recipeFrequencies": {
+              "R02": 1,
+              "R03": 2,
+              "R04": 3,
+              "R18": 1
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03",
+                "R03"
+              ],
+              "couscous_bowl": [
+                "R04",
+                "R04",
+                "R04"
+              ],
+              "muesli": [
+                "R18"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 13,
+            "portions": 26,
+            "distinctRecipes": 7,
+            "distinctFamilies": 5,
+            "recipeIds": [
+              "R05",
+              "R06",
+              "R07",
+              "R09",
+              "R24",
+              "R36",
+              "R40"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "open_sandwich",
+              "pulse_salad",
+              "toastie",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "toastie": 8,
+              "pulse_salad": 1,
+              "open_sandwich": 1,
+              "couscous_bowl": 2,
+              "wrap": 1
+            },
+            "recipeFrequencies": {
+              "R09": 6,
+              "R06": 1,
+              "R24": 1,
+              "R05": 1,
+              "R36": 2,
+              "R07": 1,
+              "R40": 1
+            },
+            "recipesByFamily": {
+              "toastie": [
+                "R09",
+                "R36",
+                "R36",
+                "R09",
+                "R09",
+                "R09",
+                "R09",
+                "R09"
+              ],
+              "pulse_salad": [
+                "R06"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "couscous_bowl": [
+                "R05",
+                "R40"
+              ],
+              "wrap": [
+                "R07"
+              ]
+            },
+            "maxFamilyFrequency": 8,
+            "adjacent": 5,
+            "familyCollisions": 29,
+            "recipeCollisions": 16
+          },
+          "after": {
+            "slots": 13,
+            "portions": 26,
+            "distinctRecipes": 7,
+            "distinctFamilies": 5,
+            "recipeIds": [
+              "R05",
+              "R06",
+              "R07",
+              "R09",
+              "R24",
+              "R36",
+              "R40"
+            ],
+            "familyIds": [
+              "couscous_bowl",
+              "open_sandwich",
+              "pulse_salad",
+              "toastie",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "toastie": 8,
+              "pulse_salad": 1,
+              "couscous_bowl": 2,
+              "open_sandwich": 1,
+              "wrap": 1
+            },
+            "recipeFrequencies": {
+              "R09": 6,
+              "R06": 1,
+              "R05": 1,
+              "R36": 2,
+              "R40": 1,
+              "R24": 1,
+              "R07": 1
+            },
+            "recipesByFamily": {
+              "toastie": [
+                "R09",
+                "R09",
+                "R36",
+                "R09",
+                "R36",
+                "R09",
+                "R09",
+                "R09"
+              ],
+              "pulse_salad": [
+                "R06"
+              ],
+              "couscous_bowl": [
+                "R05",
+                "R40"
+              ],
+              "open_sandwich": [
+                "R24"
+              ],
+              "wrap": [
+                "R07"
+              ]
+            },
+            "maxFamilyFrequency": 8,
+            "adjacent": 2,
+            "familyCollisions": 29,
+            "recipeCollisions": 16
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": true,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": [
+              "toastie"
+            ]
+          }
+        }
+      },
+      {
+        "id": "H08",
+        "breakfast": {
+          "before": {
+            "slots": 6,
+            "portions": 18,
+            "distinctRecipes": 3,
+            "distinctFamilies": 3,
+            "recipeIds": [
+              "R01",
+              "R02",
+              "R03"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "porridge",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "yogurt_bowl": 1,
+              "porridge": 3
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R03": 1,
+              "R01": 3
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03"
+              ],
+              "porridge": [
+                "R01",
+                "R01",
+                "R01"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "after": {
+            "slots": 6,
+            "portions": 18,
+            "distinctRecipes": 3,
+            "distinctFamilies": 3,
+            "recipeIds": [
+              "R01",
+              "R02",
+              "R03"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "porridge",
+              "yogurt_bowl"
+            ],
+            "familyFrequencies": {
+              "open_sandwich": 2,
+              "yogurt_bowl": 1,
+              "porridge": 3
+            },
+            "recipeFrequencies": {
+              "R02": 2,
+              "R03": 1,
+              "R01": 3
+            },
+            "recipesByFamily": {
+              "open_sandwich": [
+                "R02",
+                "R02"
+              ],
+              "yogurt_bowl": [
+                "R03"
+              ],
+              "porridge": [
+                "R01",
+                "R01",
+                "R01"
+              ]
+            },
+            "maxFamilyFrequency": 3,
+            "adjacent": 1,
+            "familyCollisions": 4,
+            "recipeCollisions": 4
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        },
+        "main": {
+          "before": {
+            "slots": 9,
+            "portions": 27,
+            "distinctRecipes": 8,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R08",
+              "R13",
+              "R14",
+              "R15",
+              "R23",
+              "R24"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "potato_bowl",
+              "pulse_salad",
+              "soup",
+              "tray_roast",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 2,
+              "potato_bowl": 1,
+              "soup": 1,
+              "tray_roast": 2,
+              "wrap": 2,
+              "open_sandwich": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R13": 1,
+              "R15": 1,
+              "R14": 2,
+              "R08": 1,
+              "R23": 1,
+              "R07": 1,
+              "R24": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06",
+                "R23"
+              ],
+              "potato_bowl": [
+                "R13"
+              ],
+              "soup": [
+                "R15"
+              ],
+              "tray_roast": [
+                "R14",
+                "R14"
+              ],
+              "wrap": [
+                "R08",
+                "R07"
+              ],
+              "open_sandwich": [
+                "R24"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 1
+          },
+          "after": {
+            "slots": 9,
+            "portions": 27,
+            "distinctRecipes": 8,
+            "distinctFamilies": 6,
+            "recipeIds": [
+              "R06",
+              "R07",
+              "R08",
+              "R13",
+              "R14",
+              "R15",
+              "R23",
+              "R24"
+            ],
+            "familyIds": [
+              "open_sandwich",
+              "potato_bowl",
+              "pulse_salad",
+              "soup",
+              "tray_roast",
+              "wrap"
+            ],
+            "familyFrequencies": {
+              "pulse_salad": 2,
+              "potato_bowl": 1,
+              "soup": 1,
+              "tray_roast": 2,
+              "wrap": 2,
+              "open_sandwich": 1
+            },
+            "recipeFrequencies": {
+              "R06": 1,
+              "R13": 1,
+              "R15": 1,
+              "R14": 2,
+              "R08": 1,
+              "R23": 1,
+              "R07": 1,
+              "R24": 1
+            },
+            "recipesByFamily": {
+              "pulse_salad": [
+                "R06",
+                "R23"
+              ],
+              "potato_bowl": [
+                "R13"
+              ],
+              "soup": [
+                "R15"
+              ],
+              "tray_roast": [
+                "R14",
+                "R14"
+              ],
+              "wrap": [
+                "R08",
+                "R07"
+              ],
+              "open_sandwich": [
+                "R24"
+              ]
+            },
+            "maxFamilyFrequency": 2,
+            "adjacent": 0,
+            "familyCollisions": 3,
+            "recipeCollisions": 1
+          },
+          "effect": {
+            "broader": false,
+            "moreBalanced": false,
+            "betterSpacing": false,
+            "recipeVariants": false,
+            "sameFamilyMix": true,
+            "addedFamilies": [],
+            "removedFamilies": [],
+            "variantFamilies": [],
+            "reorderedFamilies": []
+          }
+        }
+      }
+    ],
+    "changes": {
+      "deltas": [
+        {
+          "householdId": "H01",
+          "before": 15,
+          "after": 15,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H02",
+          "before": 32,
+          "after": 32,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H03",
+          "before": 42,
+          "after": 42,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H04",
+          "before": 21,
+          "after": 21,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H05",
+          "before": 72,
+          "after": 72,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H06",
+          "before": 30,
+          "after": 30,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H07",
+          "before": 40,
+          "after": 40,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H08",
+          "before": 45,
+          "after": 45,
+          "delta": 0,
+          "percentagePoints": 0
+        }
+      ],
+      "filled": [],
+      "lost": [],
+      "changed": [
+        {
+          "householdId": "H02",
+          "day": 0,
+          "meal": "breakfast",
+          "fromRecipeId": "R02",
+          "toRecipeId": "R04",
+          "fromMethodId": "R02-cold",
+          "toMethodId": "R04-kettle",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H02",
+          "day": 0,
+          "meal": "lunch",
+          "fromRecipeId": "R06",
+          "toRecipeId": "R07",
+          "fromMethodId": "R06-cold",
+          "toMethodId": "R07-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H01",
+          "day": 0,
+          "meal": "dinner",
+          "fromRecipeId": "R08",
+          "toRecipeId": "R26",
+          "fromMethodId": "R08-cold",
+          "toMethodId": "R26-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H06",
+          "day": 0,
+          "meal": "dinner",
+          "fromRecipeId": "R24",
+          "toRecipeId": "R25",
+          "fromMethodId": "R24-cold",
+          "toMethodId": "R25-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H07",
+          "day": 1,
+          "meal": "lunch",
+          "fromRecipeId": "R24",
+          "toRecipeId": "R09",
+          "fromMethodId": "R24-cold",
+          "toMethodId": "R09-press",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H02",
+          "day": 1,
+          "meal": "dinner",
+          "fromRecipeId": "R07",
+          "toRecipeId": "R06",
+          "fromMethodId": "R07-cold",
+          "toMethodId": "R06-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H03",
+          "day": 2,
+          "meal": "lunch",
+          "fromRecipeId": "R07",
+          "toRecipeId": "R13",
+          "fromMethodId": "R07-cold",
+          "toMethodId": "R13-microwave",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H07",
+          "day": 2,
+          "meal": "dinner",
+          "fromRecipeId": "R07",
+          "toRecipeId": "R09",
+          "fromMethodId": "R07-cold",
+          "toMethodId": "R09-press",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H06",
+          "day": 3,
+          "meal": "lunch",
+          "fromRecipeId": "R25",
+          "toRecipeId": "R24",
+          "fromMethodId": "R25-cold",
+          "toMethodId": "R24-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H03",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R13",
+          "toRecipeId": "R07",
+          "fromMethodId": "R13-microwave",
+          "toMethodId": "R07-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H01",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R26",
+          "toRecipeId": "R27",
+          "fromMethodId": "R26-cold",
+          "toMethodId": "R27-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H07",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R09",
+          "toRecipeId": "R24",
+          "fromMethodId": "R09-press",
+          "toMethodId": "R24-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H02",
+          "day": 5,
+          "meal": "breakfast",
+          "fromRecipeId": "R04",
+          "toRecipeId": "R02",
+          "fromMethodId": "R04-kettle",
+          "toMethodId": "R02-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H07",
+          "day": 5,
+          "meal": "lunch",
+          "fromRecipeId": "R09",
+          "toRecipeId": "R07",
+          "fromMethodId": "R09-press",
+          "toMethodId": "R07-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H04",
+          "day": 5,
+          "meal": "dinner",
+          "fromRecipeId": "R31",
+          "toRecipeId": "R32",
+          "fromMethodId": "R31-hob",
+          "toMethodId": "R32-hob",
+          "fromPortions": 1,
+          "toPortions": 1
+        }
+      ]
+    },
+    "validation": []
+  },
+  "receiptBranches": [
+    {
+      "offered": {
+        "mode": "If received as entered",
+        "key": "1bo3beu-scfjf4",
+        "baseline": "alloc-16izyjp-qgqs6z",
+        "status": "approved",
+        "offeredPouches": 12,
+        "recommended": "keep",
+        "keep": "alloc-tvn1x1-sdzkg3",
+        "coverage": "alloc-1oojqrj-19bli07"
+      },
+      "mode": "Actual receipt draft",
+      "key": "1qm0s4m-1lj3bgs",
+      "appliedPouches": 12,
+      "receipt": {
+        "lot": {
+          "id": "pasted-demo-chickpeas-row-1",
+          "ingredientId": "ready_chickpeas",
+          "quantityBaseUnits": 2400,
+          "packageSize": 200,
+          "packageCount": 12,
+          "canRepack": false,
+          "requiresCanOpener": false,
+          "packageKind": "packet",
+          "availableFromDay": 0,
+          "usableThroughDay": 6,
+          "storage": "ambient",
+          "afterOpening": "fridge",
+          "received": true,
+          "sourceOfferId": "pasted-demo-chickpeas",
+          "reviewStatus": "demo",
+          "provenance": "Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15"
+        },
+        "unit": "g"
+      },
+      "rule": "approved-meals-first-v1",
+      "baselineDigest": "alloc-16izyjp-qgqs6z",
+      "baselineStatus": "approved",
+      "recommended": "keep",
+      "selected": "keep",
+      "keep": {
+        "portions": 309,
+        "filledSlots": 139,
+        "counts": {
+          "filled": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-s5to46-embbak",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/approved/keep",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-d5vws2-152g858"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-tvn1x1-sdzkg3",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 1200,
+          "delta": 1200,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "lunch",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      },
+      "coverage": {
+        "portions": 310,
+        "filledSlots": 140,
+        "counts": {
+          "filled": 8,
+          "removed": 2,
+          "changed": 28,
+          "unchanged": 104
+        },
+        "recipeOrMethodChanges": 27,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 16,
+            "delta": 1,
+            "percentagePoints": 4.761904761904756
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 36,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 45,
+            "delta": 3,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 42,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 48,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-s5to46-embbak",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/approved/coverage",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-g865h-1r40wvd"
+        },
+        "winner": "fresh-legacy",
+        "allocationDigest": "alloc-1oojqrj-19bli07",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H01",
+            "day": "Monday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Tuesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Wednesday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Apple and apricot muesli",
+              "method": "R18-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Rice and sardine stuffed tomatoes",
+              "method": "R35-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Sunflower and jam cracker plate",
+              "method": "R19-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple and apricot muesli",
+              "method": "R18-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Sunday",
+            "meal": "breakfast",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Lentil salad with bread",
+              "method": "R06-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Potato mash with peas",
+              "method": "R29-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Lentil salad with bread",
+              "method": "R06-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Couscous-stuffed pepper halves",
+              "method": "R30-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "removed",
+            "before": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            },
+            "after": null
+          },
+          {
+            "household": "H03",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple yogurt bowl",
+              "method": "R03-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Sunflower and jam cracker plate",
+              "method": "R19-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Rice and sardine stuffed tomatoes",
+              "method": "R35-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Red lentil and carrot soup",
+              "method": "R31-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Saturday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Red lentil and carrot soup",
+              "method": "R31-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Rice and beans",
+              "method": "R11-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Sunday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tomato pasta",
+              "method": "R10-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Sunday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Tomato pasta",
+              "method": "R10-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H06",
+            "day": "Wednesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beet and bean dip with crackers",
+              "method": "R28-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H06",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Rice and beans",
+              "method": "R11-cooker",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Crunchy cabbage and hummus wrap",
+              "method": "R27-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H07",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple and cheese tortilla pockets",
+              "method": "R36-sandwich_press",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H07",
+            "day": "Sunday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Cheese and tomato toastie",
+              "method": "R09-press",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Tuesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Vegetable soup and crackers",
+              "method": "R15-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Tuesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Vegetable soup and crackers",
+              "method": "R15-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Wednesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Wednesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Apple yogurt bowl",
+              "method": "R03-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Hummus and pepper open sandwiches",
+              "method": "R24-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "removed",
+            "before": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            },
+            "after": null
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 800,
+          "delta": 800,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "lunch",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "offered": {
+        "mode": "If received as entered",
+        "key": "1bo3beu-scfjf4",
+        "baseline": "alloc-16izyjp-qgqs6z",
+        "status": "approved",
+        "offeredPouches": 12,
+        "recommended": "keep",
+        "keep": "alloc-tvn1x1-sdzkg3",
+        "coverage": "alloc-1oojqrj-19bli07"
+      },
+      "mode": "Actual receipt draft",
+      "key": "1vmbbxk-1xszj4i",
+      "appliedPouches": 8,
+      "receipt": {
+        "lot": {
+          "id": "pasted-demo-chickpeas-row-1",
+          "ingredientId": "ready_chickpeas",
+          "quantityBaseUnits": 1600,
+          "packageSize": 200,
+          "packageCount": 8,
+          "canRepack": false,
+          "requiresCanOpener": false,
+          "packageKind": "packet",
+          "availableFromDay": 0,
+          "usableThroughDay": 6,
+          "storage": "ambient",
+          "afterOpening": "fridge",
+          "received": true,
+          "sourceOfferId": "pasted-demo-chickpeas",
+          "reviewStatus": "demo",
+          "provenance": "Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15"
+        },
+        "unit": "g"
+      },
+      "rule": "approved-meals-first-v1",
+      "baselineDigest": "alloc-16izyjp-qgqs6z",
+      "baselineStatus": "approved",
+      "recommended": "keep",
+      "selected": "keep",
+      "keep": {
+        "portions": 305,
+        "filledSlots": 137,
+        "counts": {
+          "filled": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 34,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-186i676-nwy0ty",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/approved/keep",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-1i6rlzj-1hk8ovx"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-8b3e2t-14iah39",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 400,
+          "delta": 400,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      },
+      "coverage": {
+        "portions": 305,
+        "filledSlots": 137,
+        "counts": {
+          "filled": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 34,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-186i676-nwy0ty",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/approved/coverage",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-1cl7oq8-1ifa5ns"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-8b3e2t-14iah39",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 400,
+          "delta": 400,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "offered": {
+        "mode": "If received as entered",
+        "key": "10ggf92-171ovds",
+        "baseline": "alloc-16izyjp-qgqs6z",
+        "status": "draft",
+        "offeredPouches": 12,
+        "recommended": "coverage",
+        "keep": "alloc-tvn1x1-sdzkg3",
+        "coverage": "alloc-1oojqrj-19bli07"
+      },
+      "mode": "Actual receipt draft",
+      "key": "3gc749-h21g0x",
+      "appliedPouches": 12,
+      "receipt": {
+        "lot": {
+          "id": "pasted-demo-chickpeas-row-1",
+          "ingredientId": "ready_chickpeas",
+          "quantityBaseUnits": 2400,
+          "packageSize": 200,
+          "packageCount": 12,
+          "canRepack": false,
+          "requiresCanOpener": false,
+          "packageKind": "packet",
+          "availableFromDay": 0,
+          "usableThroughDay": 6,
+          "storage": "ambient",
+          "afterOpening": "fridge",
+          "received": true,
+          "sourceOfferId": "pasted-demo-chickpeas",
+          "reviewStatus": "demo",
+          "provenance": "Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15"
+        },
+        "unit": "g"
+      },
+      "rule": "approved-meals-first-v1",
+      "baselineDigest": "alloc-16izyjp-qgqs6z",
+      "baselineStatus": "draft",
+      "recommended": "coverage",
+      "selected": "coverage",
+      "keep": {
+        "portions": 309,
+        "filledSlots": 139,
+        "counts": {
+          "filled": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 38,
+            "delta": 6,
+            "percentagePoints": 14.28571428571429
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-s5to46-embbak",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/draft/keep",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-1e2cxgu-1ohz4fm"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-tvn1x1-sdzkg3",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 1200,
+          "delta": 1200,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "lunch",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      },
+      "coverage": {
+        "portions": 310,
+        "filledSlots": 140,
+        "counts": {
+          "filled": 8,
+          "removed": 2,
+          "changed": 28,
+          "unchanged": 104
+        },
+        "recipeOrMethodChanges": 27,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 16,
+            "delta": 1,
+            "percentagePoints": 4.761904761904756
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 36,
+            "delta": 4,
+            "percentagePoints": 9.523809523809524
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 45,
+            "delta": 3,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 42,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 48,
+            "delta": 3,
+            "percentagePoints": 4.761904761904756
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-s5to46-embbak",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/draft/coverage",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-peyfbd-bvqhnr"
+        },
+        "winner": "fresh-legacy",
+        "allocationDigest": "alloc-1oojqrj-19bli07",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H01",
+            "day": "Monday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Tuesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Wednesday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Apple and apricot muesli",
+              "method": "R18-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Rice and sardine stuffed tomatoes",
+              "method": "R35-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Sunflower and jam cracker plate",
+              "method": "R19-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple and apricot muesli",
+              "method": "R18-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H01",
+            "day": "Sunday",
+            "meal": "breakfast",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Peanut butter and banana bread",
+              "method": "R02-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Lentil salad with bread",
+              "method": "R06-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Potato mash with peas",
+              "method": "R29-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Lentil salad with bread",
+              "method": "R06-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Couscous-stuffed pepper halves",
+              "method": "R30-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H02",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H03",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "removed",
+            "before": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            },
+            "after": null
+          },
+          {
+            "household": "H03",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple yogurt bowl",
+              "method": "R03-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Sunflower and jam cracker plate",
+              "method": "R19-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Rice and sardine stuffed tomatoes",
+              "method": "R35-cold",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Red lentil and carrot soup",
+              "method": "R31-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Saturday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Red lentil and carrot soup",
+              "method": "R31-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Rice and beans",
+              "method": "R11-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Sunday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tomato pasta",
+              "method": "R10-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H04",
+            "day": "Sunday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Cabbage and potato mash",
+              "method": "R39-hob",
+              "portions": 1
+            },
+            "after": {
+              "recipe": "Tomato pasta",
+              "method": "R10-hob",
+              "portions": 1
+            }
+          },
+          {
+            "household": "H06",
+            "day": "Wednesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beet and bean dip with crackers",
+              "method": "R28-cold",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Cold rice and pea bowl",
+              "method": "R26-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H06",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Rice and beans",
+              "method": "R11-cooker",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Crunchy cabbage and hummus wrap",
+              "method": "R27-cold",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H07",
+            "day": "Thursday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Apple and cheese tortilla pockets",
+              "method": "R36-sandwich_press",
+              "portions": 2
+            },
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H07",
+            "day": "Sunday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Cheese and tomato toastie",
+              "method": "R09-press",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Tuesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Vegetable soup and crackers",
+              "method": "R15-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Tuesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Vegetable soup and crackers",
+              "method": "R15-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Wednesday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Wednesday",
+            "meal": "dinner",
+            "kind": "changed",
+            "before": {
+              "recipe": "Beetroot and chickpea salad",
+              "method": "R23-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Thursday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Bean and corn tortilla",
+              "method": "R07-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Tuna cucumber wraps",
+              "method": "R08-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "breakfast",
+            "kind": "changed",
+            "before": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Apple yogurt bowl",
+              "method": "R03-cold",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "lunch",
+            "kind": "changed",
+            "before": {
+              "recipe": "Hummus and pepper open sandwiches",
+              "method": "R24-cold",
+              "portions": 3
+            },
+            "after": {
+              "recipe": "Potato with beans",
+              "method": "R13-microwave",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "breakfast",
+            "kind": "removed",
+            "before": {
+              "recipe": "Banana oatmeal",
+              "method": "R01-microwave",
+              "portions": 3
+            },
+            "after": null
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 800,
+          "delta": 800,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            },
+            {
+              "day": "Saturday",
+              "meal": "lunch",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "offered": {
+        "mode": "If received as entered",
+        "key": "10ggf92-171ovds",
+        "baseline": "alloc-16izyjp-qgqs6z",
+        "status": "draft",
+        "offeredPouches": 12,
+        "recommended": "coverage",
+        "keep": "alloc-tvn1x1-sdzkg3",
+        "coverage": "alloc-1oojqrj-19bli07"
+      },
+      "mode": "Actual receipt draft",
+      "key": "11zv2j2-a50lna",
+      "appliedPouches": 8,
+      "receipt": {
+        "lot": {
+          "id": "pasted-demo-chickpeas-row-1",
+          "ingredientId": "ready_chickpeas",
+          "quantityBaseUnits": 1600,
+          "packageSize": 200,
+          "packageCount": 8,
+          "canRepack": false,
+          "requiresCanOpener": false,
+          "packageKind": "packet",
+          "availableFromDay": 0,
+          "usableThroughDay": 6,
+          "storage": "ambient",
+          "afterOpening": "fridge",
+          "received": true,
+          "sourceOfferId": "pasted-demo-chickpeas",
+          "reviewStatus": "demo",
+          "provenance": "Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15"
+        },
+        "unit": "g"
+      },
+      "rule": "approved-meals-first-v1",
+      "baselineDigest": "alloc-16izyjp-qgqs6z",
+      "baselineStatus": "draft",
+      "recommended": "coverage",
+      "selected": "coverage",
+      "keep": {
+        "portions": 305,
+        "filledSlots": 137,
+        "counts": {
+          "filled": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 34,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-186i676-nwy0ty",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/draft/keep",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-1anmma1-18io32r"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-8b3e2t-14iah39",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 400,
+          "delta": 400,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      },
+      "coverage": {
+        "portions": 305,
+        "filledSlots": 137,
+        "counts": {
+          "filled": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 134
+        },
+        "recipeOrMethodChanges": 0,
+        "householdPortions": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 34,
+            "delta": 2,
+            "percentagePoints": 4.761904761904767
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 51,
+            "delta": 6,
+            "percentagePoints": 9.523809523809524
+          }
+        ],
+        "context": {
+          "snapshotFingerprint": "wk13-186i676-nwy0ty",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "approved-meals-first-v1/draft/coverage",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-j8jlxe-1gf3miu"
+        },
+        "winner": "extend",
+        "allocationDigest": "alloc-8b3e2t-14iah39",
+        "validation": [],
+        "meals": [
+          {
+            "household": "H02",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Chickpea couscous bowl",
+              "method": "R05-kettle",
+              "portions": 2
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Friday",
+            "meal": "dinner",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          },
+          {
+            "household": "H08",
+            "day": "Saturday",
+            "meal": "lunch",
+            "kind": "filled",
+            "before": null,
+            "after": {
+              "recipe": "Roasted potatoes and chickpeas",
+              "method": "R14-oven",
+              "portions": 3
+            }
+          }
+        ],
+        "fridayH02": {
+          "before": 0,
+          "after": 400,
+          "delta": 400,
+          "lines": [
+            {
+              "day": "Friday",
+              "meal": "dinner",
+              "recipeId": "R05",
+              "methodId": "R05-kettle",
+              "portions": 2,
+              "lotId": "pasted-demo-chickpeas-row-1",
+              "source": "pasted-demo-chickpeas · Donor offer pasted-demo-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15",
+              "before": 0,
+              "after": 400,
+              "delta": 400,
+              "beforePackages": 0,
+              "afterPackages": 2,
+              "recipe": "Chickpea couscous bowl"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

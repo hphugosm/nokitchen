@@ -1,0 +1,7057 @@
+{
+  "metricVersion": "family-collisions-v1",
+  "searchBudget": 240,
+  "frozen12": {
+    "ingredients": 30,
+    "recipes": 16,
+    "engineVersion": "1.2.0",
+    "seed": 241,
+    "reference": 228,
+    "openerRaw": 239,
+    "openerSelected": 241,
+    "donationRaw": 249,
+    "donationSelected": 255,
+    "donationFilled": [
+      {
+        "householdId": "H01",
+        "day": 3,
+        "meal": "lunch"
+      },
+      {
+        "householdId": "H06",
+        "day": 3,
+        "meal": "lunch"
+      },
+      {
+        "householdId": "H01",
+        "day": 3,
+        "meal": "dinner"
+      },
+      {
+        "householdId": "H06",
+        "day": 3,
+        "meal": "dinner"
+      },
+      {
+        "householdId": "H03",
+        "day": 3,
+        "meal": "dinner"
+      },
+      {
+        "householdId": "H02",
+        "day": 3,
+        "meal": "dinner"
+      },
+      {
+        "householdId": "H08",
+        "day": 3,
+        "meal": "dinner"
+      }
+    ],
+    "donationThenOpener": 255,
+    "couscousRemoved": 222,
+    "validation": []
+  },
+  "expanded": {
+    "freshRefinement": {
+      "source": "fresh-legacy",
+      "before": {
+        "id": "wk13-6o3dre-6jkdk4:1.3.0:total-minimum-stability-family-v2-fresh-one:nokitchen:alloc-1hozqx4-k60u0",
+        "source": "wk13-6o3dre-6jkdk4",
+        "context": null,
+        "winner": "nokitchen",
+        "metrics": {
+          "requested": 378,
+          "allocated": 297,
+          "uncovered": 81,
+          "percent": 79
+        },
+        "variety": {
+          "score": [
+            102,
+            18,
+            67
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 6,
+                "portions": 6,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 6,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "score": [
+                6,
+                1,
+                6
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 6,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 7,
+                "recipeCollisions": 3
+              },
+              "score": [
+                13,
+                3,
+                9
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R24",
+                  "R26"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 2,
+                "familyCollisions": 4,
+                "recipeCollisions": 3
+              },
+              "score": [
+                5,
+                2,
+                4
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R35",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "stuffed_vegetables"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 12,
+                "recipeCollisions": 7
+              },
+              "score": [
+                16,
+                2,
+                11
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R28"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 5,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                1,
+                4
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 13,
+                "portions": 26,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 5,
+                "familyCollisions": 29,
+                "recipeCollisions": 16
+              },
+              "score": [
+                33,
+                6,
+                20
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                1,
+                5
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "ctx13-1r91qn2-nfjdpa:meal-coverage-first:06-fresh-refined:alloc-16izyjp-qgqs6z",
+        "source": "wk13-6o3dre-6jkdk4",
+        "context": {
+          "snapshotFingerprint": "wk13-6o3dre-6jkdk4",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "select",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": null,
+          "incumbentEvidenceDigest": null,
+          "key": "ctx13-1r91qn2-nfjdpa"
+        },
+        "winner": "fresh-refined",
+        "metrics": {
+          "requested": 378,
+          "allocated": 297,
+          "uncovered": 81,
+          "percent": 79
+        },
+        "variety": {
+          "score": [
+            102,
+            17,
+            67
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 6,
+                "portions": 6,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 6,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "score": [
+                6,
+                0,
+                6
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 6,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 7,
+                "recipeCollisions": 3
+              },
+              "score": [
+                13,
+                3,
+                9
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R24",
+                  "R26"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 2,
+                "familyCollisions": 4,
+                "recipeCollisions": 3
+              },
+              "score": [
+                5,
+                2,
+                4
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R35",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "stuffed_vegetables"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 12,
+                "recipeCollisions": 7
+              },
+              "score": [
+                16,
+                2,
+                11
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R28"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 5,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                1,
+                4
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 13,
+                "portions": 26,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 5,
+                "familyCollisions": 29,
+                "recipeCollisions": 16
+              },
+              "score": [
+                33,
+                6,
+                20
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                1,
+                5
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 32,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 45,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R18",
+            "toRecipeId": "R02",
+            "fromMethodId": "R18-cold",
+            "toMethodId": "R02-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H01",
+            "day": 5,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R18",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R18-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      }
+    },
+    "ingredientCount": 50,
+    "recipeCount": 40,
+    "methodCount": 44,
+    "familyCount": 21,
+    "receivedLots": 54,
+    "initialFixed": {
+      "reason": "Improved household variety at fixed coverage with 1 single-meal and 7 paired changes.",
+      "improved": true,
+      "before": {
+        "id": "ctx13-1r91qn2-nfjdpa:meal-coverage-first:06-fresh-refined:alloc-16izyjp-qgqs6z",
+        "source": "wk13-6o3dre-6jkdk4",
+        "context": {
+          "snapshotFingerprint": "wk13-6o3dre-6jkdk4",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "select",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": null,
+          "incumbentEvidenceDigest": null,
+          "key": "ctx13-1r91qn2-nfjdpa"
+        },
+        "winner": "fresh-refined",
+        "metrics": {
+          "requested": 378,
+          "allocated": 297,
+          "uncovered": 81,
+          "percent": 79
+        },
+        "variety": {
+          "score": [
+            102,
+            17,
+            67
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 6,
+                "portions": 6,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 6,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "score": [
+                6,
+                0,
+                6
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 6,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 7,
+                "recipeCollisions": 3
+              },
+              "score": [
+                13,
+                3,
+                9
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R24",
+                  "R26"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 2,
+                "familyCollisions": 4,
+                "recipeCollisions": 3
+              },
+              "score": [
+                5,
+                2,
+                4
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R35",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "stuffed_vegetables"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 12,
+                "recipeCollisions": 7
+              },
+              "score": [
+                16,
+                2,
+                11
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R28"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 5,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                1,
+                4
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 13,
+                "portions": 26,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 5,
+                "familyCollisions": 29,
+                "recipeCollisions": 16
+              },
+              "score": [
+                33,
+                6,
+                20
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                1,
+                5
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "ctx13-di16h3-t9vxwh:meal-coverage-first:05-improve-variety:alloc-1xh1mcy-3xd0uk",
+        "source": "wk13-6o3dre-6jkdk4",
+        "context": {
+          "snapshotFingerprint": "wk13-6o3dre-6jkdk4",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "improve-variety",
+          "strategyId": "improve-variety",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-di16h3-t9vxwh"
+        },
+        "winner": "improve-variety",
+        "metrics": {
+          "requested": 378,
+          "allocated": 297,
+          "uncovered": 81,
+          "percent": 79
+        },
+        "variety": {
+          "score": [
+            101,
+            9,
+            66
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 6,
+                "portions": 6,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R27",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 2
+              },
+              "score": [
+                6,
+                0,
+                5
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 6,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 7,
+                "recipeCollisions": 3
+              },
+              "score": [
+                13,
+                1,
+                9
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R24",
+                  "R26"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 4,
+                "recipeCollisions": 3
+              },
+              "score": [
+                5,
+                0,
+                4
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R20"
+                ],
+                "familyIds": [
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R35",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "stuffed_vegetables"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 11,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                11
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R28"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 5,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                0,
+                4
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 13,
+                "portions": 26,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 2,
+                "familyCollisions": 29,
+                "recipeCollisions": 16
+              },
+              "score": [
+                33,
+                3,
+                20
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                1,
+                5
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 15,
+            "after": 15,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 32,
+            "after": 32,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 40,
+            "after": 40,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 45,
+            "after": 45,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R04",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R04-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R07",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R26",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R26-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H06",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R24",
+            "toRecipeId": "R25",
+            "fromMethodId": "R24-cold",
+            "toMethodId": "R25-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R24",
+            "toRecipeId": "R09",
+            "fromMethodId": "R24-cold",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R06",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R09",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H06",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R25",
+            "toRecipeId": "R24",
+            "fromMethodId": "R25-cold",
+            "toMethodId": "R24-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R07",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R26",
+            "toRecipeId": "R27",
+            "fromMethodId": "R26-cold",
+            "toMethodId": "R27-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R24",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R24-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 5,
+            "meal": "breakfast",
+            "fromRecipeId": "R04",
+            "toRecipeId": "R02",
+            "fromMethodId": "R04-kettle",
+            "toMethodId": "R02-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 5,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R07",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "dinner",
+            "fromRecipeId": "R31",
+            "toRecipeId": "R32",
+            "fromMethodId": "R31-hob",
+            "toMethodId": "R32-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      }
+    },
+    "freshLegacy": {
+      "id": "wk13-6o3dre-6jkdk4:1.3.0:total-minimum-stability-family-v2-fresh-one:nokitchen:alloc-1hozqx4-k60u0",
+      "source": "wk13-6o3dre-6jkdk4",
+      "context": null,
+      "winner": "nokitchen",
+      "metrics": {
+        "requested": 378,
+        "allocated": 297,
+        "uncovered": 81,
+        "percent": 79
+      },
+      "variety": {
+        "score": [
+          102,
+          18,
+          67
+        ],
+        "households": [
+          {
+            "householdId": "H01",
+            "breakfast": {
+              "slots": 6,
+              "portions": 6,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "fruit_salad",
+                "muesli",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 9,
+              "portions": 9,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R08",
+                "R23",
+                "R24",
+                "R25",
+                "R26",
+                "R35"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "score": [
+              6,
+              1,
+              6
+            ]
+          },
+          {
+            "householdId": "H02",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R04",
+                "R17",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "couscous_bowl",
+                "fruit_salad",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 6,
+              "recipeCollisions": 6
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 6,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R08",
+                "R24",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "pulse_salad",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 7,
+              "recipeCollisions": 3
+            },
+            "score": [
+              13,
+              3,
+              9
+            ]
+          },
+          {
+            "householdId": "H03",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03",
+                "R22"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "rice_pudding",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 7,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R15",
+                "R24",
+                "R26"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 2,
+              "familyCollisions": 4,
+              "recipeCollisions": 3
+            },
+            "score": [
+              5,
+              2,
+              4
+            ]
+          },
+          {
+            "householdId": "H04",
+            "breakfast": {
+              "slots": 7,
+              "portions": 7,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "fruit_salad",
+                "muesli",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 14,
+              "portions": 14,
+              "distinctRecipes": 9,
+              "distinctFamilies": 7,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R35",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew",
+                "stuffed_vegetables"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 1,
+              "familyCollisions": 12,
+              "recipeCollisions": 7
+            },
+            "score": [
+              16,
+              2,
+              11
+            ]
+          },
+          {
+            "householdId": "H05",
+            "breakfast": {
+              "slots": 5,
+              "portions": 20,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R18",
+                "R19",
+                "R21"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "muesli",
+                "open_sandwich",
+                "porridge"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 13,
+              "portions": 52,
+              "distinctRecipes": 9,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R12",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 2,
+              "familyCollisions": 14,
+              "recipeCollisions": 7
+            },
+            "score": [
+              15,
+              2,
+              8
+            ]
+          },
+          {
+            "householdId": "H06",
+            "breakfast": {
+              "slots": 6,
+              "portions": 12,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "fruit_salad",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R11",
+                "R23",
+                "R24",
+                "R25",
+                "R28"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 5,
+              "recipeCollisions": 2
+            },
+            "score": [
+              7,
+              1,
+              4
+            ]
+          },
+          {
+            "householdId": "H07",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R04",
+                "R18"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "muesli",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 13,
+              "portions": 26,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R09",
+                "R24",
+                "R36",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "pulse_salad",
+                "toastie",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 8,
+              "adjacent": 5,
+              "familyCollisions": 29,
+              "recipeCollisions": 16
+            },
+            "score": [
+              33,
+              6,
+              20
+            ]
+          },
+          {
+            "householdId": "H08",
+            "breakfast": {
+              "slots": 6,
+              "portions": 18,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 8,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R14",
+                "R15",
+                "R23",
+                "R24"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "tray_roast",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 3,
+              "recipeCollisions": 1
+            },
+            "score": [
+              7,
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      "validation": []
+    },
+    "freshFamilyAware": {
+      "id": "wk13-6o3dre-6jkdk4:1.3.0:total-minimum-stability-family-v2-fresh-one:family-aware:alloc-1m0zdfx-1m5m9et",
+      "source": "wk13-6o3dre-6jkdk4",
+      "context": null,
+      "winner": "family-aware",
+      "metrics": {
+        "requested": 378,
+        "allocated": 293,
+        "uncovered": 85,
+        "percent": 78
+      },
+      "variety": {
+        "score": [
+          80,
+          11,
+          60
+        ],
+        "households": [
+          {
+            "householdId": "H01",
+            "breakfast": {
+              "slots": 6,
+              "portions": 6,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "fruit_salad",
+                "muesli",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 10,
+              "portions": 10,
+              "distinctRecipes": 7,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R08",
+                "R23",
+                "R24",
+                "R25",
+                "R26",
+                "R27",
+                "R35"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 0,
+              "familyCollisions": 5,
+              "recipeCollisions": 3
+            },
+            "score": [
+              8,
+              1,
+              6
+            ]
+          },
+          {
+            "householdId": "H02",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R04",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "cracker_plate",
+                "fruit_salad",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 6,
+              "recipeCollisions": 6
+            },
+            "main": {
+              "slots": 8,
+              "portions": 16,
+              "distinctRecipes": 7,
+              "distinctFamilies": 7,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R24",
+                "R26",
+                "R29",
+                "R30"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "score": [
+              7,
+              2,
+              7
+            ]
+          },
+          {
+            "householdId": "H03",
+            "breakfast": {
+              "slots": 6,
+              "portions": 18,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03",
+                "R22"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "rice_pudding",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 8,
+              "portions": 24,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R08",
+                "R13",
+                "R15",
+                "R24",
+                "R28"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "score": [
+              4,
+              0,
+              4
+            ]
+          },
+          {
+            "householdId": "H04",
+            "breakfast": {
+              "slots": 7,
+              "portions": 7,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R18",
+                "R19"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "muesli",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 14,
+              "portions": 14,
+              "distinctRecipes": 10,
+              "distinctFamilies": 7,
+              "recipeIds": [
+                "R06",
+                "R08",
+                "R10",
+                "R11",
+                "R15",
+                "R16",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 0,
+              "familyCollisions": 9,
+              "recipeCollisions": 4
+            },
+            "score": [
+              13,
+              1,
+              8
+            ]
+          },
+          {
+            "householdId": "H05",
+            "breakfast": {
+              "slots": 5,
+              "portions": 20,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R18",
+                "R20",
+                "R21"
+              ],
+              "familyIds": [
+                "fruit_salad",
+                "muesli",
+                "open_sandwich",
+                "porridge"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 14,
+              "portions": 56,
+              "distinctRecipes": 10,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R12",
+                "R15",
+                "R16",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 1,
+              "familyCollisions": 15,
+              "recipeCollisions": 7
+            },
+            "score": [
+              16,
+              1,
+              8
+            ]
+          },
+          {
+            "householdId": "H06",
+            "breakfast": {
+              "slots": 5,
+              "portions": 10,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R17",
+                "R18"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "muesli",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R11",
+                "R24",
+                "R28",
+                "R35"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "score": [
+              5,
+              1,
+              5
+            ]
+          },
+          {
+            "householdId": "H07",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R04"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 5,
+              "recipeCollisions": 5
+            },
+            "main": {
+              "slots": 12,
+              "portions": 24,
+              "distinctRecipes": 7,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R08",
+                "R09",
+                "R24",
+                "R28",
+                "R36"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "toastie",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 6,
+              "adjacent": 3,
+              "familyCollisions": 16,
+              "recipeCollisions": 11
+            },
+            "score": [
+              21,
+              4,
+              16
+            ]
+          },
+          {
+            "householdId": "H08",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R13",
+                "R14",
+                "R15",
+                "R38"
+              ],
+              "familyIds": [
+                "flatbread",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "tray_roast",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "score": [
+              6,
+              1,
+              6
+            ]
+          }
+        ]
+      },
+      "validation": []
+    },
+    "firstFit": {
+      "id": "wk13-6o3dre-6jkdk4:1.3.0:total-minimum-stability-family-v2-fresh-one:reference-first-fit:alloc-ct2esg-1vxrjyg",
+      "source": "wk13-6o3dre-6jkdk4",
+      "context": null,
+      "winner": "reference-first-fit",
+      "metrics": {
+        "requested": 378,
+        "allocated": 286,
+        "uncovered": 92,
+        "percent": 76
+      },
+      "variety": {
+        "score": [
+          123,
+          65,
+          112
+        ],
+        "households": [
+          {
+            "householdId": "H01",
+            "breakfast": {
+              "slots": 6,
+              "portions": 6,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R19"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "cracker_plate",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 3,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 10,
+              "portions": 10,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R08",
+                "R23",
+                "R24",
+                "R26"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 4,
+              "familyCollisions": 12,
+              "recipeCollisions": 12
+            },
+            "score": [
+              16,
+              7,
+              16
+            ]
+          },
+          {
+            "householdId": "H02",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 2,
+              "distinctFamilies": 2,
+              "recipeIds": [
+                "R02",
+                "R04"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 5,
+              "familyCollisions": 9,
+              "recipeCollisions": 9
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R05",
+                "R24",
+                "R26",
+                "R30"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "rice_bowl",
+                "stuffed_vegetables"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 4,
+              "familyCollisions": 11,
+              "recipeCollisions": 11
+            },
+            "score": [
+              20,
+              9,
+              20
+            ]
+          },
+          {
+            "householdId": "H03",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 2,
+              "distinctFamilies": 2,
+              "recipeIds": [
+                "R01",
+                "R03"
+              ],
+              "familyIds": [
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 3,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R13",
+                "R15"
+              ],
+              "familyIds": [
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 4,
+              "familyCollisions": 6,
+              "recipeCollisions": 6
+            },
+            "score": [
+              10,
+              7,
+              10
+            ]
+          },
+          {
+            "householdId": "H04",
+            "breakfast": {
+              "slots": 6,
+              "portions": 6,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "fruit_salad",
+                "muesli",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 2,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 14,
+              "portions": 14,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R31"
+              ],
+              "familyIds": [
+                "pasta",
+                "pulse_salad",
+                "soup"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 11,
+              "familyCollisions": 26,
+              "recipeCollisions": 26
+            },
+            "score": [
+              29,
+              13,
+              29
+            ]
+          },
+          {
+            "householdId": "H05",
+            "breakfast": {
+              "slots": 5,
+              "portions": 20,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R18"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "muesli",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 2,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 14,
+              "portions": 56,
+              "distinctRecipes": 8,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R10",
+                "R11",
+                "R12",
+                "R31",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 8,
+              "familyCollisions": 15,
+              "recipeCollisions": 10
+            },
+            "score": [
+              17,
+              10,
+              12
+            ]
+          },
+          {
+            "householdId": "H06",
+            "breakfast": {
+              "slots": 5,
+              "portions": 10,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R18"
+              ],
+              "familyIds": [
+                "muesli",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 2,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 8,
+              "portions": 16,
+              "distinctRecipes": 4,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R11",
+                "R26"
+              ],
+              "familyIds": [
+                "pulse_salad",
+                "rice_bowl",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 5,
+              "familyCollisions": 11,
+              "recipeCollisions": 5
+            },
+            "score": [
+              13,
+              7,
+              7
+            ]
+          },
+          {
+            "householdId": "H07",
+            "breakfast": {
+              "slots": 6,
+              "portions": 12,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R04"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 3,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 10,
+              "portions": 20,
+              "distinctRecipes": 5,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R05",
+                "R09",
+                "R26",
+                "R27",
+                "R30"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "toastie",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 4,
+              "familyCollisions": 9,
+              "recipeCollisions": 9
+            },
+            "score": [
+              12,
+              7,
+              12
+            ]
+          },
+          {
+            "householdId": "H08",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R20"
+              ],
+              "familyIds": [
+                "fruit_salad",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 2,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R13",
+                "R15",
+                "R35",
+                "R37"
+              ],
+              "familyIds": [
+                "gratin",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 3,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "score": [
+              6,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      "validation": []
+    }
+  },
+  "delivery": {
+    "message": "12 sealed pouches of ready-to-eat chickpeas, 200 g edible contents each. Delivery 2026-11-23. Best before 2026-12-15.",
+    "operatorConfirmed": {
+      "storage": "ambient",
+      "afterOpening": "fridge",
+      "canRepack": false,
+      "requiresCanOpener": false,
+      "availableFromDay": 0,
+      "usableThroughDay": 6
+    },
+    "items": [
+      {
+        "lot": {
+          "id": "release-evidence-chickpeas-row-1",
+          "ingredientId": "ready_chickpeas",
+          "quantityBaseUnits": 2400,
+          "packageSize": 200,
+          "packageCount": 12,
+          "canRepack": false,
+          "requiresCanOpener": false,
+          "packageKind": "packet",
+          "availableFromDay": 0,
+          "usableThroughDay": 6,
+          "storage": "ambient",
+          "afterOpening": "fridge",
+          "received": true,
+          "sourceOfferId": "release-evidence-chickpeas",
+          "reviewStatus": "demo",
+          "provenance": "Donor offer release-evidence-chickpeas · row-1, line 1 · edible content · delivery 2026-11-23 · best-before 2026-12-15"
+        },
+        "unit": "g"
+      }
+    ],
+    "previewId": "ctx13-1h4ou0g-1u4i9y0:meal-coverage-first:03-fresh-legacy:alloc-b554ff-75eo15",
+    "actualId": "ctx13-1h4ou0g-1u4i9y0:meal-coverage-first:03-fresh-legacy:alloc-b554ff-75eo15",
+    "baseline": {
+      "id": "ctx13-1r91qn2-nfjdpa:meal-coverage-first:06-fresh-refined:alloc-16izyjp-qgqs6z",
+      "source": "wk13-6o3dre-6jkdk4",
+      "context": {
+        "snapshotFingerprint": "wk13-6o3dre-6jkdk4",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.3.0",
+        "parametersId": "total-minimum-stability-family-v2-fresh-one",
+        "operation": "select",
+        "strategyId": "select",
+        "catalogRevision": "catalog-families-1.3",
+        "metricVersion": "family-collisions-v1",
+        "searchBudget": 240,
+        "incumbentDigest": null,
+        "incumbentEvidenceDigest": null,
+        "key": "ctx13-1r91qn2-nfjdpa"
+      },
+      "winner": "fresh-refined",
+      "metrics": {
+        "requested": 378,
+        "allocated": 297,
+        "uncovered": 81,
+        "percent": 79
+      },
+      "variety": {
+        "score": [
+          102,
+          17,
+          67
+        ],
+        "households": [
+          {
+            "householdId": "H01",
+            "breakfast": {
+              "slots": 6,
+              "portions": 6,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "fruit_salad",
+                "muesli",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 0,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 9,
+              "portions": 9,
+              "distinctRecipes": 6,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R08",
+                "R23",
+                "R24",
+                "R25",
+                "R26",
+                "R35"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "score": [
+              6,
+              0,
+              6
+            ]
+          },
+          {
+            "householdId": "H02",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R04",
+                "R17",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "couscous_bowl",
+                "fruit_salad",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 6,
+              "recipeCollisions": 6
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 6,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R08",
+                "R24",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "pulse_salad",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 7,
+              "recipeCollisions": 3
+            },
+            "score": [
+              13,
+              3,
+              9
+            ]
+          },
+          {
+            "householdId": "H03",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03",
+                "R22"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "rice_pudding",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 7,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R15",
+                "R24",
+                "R26"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 2,
+              "familyCollisions": 4,
+              "recipeCollisions": 3
+            },
+            "score": [
+              5,
+              2,
+              4
+            ]
+          },
+          {
+            "householdId": "H04",
+            "breakfast": {
+              "slots": 7,
+              "portions": 7,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R18",
+                "R20"
+              ],
+              "familyIds": [
+                "fruit_salad",
+                "muesli",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 14,
+              "portions": 14,
+              "distinctRecipes": 9,
+              "distinctFamilies": 7,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R35",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew",
+                "stuffed_vegetables"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 1,
+              "familyCollisions": 12,
+              "recipeCollisions": 7
+            },
+            "score": [
+              16,
+              2,
+              11
+            ]
+          },
+          {
+            "householdId": "H05",
+            "breakfast": {
+              "slots": 5,
+              "portions": 20,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R18",
+                "R19",
+                "R21"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "muesli",
+                "open_sandwich",
+                "porridge"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 13,
+              "portions": 52,
+              "distinctRecipes": 9,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R12",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 2,
+              "familyCollisions": 14,
+              "recipeCollisions": 7
+            },
+            "score": [
+              15,
+              2,
+              8
+            ]
+          },
+          {
+            "householdId": "H06",
+            "breakfast": {
+              "slots": 6,
+              "portions": 12,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "fruit_salad",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R11",
+                "R23",
+                "R24",
+                "R25",
+                "R28"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 5,
+              "recipeCollisions": 2
+            },
+            "score": [
+              7,
+              1,
+              4
+            ]
+          },
+          {
+            "householdId": "H07",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R04",
+                "R18"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "muesli",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 13,
+              "portions": 26,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R09",
+                "R24",
+                "R36",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "pulse_salad",
+                "toastie",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 8,
+              "adjacent": 5,
+              "familyCollisions": 29,
+              "recipeCollisions": 16
+            },
+            "score": [
+              33,
+              6,
+              20
+            ]
+          },
+          {
+            "householdId": "H08",
+            "breakfast": {
+              "slots": 6,
+              "portions": 18,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 8,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R14",
+                "R15",
+                "R23",
+                "R24"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "tray_roast",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 3,
+              "recipeCollisions": 1
+            },
+            "score": [
+              7,
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      "validation": []
+    },
+    "actual": {
+      "id": "ctx13-1h4ou0g-1u4i9y0:meal-coverage-first:03-fresh-legacy:alloc-b554ff-75eo15",
+      "source": "wk13-om0q72-1xao19e",
+      "context": {
+        "snapshotFingerprint": "wk13-om0q72-1xao19e",
+        "policyId": "meal-coverage-first",
+        "engineVersion": "1.3.0",
+        "parametersId": "total-minimum-stability-family-v2-fresh-one",
+        "operation": "select",
+        "strategyId": "select",
+        "catalogRevision": "catalog-families-1.3",
+        "metricVersion": "family-collisions-v1",
+        "searchBudget": 240,
+        "incumbentDigest": "alloc-16izyjp-qgqs6z",
+        "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+        "key": "ctx13-1h4ou0g-1u4i9y0"
+      },
+      "winner": "fresh-legacy",
+      "metrics": {
+        "requested": 378,
+        "allocated": 310,
+        "uncovered": 68,
+        "percent": 82
+      },
+      "variety": {
+        "score": [
+          110,
+          20,
+          75
+        ],
+        "households": [
+          {
+            "householdId": "H01",
+            "breakfast": {
+              "slots": 7,
+              "portions": 7,
+              "distinctRecipes": 5,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R02",
+                "R17",
+                "R18",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "cracker_plate",
+                "fruit_salad",
+                "muesli",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 9,
+              "portions": 9,
+              "distinctRecipes": 7,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R07",
+                "R08",
+                "R23",
+                "R24",
+                "R25",
+                "R26",
+                "R35"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 0,
+              "familyCollisions": 4,
+              "recipeCollisions": 2
+            },
+            "score": [
+              7,
+              1,
+              5
+            ]
+          },
+          {
+            "householdId": "H02",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R04",
+                "R17",
+                "R20"
+              ],
+              "familyIds": [
+                "cereal_bowl",
+                "couscous_bowl",
+                "fruit_salad",
+                "open_sandwich"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 6,
+              "recipeCollisions": 6
+            },
+            "main": {
+              "slots": 11,
+              "portions": 22,
+              "distinctRecipes": 8,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R08",
+                "R24",
+                "R29",
+                "R30",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "stuffed_vegetables",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 8,
+              "recipeCollisions": 4
+            },
+            "score": [
+              14,
+              4,
+              10
+            ]
+          },
+          {
+            "householdId": "H03",
+            "breakfast": {
+              "slots": 6,
+              "portions": 18,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03",
+                "R22"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "rice_pudding",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 27,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R15",
+                "R23",
+                "R24"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 2,
+              "familyCollisions": 5,
+              "recipeCollisions": 3
+            },
+            "score": [
+              7,
+              2,
+              5
+            ]
+          },
+          {
+            "householdId": "H04",
+            "breakfast": {
+              "slots": 7,
+              "portions": 7,
+              "distinctRecipes": 5,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R01",
+                "R03",
+                "R18",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "fruit_salad",
+                "muesli",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 3,
+              "recipeCollisions": 3
+            },
+            "main": {
+              "slots": 14,
+              "portions": 14,
+              "distinctRecipes": 9,
+              "distinctFamilies": 7,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R10",
+                "R11",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 1,
+              "familyCollisions": 11,
+              "recipeCollisions": 6
+            },
+            "score": [
+              14,
+              2,
+              9
+            ]
+          },
+          {
+            "householdId": "H05",
+            "breakfast": {
+              "slots": 5,
+              "portions": 20,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R18",
+                "R19",
+                "R21"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "muesli",
+                "open_sandwich",
+                "porridge"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 1,
+              "recipeCollisions": 1
+            },
+            "main": {
+              "slots": 13,
+              "portions": 52,
+              "distinctRecipes": 9,
+              "distinctFamilies": 6,
+              "recipeIds": [
+                "R06",
+                "R10",
+                "R11",
+                "R12",
+                "R15",
+                "R31",
+                "R32",
+                "R33",
+                "R39"
+              ],
+              "familyIds": [
+                "pasta",
+                "potato_bowl",
+                "pulse_salad",
+                "rice_bowl",
+                "soup",
+                "stew"
+              ],
+              "maxFamilyFrequency": 5,
+              "adjacent": 2,
+              "familyCollisions": 14,
+              "recipeCollisions": 7
+            },
+            "score": [
+              15,
+              2,
+              8
+            ]
+          },
+          {
+            "householdId": "H06",
+            "breakfast": {
+              "slots": 6,
+              "portions": 12,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R19",
+                "R20"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "fruit_salad",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 9,
+              "portions": 18,
+              "distinctRecipes": 8,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R11",
+                "R23",
+                "R24",
+                "R25",
+                "R26",
+                "R27"
+              ],
+              "familyIds": [
+                "cracker_plate",
+                "open_sandwich",
+                "pulse_salad",
+                "rice_bowl",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 0,
+              "familyCollisions": 5,
+              "recipeCollisions": 1
+            },
+            "score": [
+              7,
+              0,
+              3
+            ]
+          },
+          {
+            "householdId": "H07",
+            "breakfast": {
+              "slots": 7,
+              "portions": 14,
+              "distinctRecipes": 4,
+              "distinctFamilies": 4,
+              "recipeIds": [
+                "R02",
+                "R03",
+                "R04",
+                "R18"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "muesli",
+                "open_sandwich",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 3,
+              "adjacent": 1,
+              "familyCollisions": 4,
+              "recipeCollisions": 4
+            },
+            "main": {
+              "slots": 14,
+              "portions": 28,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R05",
+                "R06",
+                "R07",
+                "R09",
+                "R24",
+                "R36",
+                "R40"
+              ],
+              "familyIds": [
+                "couscous_bowl",
+                "open_sandwich",
+                "pulse_salad",
+                "toastie",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 8,
+              "adjacent": 6,
+              "familyCollisions": 31,
+              "recipeCollisions": 22
+            },
+            "score": [
+              35,
+              7,
+              26
+            ]
+          },
+          {
+            "householdId": "H08",
+            "breakfast": {
+              "slots": 5,
+              "portions": 15,
+              "distinctRecipes": 3,
+              "distinctFamilies": 3,
+              "recipeIds": [
+                "R01",
+                "R02",
+                "R03"
+              ],
+              "familyIds": [
+                "open_sandwich",
+                "porridge",
+                "yogurt_bowl"
+              ],
+              "maxFamilyFrequency": 2,
+              "adjacent": 0,
+              "familyCollisions": 2,
+              "recipeCollisions": 2
+            },
+            "main": {
+              "slots": 11,
+              "portions": 33,
+              "distinctRecipes": 7,
+              "distinctFamilies": 5,
+              "recipeIds": [
+                "R06",
+                "R07",
+                "R08",
+                "R13",
+                "R14",
+                "R15",
+                "R23"
+              ],
+              "familyIds": [
+                "potato_bowl",
+                "pulse_salad",
+                "soup",
+                "tray_roast",
+                "wrap"
+              ],
+              "maxFamilyFrequency": 4,
+              "adjacent": 2,
+              "familyCollisions": 9,
+              "recipeCollisions": 7
+            },
+            "score": [
+              11,
+              2,
+              9
+            ]
+          }
+        ]
+      },
+      "validation": []
+    },
+    "changes": {
+      "deltas": [
+        {
+          "householdId": "H01",
+          "before": 15,
+          "after": 16,
+          "delta": 1,
+          "percentagePoints": 4.761904761904756
+        },
+        {
+          "householdId": "H02",
+          "before": 32,
+          "after": 36,
+          "delta": 4,
+          "percentagePoints": 9.523809523809524
+        },
+        {
+          "householdId": "H03",
+          "before": 42,
+          "after": 45,
+          "delta": 3,
+          "percentagePoints": 4.761904761904767
+        },
+        {
+          "householdId": "H04",
+          "before": 21,
+          "after": 21,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H05",
+          "before": 72,
+          "after": 72,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H06",
+          "before": 30,
+          "after": 30,
+          "delta": 0,
+          "percentagePoints": 0
+        },
+        {
+          "householdId": "H07",
+          "before": 40,
+          "after": 42,
+          "delta": 2,
+          "percentagePoints": 4.761904761904767
+        },
+        {
+          "householdId": "H08",
+          "before": 45,
+          "after": 48,
+          "delta": 3,
+          "percentagePoints": 4.761904761904756
+        }
+      ],
+      "filled": [
+        {
+          "householdId": "H03",
+          "day": 3,
+          "meal": "dinner"
+        },
+        {
+          "householdId": "H08",
+          "day": 4,
+          "meal": "dinner"
+        },
+        {
+          "householdId": "H02",
+          "day": 4,
+          "meal": "dinner"
+        },
+        {
+          "householdId": "H03",
+          "day": 5,
+          "meal": "breakfast"
+        },
+        {
+          "householdId": "H08",
+          "day": 5,
+          "meal": "lunch"
+        },
+        {
+          "householdId": "H02",
+          "day": 5,
+          "meal": "lunch"
+        },
+        {
+          "householdId": "H01",
+          "day": 6,
+          "meal": "breakfast"
+        },
+        {
+          "householdId": "H07",
+          "day": 6,
+          "meal": "dinner"
+        }
+      ],
+      "lost": [
+        {
+          "householdId": "H03",
+          "day": 4,
+          "meal": "dinner"
+        },
+        {
+          "householdId": "H08",
+          "day": 5,
+          "meal": "breakfast"
+        }
+      ],
+      "changed": [
+        {
+          "householdId": "H01",
+          "day": 0,
+          "meal": "dinner",
+          "fromRecipeId": "R08",
+          "toRecipeId": "R23",
+          "fromMethodId": "R08-cold",
+          "toMethodId": "R23-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H01",
+          "day": 1,
+          "meal": "lunch",
+          "fromRecipeId": "R23",
+          "toRecipeId": "R08",
+          "fromMethodId": "R23-cold",
+          "toMethodId": "R08-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H08",
+          "day": 1,
+          "meal": "lunch",
+          "fromRecipeId": "R15",
+          "toRecipeId": "R14",
+          "fromMethodId": "R15-microwave",
+          "toMethodId": "R14-oven",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H08",
+          "day": 1,
+          "meal": "dinner",
+          "fromRecipeId": "R14",
+          "toRecipeId": "R15",
+          "fromMethodId": "R14-oven",
+          "toMethodId": "R15-microwave",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H01",
+          "day": 2,
+          "meal": "breakfast",
+          "fromRecipeId": "R02",
+          "toRecipeId": "R18",
+          "fromMethodId": "R02-cold",
+          "toMethodId": "R18-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H08",
+          "day": 2,
+          "meal": "lunch",
+          "fromRecipeId": "R08",
+          "toRecipeId": "R23",
+          "fromMethodId": "R08-cold",
+          "toMethodId": "R23-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H06",
+          "day": 2,
+          "meal": "dinner",
+          "fromRecipeId": "R28",
+          "toRecipeId": "R26",
+          "fromMethodId": "R28-cold",
+          "toMethodId": "R26-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H08",
+          "day": 2,
+          "meal": "dinner",
+          "fromRecipeId": "R23",
+          "toRecipeId": "R07",
+          "fromMethodId": "R23-cold",
+          "toMethodId": "R07-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H03",
+          "day": 3,
+          "meal": "lunch",
+          "fromRecipeId": "R26",
+          "toRecipeId": "R23",
+          "fromMethodId": "R26-cold",
+          "toMethodId": "R23-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H08",
+          "day": 3,
+          "meal": "lunch",
+          "fromRecipeId": "R07",
+          "toRecipeId": "R08",
+          "fromMethodId": "R07-cold",
+          "toMethodId": "R08-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H02",
+          "day": 3,
+          "meal": "lunch",
+          "fromRecipeId": "R06",
+          "toRecipeId": "R29",
+          "fromMethodId": "R06-cold",
+          "toMethodId": "R29-kettle",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H01",
+          "day": 3,
+          "meal": "dinner",
+          "fromRecipeId": "R23",
+          "toRecipeId": "R35",
+          "fromMethodId": "R23-cold",
+          "toMethodId": "R35-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H02",
+          "day": 3,
+          "meal": "dinner",
+          "fromRecipeId": "R05",
+          "toRecipeId": "R06",
+          "fromMethodId": "R05-kettle",
+          "toMethodId": "R06-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H07",
+          "day": 3,
+          "meal": "dinner",
+          "fromRecipeId": "R36",
+          "toRecipeId": "R05",
+          "fromMethodId": "R36-sandwich_press",
+          "toMethodId": "R05-kettle",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H01",
+          "day": 4,
+          "meal": "breakfast",
+          "fromRecipeId": "R02",
+          "toRecipeId": "R19",
+          "fromMethodId": "R02-cold",
+          "toMethodId": "R19-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H08",
+          "day": 4,
+          "meal": "breakfast",
+          "fromRecipeId": "R01",
+          "toRecipeId": "R03",
+          "fromMethodId": "R01-microwave",
+          "toMethodId": "R03-cold",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H04",
+          "day": 4,
+          "meal": "breakfast",
+          "fromRecipeId": "R03",
+          "toRecipeId": "R19",
+          "fromMethodId": "R03-cold",
+          "toMethodId": "R19-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H01",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R26",
+          "toRecipeId": "R07",
+          "fromMethodId": "R26-cold",
+          "toMethodId": "R07-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H06",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R11",
+          "toRecipeId": "R27",
+          "fromMethodId": "R11-cooker",
+          "toMethodId": "R27-cold",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H08",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R24",
+          "toRecipeId": "R13",
+          "fromMethodId": "R24-cold",
+          "toMethodId": "R13-microwave",
+          "fromPortions": 3,
+          "toPortions": 3
+        },
+        {
+          "householdId": "H02",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R07",
+          "toRecipeId": "R30",
+          "fromMethodId": "R07-cold",
+          "toMethodId": "R30-kettle",
+          "fromPortions": 2,
+          "toPortions": 2
+        },
+        {
+          "householdId": "H04",
+          "day": 4,
+          "meal": "lunch",
+          "fromRecipeId": "R35",
+          "toRecipeId": "R07",
+          "fromMethodId": "R35-cold",
+          "toMethodId": "R07-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H01",
+          "day": 5,
+          "meal": "breakfast",
+          "fromRecipeId": "R18",
+          "toRecipeId": "R02",
+          "fromMethodId": "R18-cold",
+          "toMethodId": "R02-cold",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H04",
+          "day": 5,
+          "meal": "lunch",
+          "fromRecipeId": "R39",
+          "toRecipeId": "R31",
+          "fromMethodId": "R39-hob",
+          "toMethodId": "R31-hob",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H04",
+          "day": 5,
+          "meal": "dinner",
+          "fromRecipeId": "R31",
+          "toRecipeId": "R11",
+          "fromMethodId": "R31-hob",
+          "toMethodId": "R11-hob",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H04",
+          "day": 6,
+          "meal": "lunch",
+          "fromRecipeId": "R10",
+          "toRecipeId": "R39",
+          "fromMethodId": "R10-hob",
+          "toMethodId": "R39-hob",
+          "fromPortions": 1,
+          "toPortions": 1
+        },
+        {
+          "householdId": "H04",
+          "day": 6,
+          "meal": "dinner",
+          "fromRecipeId": "R39",
+          "toRecipeId": "R10",
+          "fromMethodId": "R39-hob",
+          "toMethodId": "R10-hob",
+          "fromPortions": 1,
+          "toPortions": 1
+        }
+      ]
+    },
+    "example": {
+      "meal": {
+        "householdId": "H01",
+        "day": 6,
+        "meal": "breakfast",
+        "recipeId": "R02",
+        "methodId": "R02-cold",
+        "portions": 1,
+        "reservations": [
+          {
+            "lotId": "LOT-006",
+            "ingredientId": "bread",
+            "quantity": 80
+          },
+          {
+            "lotId": "LOT-028",
+            "ingredientId": "peanut_butter",
+            "quantity": 25
+          },
+          {
+            "lotId": "LOT-023",
+            "ingredientId": "banana",
+            "quantity": 100
+          }
+        ]
+      },
+      "recipeName": "Peanut butter and banana bread",
+      "boxBefore": {
+        "householdId": "H01",
+        "collectionDay": 4,
+        "items": [
+          {
+            "lotId": "LOT-001",
+            "ingredientId": "oats",
+            "quantity": 50,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-006",
+            "ingredientId": "bread",
+            "quantity": 80,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-019",
+            "ingredientId": "carrot",
+            "quantity": 60,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-023",
+            "ingredientId": "banana",
+            "quantity": 100,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-027",
+            "ingredientId": "oil",
+            "quantity": 10,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-028",
+            "ingredientId": "peanut_butter",
+            "quantity": 25,
+            "packages": 1
+          },
+          {
+            "lotId": "N13-001",
+            "ingredientId": "ready_rice",
+            "quantity": 150,
+            "packages": 1
+          },
+          {
+            "lotId": "N13-008",
+            "ingredientId": "ready_peas",
+            "quantity": 100,
+            "packages": 1
+          },
+          {
+            "lotId": "N13-015",
+            "ingredientId": "dried_apricots",
+            "quantity": 25,
+            "packages": null
+          },
+          {
+            "lotId": "N13-019",
+            "ingredientId": "apple_puree",
+            "quantity": 100,
+            "packages": 1
+          }
+        ],
+        "meals": [
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H01",
+            "day": 5,
+            "meal": "breakfast"
+          }
+        ]
+      },
+      "boxAfter": {
+        "householdId": "H01",
+        "collectionDay": 4,
+        "items": [
+          {
+            "lotId": "LOT-006",
+            "ingredientId": "bread",
+            "quantity": 160,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-007",
+            "ingredientId": "tortilla",
+            "quantity": 1,
+            "packages": 1
+          },
+          {
+            "lotId": "LOT-009",
+            "ingredientId": "crackers",
+            "quantity": 60,
+            "packages": 1
+          },
+          {
+            "lotId": "LOT-012",
+            "ingredientId": "ready_beans",
+            "quantity": 200,
+            "packages": 1
+          },
+          {
+            "lotId": "LOT-014",
+            "ingredientId": "sweetcorn",
+            "quantity": 100,
+            "packages": 1
+          },
+          {
+            "lotId": "LOT-023",
+            "ingredientId": "banana",
+            "quantity": 200,
+            "packages": null
+          },
+          {
+            "lotId": "LOT-028",
+            "ingredientId": "peanut_butter",
+            "quantity": 50,
+            "packages": 2
+          },
+          {
+            "lotId": "N13-016",
+            "ingredientId": "sunflower_spread",
+            "quantity": 25,
+            "packages": 1
+          },
+          {
+            "lotId": "N13-017",
+            "ingredientId": "jam",
+            "quantity": 20,
+            "packages": 1
+          }
+        ],
+        "meals": [
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 4,
+            "meal": "lunch"
+          },
+          {
+            "householdId": "H01",
+            "day": 5,
+            "meal": "breakfast"
+          },
+          {
+            "householdId": "H01",
+            "day": 6,
+            "meal": "breakfast"
+          }
+        ]
+      }
+    },
+    "fixed": {
+      "reason": "Improved household variety at fixed coverage with 2 single-meal and 7 paired changes.",
+      "improved": true,
+      "before": {
+        "id": "ctx13-1h4ou0g-1u4i9y0:meal-coverage-first:03-fresh-legacy:alloc-b554ff-75eo15",
+        "source": "wk13-om0q72-1xao19e",
+        "context": {
+          "snapshotFingerprint": "wk13-om0q72-1xao19e",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "select",
+          "strategyId": "select",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-16izyjp-qgqs6z",
+          "incumbentEvidenceDigest": "1yb1fjk-1e70uka",
+          "key": "ctx13-1h4ou0g-1u4i9y0"
+        },
+        "winner": "fresh-legacy",
+        "metrics": {
+          "requested": 378,
+          "allocated": 310,
+          "uncovered": 68,
+          "percent": 82
+        },
+        "variety": {
+          "score": [
+            110,
+            20,
+            75
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 5,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "cracker_plate",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R07",
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 4,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                1,
+                5
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 11,
+                "portions": 22,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R29",
+                  "R30",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 8,
+                "recipeCollisions": 4
+              },
+              "score": [
+                14,
+                4,
+                10
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 2,
+                "familyCollisions": 5,
+                "recipeCollisions": 3
+              },
+              "score": [
+                7,
+                2,
+                5
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 5,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 1,
+                "familyCollisions": 11,
+                "recipeCollisions": 6
+              },
+              "score": [
+                14,
+                2,
+                9
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 8,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R27"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 5,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                0,
+                3
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 28,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 6,
+                "familyCollisions": 31,
+                "recipeCollisions": 22
+              },
+              "score": [
+                35,
+                7,
+                26
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 11,
+                "portions": 33,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23"
+                ],
+                "familyIds": [
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 9,
+                "recipeCollisions": 7
+              },
+              "score": [
+                11,
+                2,
+                9
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "ctx13-1hxx7uu-1ro87ik:meal-coverage-first:05-improve-variety:alloc-18zepgv-qtq68j",
+        "source": "wk13-om0q72-1xao19e",
+        "context": {
+          "snapshotFingerprint": "wk13-om0q72-1xao19e",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "improve-variety",
+          "strategyId": "improve-variety",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-b554ff-75eo15",
+          "incumbentEvidenceDigest": "89a4zt-oz7xwf",
+          "key": "ctx13-1hxx7uu-1ro87ik"
+        },
+        "winner": "improve-variety",
+        "metrics": {
+          "requested": 378,
+          "allocated": 310,
+          "uncovered": 68,
+          "percent": 82
+        },
+        "variety": {
+          "score": [
+            108,
+            11,
+            75
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 5,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R02",
+                  "R17",
+                  "R18",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "cracker_plate",
+                  "fruit_salad",
+                  "muesli",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 9,
+                "portions": 9,
+                "distinctRecipes": 7,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R07",
+                  "R08",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R35"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 4,
+                "recipeCollisions": 2
+              },
+              "score": [
+                7,
+                0,
+                5
+              ]
+            },
+            {
+              "householdId": "H02",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R04",
+                  "R17",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cereal_bowl",
+                  "couscous_bowl",
+                  "fruit_salad",
+                  "open_sandwich"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 2,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 11,
+                "portions": 22,
+                "distinctRecipes": 8,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R24",
+                  "R29",
+                  "R30",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "stuffed_vegetables",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 0,
+                "familyCollisions": 8,
+                "recipeCollisions": 4
+              },
+              "score": [
+                14,
+                2,
+                10
+              ]
+            },
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 6,
+                "portions": 18,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03",
+                  "R22"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "rice_pudding",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 27,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R15",
+                  "R23",
+                  "R24"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 5,
+                "recipeCollisions": 3
+              },
+              "score": [
+                7,
+                0,
+                5
+              ]
+            },
+            {
+              "householdId": "H04",
+              "breakfast": {
+                "slots": 7,
+                "portions": 7,
+                "distinctRecipes": 5,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R01",
+                  "R03",
+                  "R18",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "muesli",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 3,
+                "recipeCollisions": 3
+              },
+              "main": {
+                "slots": 14,
+                "portions": 14,
+                "distinctRecipes": 9,
+                "distinctFamilies": 7,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R10",
+                  "R11",
+                  "R15",
+                  "R26",
+                  "R31",
+                  "R32",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 2,
+                "familyCollisions": 9,
+                "recipeCollisions": 6
+              },
+              "score": [
+                12,
+                3,
+                9
+              ]
+            },
+            {
+              "householdId": "H05",
+              "breakfast": {
+                "slots": 5,
+                "portions": 20,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R18",
+                  "R19",
+                  "R21"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "muesli",
+                  "open_sandwich",
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 1,
+                "recipeCollisions": 1
+              },
+              "main": {
+                "slots": 13,
+                "portions": 52,
+                "distinctRecipes": 9,
+                "distinctFamilies": 6,
+                "recipeIds": [
+                  "R06",
+                  "R10",
+                  "R11",
+                  "R12",
+                  "R15",
+                  "R31",
+                  "R32",
+                  "R33",
+                  "R39"
+                ],
+                "familyIds": [
+                  "pasta",
+                  "potato_bowl",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "soup",
+                  "stew"
+                ],
+                "maxFamilyFrequency": 5,
+                "adjacent": 2,
+                "familyCollisions": 14,
+                "recipeCollisions": 7
+              },
+              "score": [
+                15,
+                2,
+                8
+              ]
+            },
+            {
+              "householdId": "H06",
+              "breakfast": {
+                "slots": 6,
+                "portions": 12,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R19",
+                  "R20"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "fruit_salad",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 9,
+                "portions": 18,
+                "distinctRecipes": 8,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R11",
+                  "R23",
+                  "R24",
+                  "R25",
+                  "R26",
+                  "R27"
+                ],
+                "familyIds": [
+                  "cracker_plate",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "rice_bowl",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 0,
+                "familyCollisions": 5,
+                "recipeCollisions": 1
+              },
+              "score": [
+                7,
+                0,
+                3
+              ]
+            },
+            {
+              "householdId": "H07",
+              "breakfast": {
+                "slots": 7,
+                "portions": 14,
+                "distinctRecipes": 4,
+                "distinctFamilies": 4,
+                "recipeIds": [
+                  "R02",
+                  "R03",
+                  "R04",
+                  "R18"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "muesli",
+                  "open_sandwich",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 3,
+                "adjacent": 1,
+                "familyCollisions": 4,
+                "recipeCollisions": 4
+              },
+              "main": {
+                "slots": 14,
+                "portions": 28,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R05",
+                  "R06",
+                  "R07",
+                  "R09",
+                  "R24",
+                  "R36",
+                  "R40"
+                ],
+                "familyIds": [
+                  "couscous_bowl",
+                  "open_sandwich",
+                  "pulse_salad",
+                  "toastie",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 8,
+                "adjacent": 3,
+                "familyCollisions": 31,
+                "recipeCollisions": 22
+              },
+              "score": [
+                35,
+                4,
+                26
+              ]
+            },
+            {
+              "householdId": "H08",
+              "breakfast": {
+                "slots": 5,
+                "portions": 15,
+                "distinctRecipes": 3,
+                "distinctFamilies": 3,
+                "recipeIds": [
+                  "R01",
+                  "R02",
+                  "R03"
+                ],
+                "familyIds": [
+                  "open_sandwich",
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 11,
+                "portions": 33,
+                "distinctRecipes": 7,
+                "distinctFamilies": 5,
+                "recipeIds": [
+                  "R06",
+                  "R07",
+                  "R08",
+                  "R13",
+                  "R14",
+                  "R15",
+                  "R23"
+                ],
+                "familyIds": [
+                  "potato_bowl",
+                  "pulse_salad",
+                  "soup",
+                  "tray_roast",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 0,
+                "familyCollisions": 9,
+                "recipeCollisions": 7
+              },
+              "score": [
+                11,
+                0,
+                9
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 16,
+            "after": 16,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H02",
+            "before": 36,
+            "after": 36,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H03",
+            "before": 45,
+            "after": 45,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H04",
+            "before": 21,
+            "after": 21,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H05",
+            "before": 72,
+            "after": 72,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H06",
+            "before": 30,
+            "after": 30,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H07",
+            "before": 42,
+            "after": 42,
+            "delta": 0,
+            "percentagePoints": 0
+          },
+          {
+            "householdId": "H08",
+            "before": 48,
+            "after": 48,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H02",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R07",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R07-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R40",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R40-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H04",
+            "day": 0,
+            "meal": "dinner",
+            "fromRecipeId": "R33",
+            "toRecipeId": "R26",
+            "fromMethodId": "R33-hob",
+            "toMethodId": "R26-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H07",
+            "day": 1,
+            "meal": "lunch",
+            "fromRecipeId": "R24",
+            "toRecipeId": "R09",
+            "fromMethodId": "R24-cold",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H02",
+            "day": 1,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R06",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 2,
+            "meal": "breakfast",
+            "fromRecipeId": "R18",
+            "toRecipeId": "R02",
+            "fromMethodId": "R18-cold",
+            "toMethodId": "R02-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H03",
+            "day": 2,
+            "meal": "lunch",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R13",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R13-microwave",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H08",
+            "day": 2,
+            "meal": "dinner",
+            "fromRecipeId": "R07",
+            "toRecipeId": "R14",
+            "fromMethodId": "R07-cold",
+            "toMethodId": "R14-oven",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H07",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R40",
+            "toRecipeId": "R09",
+            "fromMethodId": "R40-kettle",
+            "toMethodId": "R09-press",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H03",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R13",
+            "toRecipeId": "R07",
+            "fromMethodId": "R13-microwave",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 4,
+            "meal": "lunch",
+            "fromRecipeId": "R30",
+            "toRecipeId": "R05",
+            "fromMethodId": "R30-kettle",
+            "toMethodId": "R05-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H08",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R14",
+            "toRecipeId": "R07",
+            "fromMethodId": "R14-oven",
+            "toMethodId": "R07-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H02",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R05",
+            "toRecipeId": "R30",
+            "fromMethodId": "R05-kettle",
+            "toMethodId": "R30-kettle",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H07",
+            "day": 4,
+            "meal": "dinner",
+            "fromRecipeId": "R09",
+            "toRecipeId": "R24",
+            "fromMethodId": "R09-press",
+            "toMethodId": "R24-cold",
+            "fromPortions": 2,
+            "toPortions": 2
+          },
+          {
+            "householdId": "H01",
+            "day": 5,
+            "meal": "breakfast",
+            "fromRecipeId": "R02",
+            "toRecipeId": "R18",
+            "fromMethodId": "R02-cold",
+            "toMethodId": "R18-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H04",
+            "day": 5,
+            "meal": "lunch",
+            "fromRecipeId": "R31",
+            "toRecipeId": "R32",
+            "fromMethodId": "R31-hob",
+            "toMethodId": "R32-hob",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      }
+    }
+  },
+  "controlled": {
+    "restricted-pair": {
+      "reason": "Improved household variety at fixed coverage with 0 single-meal and 1 paired changes.",
+      "improved": true,
+      "before": {
+        "id": "wk13-11w0r54-1k20s84:1.3.0:total-minimum-stability-family-v2-fresh-one:reference-first-fit:alloc-17xpg1d-18uw3yn",
+        "source": "wk13-11w0r54-1k20s84",
+        "context": null,
+        "winner": "reference-first-fit",
+        "metrics": {
+          "requested": 4,
+          "allocated": 4,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            2,
+            2,
+            2
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "main": {
+                "slots": 4,
+                "portions": 4,
+                "distinctRecipes": 2,
+                "distinctFamilies": 2,
+                "recipeIds": [
+                  "R06",
+                  "R08"
+                ],
+                "familyIds": [
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 2,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "score": [
+                2,
+                2,
+                2
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "ctx13-fuid1b-947xe9:meal-coverage-first:05-improve-variety:alloc-1ymh6sh-1502owf",
+        "source": "wk13-11w0r54-1k20s84",
+        "context": {
+          "snapshotFingerprint": "wk13-11w0r54-1k20s84",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "improve-variety",
+          "strategyId": "improve-variety",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-17xpg1d-18uw3yn",
+          "incumbentEvidenceDigest": "1xxhety-13fjly0",
+          "key": "ctx13-fuid1b-947xe9"
+        },
+        "winner": "improve-variety",
+        "metrics": {
+          "requested": 4,
+          "allocated": 4,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            2,
+            0,
+            2
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "main": {
+                "slots": 4,
+                "portions": 4,
+                "distinctRecipes": 2,
+                "distinctFamilies": 2,
+                "recipeIds": [
+                  "R06",
+                  "R08"
+                ],
+                "familyIds": [
+                  "pulse_salad",
+                  "wrap"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "score": [
+                2,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 4,
+            "after": 4,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H01",
+            "day": 0,
+            "meal": "lunch",
+            "fromRecipeId": "R06",
+            "toRecipeId": "R08",
+            "fromMethodId": "R06-cold",
+            "toMethodId": "R08-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          },
+          {
+            "householdId": "H01",
+            "day": 3,
+            "meal": "lunch",
+            "fromRecipeId": "R08",
+            "toRecipeId": "R06",
+            "fromMethodId": "R08-cold",
+            "toMethodId": "R06-cold",
+            "fromPortions": 1,
+            "toPortions": 1
+          }
+        ]
+      }
+    },
+    "equipped-single": {
+      "reason": "Improved household variety at fixed coverage with 2 single-meal and 0 paired changes.",
+      "improved": true,
+      "before": {
+        "id": "wk13-bn66xw-1xhc13i:1.3.0:total-minimum-stability-family-v2-fresh-one:reference-first-fit:alloc-ll4509-1q6sgen",
+        "source": "wk13-bn66xw-1xhc13i",
+        "context": null,
+        "winner": "reference-first-fit",
+        "metrics": {
+          "requested": 12,
+          "allocated": 12,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            6,
+            3,
+            6
+          ],
+          "households": [
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 4,
+                "portions": 12,
+                "distinctRecipes": 1,
+                "distinctFamilies": 1,
+                "recipeIds": [
+                  "R01"
+                ],
+                "familyIds": [
+                  "porridge"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 3,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "main": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "score": [
+                6,
+                3,
+                6
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "ctx13-hd5e4z-1li94v9:meal-coverage-first:05-improve-variety:alloc-183om2r-1g8660f",
+        "source": "wk13-bn66xw-1xhc13i",
+        "context": {
+          "snapshotFingerprint": "wk13-bn66xw-1xhc13i",
+          "policyId": "meal-coverage-first",
+          "engineVersion": "1.3.0",
+          "parametersId": "total-minimum-stability-family-v2-fresh-one",
+          "operation": "improve-variety",
+          "strategyId": "improve-variety",
+          "catalogRevision": "catalog-families-1.3",
+          "metricVersion": "family-collisions-v1",
+          "searchBudget": 240,
+          "incumbentDigest": "alloc-ll4509-1q6sgen",
+          "incumbentEvidenceDigest": "146uwun-hld1rl",
+          "key": "ctx13-hd5e4z-1li94v9"
+        },
+        "winner": "improve-variety",
+        "metrics": {
+          "requested": 12,
+          "allocated": 12,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            2,
+            0,
+            2
+          ],
+          "households": [
+            {
+              "householdId": "H03",
+              "breakfast": {
+                "slots": 4,
+                "portions": 12,
+                "distinctRecipes": 2,
+                "distinctFamilies": 2,
+                "recipeIds": [
+                  "R01",
+                  "R03"
+                ],
+                "familyIds": [
+                  "porridge",
+                  "yogurt_bowl"
+                ],
+                "maxFamilyFrequency": 2,
+                "adjacent": 0,
+                "familyCollisions": 2,
+                "recipeCollisions": 2
+              },
+              "main": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "score": [
+                2,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H03",
+            "before": 12,
+            "after": 12,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": [
+          {
+            "householdId": "H03",
+            "day": 1,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          },
+          {
+            "householdId": "H03",
+            "day": 3,
+            "meal": "breakfast",
+            "fromRecipeId": "R01",
+            "toRecipeId": "R03",
+            "fromMethodId": "R01-microwave",
+            "toMethodId": "R03-cold",
+            "fromPortions": 3,
+            "toPortions": 3
+          }
+        ]
+      }
+    },
+    "no-alternative": {
+      "reason": "No improvement found within the fixed search budget and available stock.",
+      "improved": false,
+      "before": {
+        "id": "wk13-1qt1fqs-162nf4m:1.3.0:total-minimum-stability-family-v2-fresh-one:reference-first-fit:alloc-18jn459-caitqn",
+        "source": "wk13-1qt1fqs-162nf4m",
+        "context": null,
+        "winner": "reference-first-fit",
+        "metrics": {
+          "requested": 4,
+          "allocated": 4,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            6,
+            3,
+            6
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "main": {
+                "slots": 4,
+                "portions": 4,
+                "distinctRecipes": 1,
+                "distinctFamilies": 1,
+                "recipeIds": [
+                  "R06"
+                ],
+                "familyIds": [
+                  "pulse_salad"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 3,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "score": [
+                6,
+                3,
+                6
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "after": {
+        "id": "wk13-1qt1fqs-162nf4m:1.3.0:total-minimum-stability-family-v2-fresh-one:reference-first-fit:alloc-18jn459-caitqn",
+        "source": "wk13-1qt1fqs-162nf4m",
+        "context": null,
+        "winner": "reference-first-fit",
+        "metrics": {
+          "requested": 4,
+          "allocated": 4,
+          "uncovered": 0,
+          "percent": 100
+        },
+        "variety": {
+          "score": [
+            6,
+            3,
+            6
+          ],
+          "households": [
+            {
+              "householdId": "H01",
+              "breakfast": {
+                "slots": 0,
+                "portions": 0,
+                "distinctRecipes": 0,
+                "distinctFamilies": 0,
+                "recipeIds": [],
+                "familyIds": [],
+                "maxFamilyFrequency": 0,
+                "adjacent": 0,
+                "familyCollisions": 0,
+                "recipeCollisions": 0
+              },
+              "main": {
+                "slots": 4,
+                "portions": 4,
+                "distinctRecipes": 1,
+                "distinctFamilies": 1,
+                "recipeIds": [
+                  "R06"
+                ],
+                "familyIds": [
+                  "pulse_salad"
+                ],
+                "maxFamilyFrequency": 4,
+                "adjacent": 3,
+                "familyCollisions": 6,
+                "recipeCollisions": 6
+              },
+              "score": [
+                6,
+                3,
+                6
+              ]
+            }
+          ]
+        },
+        "validation": []
+      },
+      "changes": {
+        "deltas": [
+          {
+            "householdId": "H01",
+            "before": 4,
+            "after": 4,
+            "delta": 0,
+            "percentagePoints": 0
+          }
+        ],
+        "filled": [],
+        "lost": [],
+        "changed": []
+      }
+    }
+  }
+}
