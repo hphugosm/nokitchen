@@ -4,15 +4,18 @@ import { buildPackingLists, packingEvidence, planMetrics } from './packingLists'
 import { collectionForDay, DAYS, MEALS, requestForSlot } from './types'
 import type { AllocationPlan, PlanningSnapshot, Slot } from './types'
 
-// Audit supplied records and claimed lots directly. Other valid lot combinations may exist.
 export function validatePlan(snapshot: PlanningSnapshot, plan: AllocationPlan): string[] {
+  const errors = validatePlanContent(snapshot, plan)
+  if (plan.fingerprint !== snapshotFingerprint(snapshot) || plan.revision !== snapshot.revision)
+    errors.unshift('Plan inputs are out of date.')
+  return errors
+}
+
+// An existing approval can still be carried out after an input change. Audit its actual
+// assignments and packing lists without rewriting the historical revision or fingerprint.
+export function validatePlanContent(snapshot: PlanningSnapshot, plan: AllocationPlan): string[] {
+  if (plan.schemaVersion !== 1) return ['Unsupported plan schema.']
   const errors: string[] = []
-  if (
-    plan.fingerprint !== snapshotFingerprint(snapshot) ||
-    plan.revision !== snapshot.revision ||
-    plan.schemaVersion !== 1
-  )
-    errors.push('Plan inputs are out of date.')
   const ctx = makeContext(snapshot)
   const households = new Map(snapshot.households.map((h) => [h.id, h]))
   const recipes = new Map(snapshot.recipes.map((r) => [r.id, r]))

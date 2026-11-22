@@ -9,6 +9,7 @@ import {
   type PlanningSnapshot,
   type Reason,
   type RecipeMethod,
+  type Reservation,
   type Slot,
 } from '../domain/types'
 
@@ -39,19 +40,31 @@ export function Chip({
 }
 export function PlanStatus() {
   const { planLabel } = useWork()
-  const Icon =
-    planLabel === 'Approved' ? Check : planLabel === 'Out of date' ? AlertCircle : CircleDashed
+  const needsReview = planLabel === 'Out of date' || planLabel === 'Needs review'
+  const Icon = planLabel === 'Approved' ? Check : needsReview ? AlertCircle : CircleDashed
   return (
-    <Chip
-      tone={planLabel === 'Approved' ? 'green' : planLabel === 'Out of date' ? 'terra' : 'amber'}
-    >
+    <Chip tone={planLabel === 'Approved' ? 'green' : needsReview ? 'terra' : 'amber'}>
       <Icon />
       {planLabel === 'Draft' ? 'Draft plan' : planLabel}
     </Chip>
   )
 }
 export function StaleBanner() {
-  const { approved, snapshot, planLabel } = useWork()
+  const { approved, snapshot, planLabel, mode } = useWork()
+  if (mode === 'household') {
+    if (planLabel === 'Approved') return null
+    const waiting = planLabel === 'Waiting for approval'
+    return (
+      <section className="panel panel-body" role="status">
+        <h2>{waiting ? 'Waiting for an approved plan' : 'Plan needs review'}</h2>
+        <p>
+          {waiting
+            ? 'Your meals and collection boxes will appear here when the food bank approves your plan.'
+            : 'The approved meals or boxes no longer match this week’s requirements. The food bank needs to review the plan before you use it.'}
+        </p>
+      </section>
+    )
+  }
   if (planLabel !== 'Out of date' && (!approved || approved.revision === snapshot.revision))
     return null
   return (
@@ -67,7 +80,7 @@ export function StaleBanner() {
           </>
         )}
         {planLabel !== 'Out of date' &&
-          'The previous approved plan is out of date. Its reservations remain active until you approve this draft or release the plan.'}
+          'The previous approval still reserves stock. Approve this draft to replace it or release its reservations.'}
       </span>
     </div>
   )
@@ -189,6 +202,29 @@ export function Modal({
         {children}
       </div>
     </dialog>
+  )
+}
+export function StockDetails({ lines }: { lines: Reservation[] }) {
+  const { snapshot } = useWork()
+  return (
+    <details className="meal-links">
+      <summary>Stock details</summary>
+      <ul className="lined-list">
+        {lines.map((line) => {
+          const ingredient = ingredientFor(snapshot, line.ingredientId)
+          return (
+            <li key={line.lotId}>
+              <span>
+                {ingredient.name} · {line.lotId}
+              </span>
+              <strong>
+                {fmt(line.quantity)} {ingredient.unit}
+              </strong>
+            </li>
+          )
+        })}
+      </ul>
+    </details>
   )
 }
 export function Reasons({ reasons }: { reasons: Reason[] }) {

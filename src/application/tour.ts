@@ -21,7 +21,7 @@ interface LiveTour extends TourFrame {
 }
 function routeFor(step: number, householdId: string): Route {
   return {
-    mode: step === 0 ? 'household' : 'bank',
+    mode: 'bank',
     bankView: step >= 1 && step <= 4 ? 'donations' : 'overview',
     householdId,
   }

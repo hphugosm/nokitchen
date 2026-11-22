@@ -1,6 +1,6 @@
 import { HouseholdVariety } from './Variety'
 import { useState } from 'react'
-import { BookOpen, ChevronRight, CookingPot, Package, Save, Users } from 'lucide-react'
+import { ChevronRight, Package, Save, Users } from 'lucide-react'
 import { COLLECTIONS, DAYS, MEALS, TOOLS, UTILITIES, type Household } from '../domain/types'
 import { PackingBox } from './Packing'
 import {
@@ -74,7 +74,7 @@ function Settings({ household }: { household: Household }) {
       <div className="panel-head">
         <div>
           <h2>Kitchen settings</h2>
-          <p>Changes apply to this household’s next calculation.</p>
+          <p>Changing these settings may put your meals on hold for food bank review.</p>
         </div>
       </div>
       <div className="panel-body">
@@ -186,7 +186,7 @@ export default function HouseholdPortal({
       <StaleBanner />
       {view === 'settings' ? (
         <Settings key={h.id + '-' + snapshot.revision} household={h} />
-      ) : view === 'boxes' ? (
+      ) : !plan ? null : view === 'boxes' ? (
         <div className="packing-grid">
           {COLLECTIONS.map((d) => (
             <PackingBox householdId={h.id} day={d} openMeal={openMeal} key={d} />
@@ -198,7 +198,7 @@ export default function HouseholdPortal({
             <div className="panel-head">
               <div>
                 <h2>Meal schedule</h2>
-                <p>{plural(allocations.length, 'whole-household meal')} assigned this week</p>
+                <p>{plural(allocations.length, 'meal')} planned for your household this week</p>
               </div>
               <Chip>
                 <Users />
@@ -206,7 +206,6 @@ export default function HouseholdPortal({
               </Chip>
             </div>
             <div className="panel-body">
-              <HouseholdVariety />
               <div className="day-picker" role="group" aria-label="Select meal day">
                 {DAYS.map((d, i) => (
                   <button key={d} aria-pressed={day === i} onClick={() => setDay(i)}>
@@ -233,6 +232,7 @@ export default function HouseholdPortal({
                   <button
                     className={'house-meal ' + (a ? '' : 'unfilled')}
                     key={meal}
+                    disabled={!a && !missing}
                     onClick={() => openMeal(slot)}
                   >
                     <div className="meal-symbol">
@@ -240,11 +240,15 @@ export default function HouseholdPortal({
                     </div>
                     <span>
                       <small>{pretty(meal)}</small>
-                      <strong>{recipe?.name ?? 'Unfilled meal'}</strong>
+                      <strong>
+                        {recipe?.name ?? (missing ? 'Meal not covered yet' : 'No meal requested')}
+                      </strong>
                       <span>
                         {a
                           ? plural(a.portions, 'portion') + ' · ' + method?.name
-                          : (missing?.reasons[0]?.message ?? 'No current allocation.')}
+                          : missing
+                            ? 'Your approved plan has no meal for this slot.'
+                            : ''}
                       </span>
                     </span>
                     <ChevronRight />
@@ -253,14 +257,7 @@ export default function HouseholdPortal({
               })}
             </div>
           </section>
-          <div className="reservation-line recipe-link">
-            <CookingPot />
-            <span>Explore recipes with this household’s equipment and stock.</span>
-            <button className="text-button" onClick={() => ui.navigate('bank', 'recipes', h.id)}>
-              <BookOpen />
-              Check recipes
-            </button>
-          </div>
+          <HouseholdVariety />
         </>
       )}
     </>

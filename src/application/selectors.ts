@@ -1,3 +1,4 @@
+import { validatePlanContent } from '../domain/validatePlan'
 import { DONATION_RULE } from '../domain/donorTypes'
 import { catalog, seedHouseholds, seedLots, sampleOffers } from '../data'
 import { contextFor, allocationDigest } from '../domain/fingerprint'
@@ -29,6 +30,17 @@ export function displayedPlan(state: Scenario): Pick<WorkspaceUI, 'plan' | 'plan
   }
   const plan = state.draft ?? state.approved
   return { plan, planLabel: plan ? 'Out of date' : 'No plan' }
+}
+
+type HouseholdPublication =
+  | { plan: null; planLabel: 'Waiting for approval' | 'Needs review' }
+  | { plan: AllocationPlan; planLabel: 'Approved' }
+
+export function householdPublication(state: Scenario): HouseholdPublication {
+  if (!state.approved) return { plan: null, planLabel: 'Waiting for approval' }
+  if (validatePlanContent(snapshotOf(state), state.approved).length)
+    return { plan: null, planLabel: 'Needs review' }
+  return { plan: state.approved, planLabel: 'Approved' }
 }
 
 export function decisionBaseline(state: Scenario): AllocationPlan | null {
@@ -68,7 +80,10 @@ export function scenarioName(state: Scenario): string {
     (o) => state.offerStatus[o.id] === 'received',
   )
   const profilesChanged = JSON.stringify(seedHouseholds) !== JSON.stringify(state.households)
-  const expectedLots = [...seedLots, ...receipts.flatMap((o) => o.items.map((i) => i.lot))]
+  const expectedLots = [
+    ...seedLots,
+    ...receipts.flatMap((o) => (o.receipt?.items ?? o.items).map((i) => i.lot)),
+  ]
   const editedStock =
     state.lots.length !== expectedLots.length ||
     state.lots.some((l) => {
@@ -95,7 +110,7 @@ export function scenarioName(state: Scenario): string {
         : 'updated households',
     )
   }
-  const name = state.seedKind === 'migrated' ? 'Migrated week' : 'Expanded 1.3 week'
+  const name = state.seedKind === 'migrated' ? 'Migrated week' : 'Demo week'
   return notes.length ? name + ' · ' + notes.join(' · ') : name
 }
 

@@ -22,6 +22,7 @@ import {
   reviewForApproval,
   scenarioName,
   displayedPlan,
+  householdPublication,
   snapshotOf,
 } from './application/selectors'
 import { FixtureDonationSource } from './integrations/donations/FixtureDonationSource'
@@ -58,6 +59,10 @@ function App() {
   const decisionContext = useMemo(
     () => (baseline ? contextFor(snapshot, planningOptions(baseline)) : null),
     [snapshot, baseline],
+  )
+  const display = useMemo(
+    () => (route.mode === 'household' ? householdPublication(scenario) : displayedPlan(scenario)),
+    [route.mode, scenario],
   )
   const approvalReview = useMemo(() => reviewForApproval(scenario), [scenario])
   const receiptImpact = useMemo(() => latestImpact(scenario), [scenario])
@@ -122,16 +127,16 @@ function App() {
         dispatch(
           { type: 'preview', chosen },
           chosen.action.kind === 'donation'
-            ? 'Proposal created. Review and confirm receipt in Demo donations.'
+            ? 'Proposal created. Review and confirm receipt in Donations.'
             : 'Equipment applied. Review the new draft before approval.',
         )
       }
       {...route}
-      {...displayedPlan(scenario)}
+      {...display}
       snapshot={snapshot}
       draft={scenario.draft}
       approved={scenario.approved}
-      previousDraft={scenario.previousDraft}
+      previousDraft={route.mode === 'bank' ? scenario.previousDraft : null}
       sampleOffers={availableOffers}
       offers={offers}
       navigate={navigate}

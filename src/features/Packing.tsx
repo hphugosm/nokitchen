@@ -18,6 +18,7 @@ import {
   PlanStatus,
   plural,
   StaleBanner,
+  StockDetails,
   useWork,
   type OpenMeal,
 } from './shared'
@@ -44,8 +45,9 @@ export function PackingBox({
   day: Collection
   openMeal: OpenMeal
 }) {
-  const { snapshot, plan, previousDraft } = useWork(),
-    list = listFor(plan, householdId, day),
+  const { snapshot, plan, previousDraft, mode } = useWork()
+  if (mode === 'household' && !plan) return <StaleBanner />
+  const list = listFor(plan, householdId, day),
     oldList = listFor(previousDraft, householdId, day)
   const h = snapshot.households.find((h) => h.id === householdId)!
   const items = groupItems(list?.items ?? []),
@@ -89,8 +91,7 @@ export function PackingBox({
                       .map(
                         (l) =>
                           packageDescription(snapshot.lots.find((lot) => lot.id === l.lotId)!) +
-                          ' · ' +
-                          l.lotId +
+                          (mode === 'bank' ? ' · ' + l.lotId : '') +
                           ' · ' +
                           (l.packages !== null
                             ? plural(l.packages, 'package') +
@@ -108,6 +109,7 @@ export function PackingBox({
                 </li>
               ))}
             </ul>
+            {mode === 'household' && <StockDetails lines={list!.items} />}
             <details className="meal-links">
               <summary>Meals in this box ({list!.meals.length})</summary>
               <div>

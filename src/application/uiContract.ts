@@ -48,7 +48,8 @@ export interface WorkspaceUI {
   draft: AllocationPlan | null
   approved: AllocationPlan | null
   plan: AllocationPlan | null
-  planLabel: 'Draft' | 'Approved' | 'Out of date' | 'No plan'
+  planLabel:
+    'Draft' | 'Approved' | 'Out of date' | 'No plan' | 'Waiting for approval' | 'Needs review'
   previousDraft: AllocationPlan | null
   offers: DonationOffer[]
   sampleOffers: DonationOffer[]

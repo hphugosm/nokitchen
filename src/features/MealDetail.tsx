@@ -11,7 +11,10 @@ import {
   PlanStatus,
   plural,
   pretty,
+  Reasons,
   slotIs,
+  StaleBanner,
+  StockDetails,
   useWork,
 } from './shared'
 export function MealDetail({
@@ -25,7 +28,14 @@ export function MealDetail({
 }) {
   const ui = useWork(),
     { snapshot, plan } = ui
+  if (ui.mode === 'household' && !plan)
+    return (
+      <Modal title="Meal details" onClose={onClose}>
+        <StaleBanner />
+      </Modal>
+    )
   const allocation = plan?.allocations.find((a) => slotIs(a, slot))
+  const unfilled = plan?.unfilled.find((u) => slotIs(u, slot))
   const household = snapshot.households.find((h) => h.id === slot.householdId)!
   const recipe = snapshot.recipes.find((r) => r.id === allocation?.recipeId),
     method = recipe?.methods.find((m) => m.id === allocation?.methodId)
@@ -34,7 +44,7 @@ export function MealDetail({
     amounts.set(res.ingredientId, (amounts.get(res.ingredientId) ?? 0) + res.quantity)
   return (
     <Modal
-      title={recipe?.name ?? 'Unfilled meal'}
+      title={recipe?.name ?? (ui.mode === 'household' ? 'Meal not covered yet' : 'Unfilled meal')}
       sub={household.name + ' · ' + DAYS[slot.day] + ' · ' + pretty(slot.meal)}
       onClose={onClose}
     >
@@ -80,7 +90,7 @@ export function MealDetail({
                         )
                       return (
                         <small key={lot.id}>
-                          {lot.id} ·{' '}
+                          {ui.mode === 'bank' && lot.id + ' · '}
                           {lot.canRepack
                             ? fmt(line.quantity) +
                               ' ' +
@@ -99,12 +109,23 @@ export function MealDetail({
                 </li>
               ))}
             </ul>
+            {ui.mode === 'household' && <StockDetails lines={allocation.reservations} />}
             <button className="button" onClick={() => onBox(slot)}>
               <Package />
               Open {DAYS[collectionForDay(slot.day)]} packing list
             </button>
           </div>
           <MethodInfo method={method} />
+        </>
+      ) : ui.mode === 'household' ? (
+        <>
+          <p>Your approved plan has no meal for this slot.</p>
+          {unfilled && (
+            <details className="meal-links">
+              <summary>Reasons recorded at approval</summary>
+              <Reasons reasons={unfilled.reasons} />
+            </details>
+          )}
         </>
       ) : (
         <SlotEvidence slot={slot} />
